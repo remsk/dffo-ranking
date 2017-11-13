@@ -1,0 +1,1006 @@
+[{
+		"id": 41,
+		"character": "Ace",
+		"role": null,
+		"series": {
+			"id": 18,
+			"name": "FFT0"
+		},
+		"attributes": null,
+		"HP": 3656,
+		"initialBRV": 739,
+		"maxBRV": 1500,
+		"ATK": 500,
+		"DEF": 480
+	},
+	{
+		"id": 52,
+		"character": "Aerith",
+		"role": null,
+		"series": {
+			"id": 7,
+			"name": "FF7"
+		},
+		"attributes": null,
+		"HP": 3859,
+		"initialBRV": 785,
+		"maxBRV": 1500,
+		"ATK": 471,
+		"DEF": 594
+	},
+	{
+		"id": 51,
+		"character": "Ashe",
+		"role": null,
+		"series": {
+			"id": 12,
+			"name": "FF12"
+		},
+		"attributes": ["Holy"],
+		"HP": 4062,
+		"initialBRV": 739,
+		"maxBRV": 1364,
+		"ATK": 500,
+		"DEF": 537
+	},
+	{
+		"id": 55,
+		"character": "Auron",
+		"role": null,
+		"series": {
+			"id": 10,
+			"name": "FF10"
+		},
+		"attributes": null,
+		"HP": 4000,
+		"initialBRV": 739,
+		"maxBRV": 1437,
+		"ATK": 509,
+		"DEF": 537
+	},
+	{
+		"id": 32,
+		"character": "Balthier",
+		"role": null,
+		"series": {
+			"id": 12,
+			"name": "FF12"
+		},
+		"attributes": null,
+		"HP": 3859,
+		"initialBRV": 785,
+		"maxBRV": 1437,
+		"ATK": 480,
+		"DEF": 424
+	},
+	{
+		"id": 17,
+		"character": "Bartz",
+		"role": null,
+		"series": {
+			"id": 5,
+			"name": "FF5"
+		},
+		"attributes": null,
+		"HP": 4062,
+		"initialBRV": 739,
+		"maxBRV": 1437,
+		"ATK": 500,
+		"DEF": 424
+	},
+	{
+		"id": 50,
+		"character": "Cater",
+		"role": null,
+		"series": {
+			"id": 18,
+			"name": "FFT0"
+		},
+		"attributes": ["Ice"],
+		"HP": 4062,
+		"initialBRV": 831,
+		"maxBRV": 1364,
+		"ATK": 500,
+		"DEF": 424
+	},
+	{
+		"id": 10,
+		"character": "Cecil",
+		"role": null,
+		"series": {
+			"id": 4,
+			"name": "FF4"
+		},
+		"attributes": ["Dark"],
+		"HP": 4468,
+		"initialBRV": 646,
+		"maxBRV": 1364,
+		"ATK": 509,
+		"DEF": 424
+	},
+	{
+		"id": 59,
+		"character": "Celes",
+		"role": null,
+		"series": {
+			"id": 6,
+			"name": "FF6"
+		},
+		"attributes": null,
+		"HP": 4265,
+		"initialBRV": 785,
+		"maxBRV": 1364,
+		"ATK": 480,
+		"DEF": 594
+	},
+	{
+		"id": 6,
+		"character": "Cloud",
+		"role": null,
+		"series": {
+			"id": 7,
+			"name": "FF7"
+		},
+		"attributes": null,
+		"HP": 3859,
+		"initialBRV": 739,
+		"maxBRV": 1437,
+		"ATK": 509,
+		"DEF": 424
+	},
+	{
+		"id": 47,
+		"character": "Cyan",
+		"role": null,
+		"series": {
+			"id": 6,
+			"name": "FF6"
+		},
+		"attributes": null,
+		"HP": 4265,
+		"initialBRV": 785,
+		"maxBRV": 1300,
+		"ATK": 509,
+		"DEF": 480
+	},
+	{
+		"id": 58,
+		"character": "Edgar",
+		"role": null,
+		"series": {
+			"id": 6,
+			"name": "FF6"
+		},
+		"attributes": null,
+		"HP": 4062,
+		"initialBRV": 739,
+		"maxBRV": 1437,
+		"ATK": 500,
+		"DEF": 537
+	},
+	{
+		"id": 14,
+		"character": "Edge",
+		"role": null,
+		"series": {
+			"id": 4,
+			"name": "FF4"
+		},
+		"attributes": ["Thunder"],
+		"HP": 3859,
+		"initialBRV": 785,
+		"maxBRV": 1437,
+		"ATK": 480,
+		"DEF": 424
+	},
+	{
+		"id": 33,
+		"character": "Eiko",
+		"role": null,
+		"series": {
+			"id": 9,
+			"name": "FF9"
+		},
+		"attributes": ["Holy"],
+		"HP": 4062,
+		"initialBRV": 831,
+		"maxBRV": 1300,
+		"ATK": 500,
+		"DEF": 537
+	},
+	{
+		"id": 36,
+		"character": "Faris",
+		"role": null,
+		"series": {
+			"id": 5,
+			"name": "FF5"
+		},
+		"attributes": ["Water"],
+		"HP": 4062,
+		"initialBRV": 785,
+		"maxBRV": 1500,
+		"ATK": 471,
+		"DEF": 424
+	},
+	{
+		"id": 22,
+		"character": "Firion",
+		"role": null,
+		"series": {
+			"id": 2,
+			"name": "FF2"
+		},
+		"attributes": null,
+		"HP": 3656,
+		"initialBRV": 785,
+		"maxBRV": 1437,
+		"ATK": 500,
+		"DEF": 424
+	},
+	{
+		"id": 66,
+		"character": "Fujin",
+		"role": null,
+		"series": {
+			"id": 8,
+			"name": "FF8"
+		},
+		"attributes": ["Wind"],
+		"HP": 3859,
+		"initialBRV": 785,
+		"maxBRV": 1437,
+		"ATK": 480,
+		"DEF": 367
+	},
+	{
+		"id": 30,
+		"character": "Galuf",
+		"role": null,
+		"series": {
+			"id": 5,
+			"name": "FF5"
+		},
+		"attributes": null,
+		"HP": 4468,
+		"initialBRV": 646,
+		"maxBRV": 1300,
+		"ATK": 500,
+		"DEF": 594
+	},
+	{
+		"id": 54,
+		"character": "Garnet",
+		"role": null,
+		"series": {
+			"id": 9,
+			"name": "FF9"
+		},
+		"attributes": ["Thunder", "Water"],
+		"HP": 3859,
+		"initialBRV": 831,
+		"maxBRV": 1300,
+		"ATK": 500,
+		"DEF": 594
+	},
+	{
+		"id": 7,
+		"character": "Hope",
+		"role": null,
+		"series": {
+			"id": 13,
+			"name": "FF13"
+		},
+		"attributes": null,
+		"HP": 4062,
+		"initialBRV": 785,
+		"maxBRV": 1437,
+		"ATK": 471,
+		"DEF": 424
+	},
+	{
+		"id": 57,
+		"character": "Irvine",
+		"role": null,
+		"series": {
+			"id": 8,
+			"name": "FF8"
+		},
+		"attributes": null,
+		"HP": 3656,
+		"initialBRV": 739,
+		"maxBRV": 1500,
+		"ATK": 500,
+		"DEF": 367
+	},
+	{
+		"id": 60,
+		"character": "Kain",
+		"role": null,
+		"series": {
+			"id": 4,
+			"name": "FF4"
+		},
+		"attributes": null,
+		"HP": 4468,
+		"initialBRV": 739,
+		"maxBRV": 1300,
+		"ATK": 509,
+		"DEF": 537
+	},
+	{
+		"id": 16,
+		"character": "King",
+		"role": null,
+		"series": {
+			"id": 18,
+			"name": "FFT0"
+		},
+		"attributes": null,
+		"HP": 4062,
+		"initialBRV": 739,
+		"maxBRV": 1364,
+		"ATK": 500,
+		"DEF": 424
+	},
+	{
+		"id": 44,
+		"character": "Krile",
+		"role": null,
+		"series": {
+			"id": 5,
+			"name": "FF5"
+		},
+		"attributes": ["Thunder"],
+		"HP": 4062,
+		"initialBRV": 831,
+		"maxBRV": 1437,
+		"ATK": 471,
+		"DEF": 424
+	},
+	{
+		"id": 63,
+		"character": "Kuja",
+		"role": null,
+		"series": {
+			"id": 9,
+			"name": "FF9"
+		},
+		"attributes": ["Holy"],
+		"HP": 3859,
+		"initialBRV": 785,
+		"maxBRV": 1500,
+		"ATK": 480,
+		"DEF": 367
+	},
+	{
+		"id": 23,
+		"character": "Laguna",
+		"role": null,
+		"series": {
+			"id": 8,
+			"name": "FF8"
+		},
+		"attributes": null,
+		"HP": 4468,
+		"initialBRV": 693,
+		"maxBRV": 1437,
+		"ATK": 500,
+		"DEF": 424
+	},
+	{
+		"id": 39,
+		"character": "Layle",
+		"role": null,
+		"series": {
+			"id": 17,
+			"name": "FFCC"
+		},
+		"attributes": null,
+		"HP": 4062,
+		"initialBRV": 739,
+		"maxBRV": 1437,
+		"ATK": 500,
+		"DEF": 480
+	},
+	{
+		"id": 49,
+		"character": "Lightning",
+		"role": null,
+		"series": {
+			"id": 13,
+			"name": "FF13"
+		},
+		"attributes": ["Thunder"],
+		"HP": 3859,
+		"initialBRV": 831,
+		"maxBRV": 1500,
+		"ATK": 480,
+		"DEF": 424
+	},
+	{
+		"id": 53,
+		"character": "Lion",
+		"role": null,
+		"series": {
+			"id": 11,
+			"name": "FF11"
+		},
+		"attributes": null,
+		"HP": 4468,
+		"initialBRV": 693,
+		"maxBRV": 1500,
+		"ATK": 480,
+		"DEF": 367
+	},
+	{
+		"id": 61,
+		"character": "Maria",
+		"role": null,
+		"series": {
+			"id": 2,
+			"name": "FF2"
+		},
+		"attributes": ["Wind"],
+		"HP": 4265,
+		"initialBRV": 785,
+		"maxBRV": 1437,
+		"ATK": 480,
+		"DEF": 424
+	},
+	{
+		"id": 21,
+		"character": "Onion Knight",
+		"role": null,
+		"series": {
+			"id": 3,
+			"name": "FF3"
+		},
+		"attributes": ["Ice"],
+		"HP": 3859,
+		"initialBRV": 785,
+		"maxBRV": 1500,
+		"ATK": 480,
+		"DEF": 367
+	},
+	{
+		"id": 62,
+		"character": "Palom",
+		"role": null,
+		"series": {
+			"id": 4,
+			"name": "FF4"
+		},
+		"attributes": ["Ice"],
+		"HP": 3656,
+		"initialBRV": 831,
+		"maxBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	{
+		"id": 48,
+		"character": "Papalymo",
+		"role": null,
+		"series": {
+			"id": 15,
+			"name": "FF14"
+		},
+		"attributes": ["Fire", "Ice"],
+		"HP": 4062,
+		"initialBRV": 785,
+		"maxBRV": 1364,
+		"ATK": 500,
+		"DEF": 480
+	},
+	{
+		"id": 18,
+		"character": "Penelo",
+		"role": null,
+		"series": {
+			"id": 12,
+			"name": "FF12"
+		},
+		"attributes": null,
+		"HP": 4062,
+		"initialBRV": 831,
+		"maxBRV": 1364,
+		"ATK": 471,
+		"DEF": 594
+	},
+	{
+		"id": 35,
+		"character": "Prishe",
+		"role": null,
+		"series": {
+			"id": 11,
+			"name": "FF11"
+		},
+		"attributes": ["Fire", "Holy", "Wind"],
+		"HP": 4062,
+		"initialBRV": 739,
+		"maxBRV": 1500,
+		"ATK": 480,
+		"DEF": 367
+	},
+	{
+		"id": 64,
+		"character": "Quistis",
+		"role": null,
+		"series": {
+			"id": 8,
+			"name": "FF8"
+		},
+		"attributes": null,
+		"HP": 4062,
+		"initialBRV": 785,
+		"maxBRV": 1500,
+		"ATK": 480,
+		"DEF": 424
+	},
+	{
+		"id": 65,
+		"character": "Raijin",
+		"role": null,
+		"series": {
+			"id": 8,
+			"name": "FF8"
+		},
+		"attributes": ["Thunder"],
+		"HP": 4062,
+		"initialBRV": 693,
+		"maxBRV": 1437,
+		"ATK": 509,
+		"DEF": 480
+	},
+	{
+		"id": 37,
+		"character": "Ramza",
+		"role": null,
+		"series": {
+			"id": 16,
+			"name": "FFT"
+		},
+		"attributes": null,
+		"HP": 3859,
+		"initialBRV": 785,
+		"maxBRV": 1364,
+		"ATK": 500,
+		"DEF": 537
+	},
+	{
+		"id": 3,
+		"character": "Rem",
+		"role": null,
+		"series": {
+			"id": 18,
+			"name": "FFT0"
+		},
+		"attributes": null,
+		"HP": 3859,
+		"initialBRV": 785,
+		"maxBRV": 1500,
+		"ATK": 452,
+		"DEF": 424
+	},
+	{
+		"id": 43,
+		"character": "Sabin",
+		"role": null,
+		"series": {
+			"id": 6,
+			"name": "FF6"
+		},
+		"attributes": ["Holy", "Wind"],
+		"HP": 4062,
+		"initialBRV": 785,
+		"maxBRV": 1437,
+		"ATK": 509,
+		"DEF": 424
+	},
+	{
+		"id": 4,
+		"character": "Sazh",
+		"role": null,
+		"series": {
+			"id": 13,
+			"name": "FF13"
+		},
+		"attributes": null,
+		"HP": 4265,
+		"initialBRV": 739,
+		"maxBRV": 1364,
+		"ATK": 500,
+		"DEF": 480
+	},
+	{
+		"id": 67,
+		"character": "Seifer",
+		"role": null,
+		"series": {
+			"id": 8,
+			"name": "FF8"
+		},
+		"attributes": ["Wind"],
+		"HP": 4265,
+		"initialBRV": 693,
+		"maxBRV": 1437,
+		"ATK": 480,
+		"DEF": 594
+	},
+	{
+		"id": 56,
+		"character": "Serah",
+		"role": null,
+		"series": {
+			"id": 14,
+			"name": "FF13-2"
+		},
+		"attributes": null,
+		"HP": 4265,
+		"initialBRV": 785,
+		"maxBRV": 1364,
+		"ATK": 480,
+		"DEF": 480
+	},
+	{
+		"id": 28,
+		"character": "Setzer",
+		"role": null,
+		"series": {
+			"id": 6,
+			"name": "FF6"
+		},
+		"attributes": null,
+		"HP": 4062,
+		"initialBRV": 831,
+		"maxBRV": 1500,
+		"ATK": 452,
+		"DEF": 367
+	},
+	{
+		"id": 42,
+		"character": "Seymour",
+		"role": null,
+		"series": {
+			"id": 10,
+			"name": "FF10"
+		},
+		"attributes": null,
+		"HP": 3859,
+		"initialBRV": 785,
+		"maxBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	{
+		"id": 25,
+		"character": "Shadow",
+		"role": null,
+		"series": {
+			"id": 6,
+			"name": "FF6"
+		},
+		"attributes": null,
+		"HP": 3656,
+		"initialBRV": 831,
+		"maxBRV": 1227,
+		"ATK": 500,
+		"DEF": 367
+	},
+	{
+		"id": 31,
+		"character": "Shantotto",
+		"role": null,
+		"series": {
+			"id": 11,
+			"name": "FF11"
+		},
+		"attributes": ["Dark", "Wind"],
+		"HP": 4062,
+		"initialBRV": 693,
+		"maxBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	{
+		"id": 46,
+		"character": "Snow",
+		"role": null,
+		"series": {
+			"id": 13,
+			"name": "FF13"
+		},
+		"attributes": ["Ice"],
+		"HP": 4468,
+		"initialBRV": 739,
+		"maxBRV": 1300,
+		"ATK": 480,
+		"DEF": 537
+	},
+	{
+		"id": 26,
+		"character": "Squall",
+		"role": null,
+		"series": {
+			"id": 8,
+			"name": "FF8"
+		},
+		"attributes": null,
+		"HP": 4062,
+		"initialBRV": 693,
+		"maxBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	{
+		"id": 24,
+		"character": "Steiner",
+		"role": null,
+		"series": {
+			"id": 9,
+			"name": "FF9"
+		},
+		"attributes": ["Fire"],
+		"HP": 4265,
+		"initialBRV": 646,
+		"maxBRV": 1300,
+		"ATK": 509,
+		"DEF": 480
+	},
+	{
+		"id": 45,
+		"character": "Thancred",
+		"role": null,
+		"series": {
+			"id": 13,
+			"name": "FF13"
+		},
+		"attributes": null,
+		"HP": 3656,
+		"initialBRV": 785,
+		"maxBRV": 1437,
+		"ATK": 480,
+		"DEF": 500
+	},
+	{
+		"id": 34,
+		"character": "Tidus",
+		"role": null,
+		"series": {
+			"id": 10,
+			"name": "FF10"
+		},
+		"attributes": null,
+		"HP": 3859,
+		"initialBRV": 785,
+		"maxBRV": 1437,
+		"ATK": 480,
+		"DEF": 424
+	},
+	{
+		"id": 5,
+		"character": "Tifa",
+		"role": null,
+		"series": {
+			"id": 7,
+			"name": "FF7"
+		},
+		"attributes": null,
+		"HP": 3859,
+		"initialBRV": 739,
+		"maxBRV": 1437,
+		"ATK": 500,
+		"DEF": 424
+	},
+	{
+		"id": 19,
+		"character": "Terra",
+		"role": null,
+		"series": {
+			"id": 6,
+			"name": "FF6"
+		},
+		"attributes": null,
+		"HP": 3656,
+		"initialBRV": 831,
+		"maxBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	{
+		"id": 12,
+		"character": "Vaan",
+		"role": null,
+		"series": {
+			"id": 12,
+			"name": "FF12"
+		},
+		"attributes": ["Holy", "Ice", "Wind"],
+		"HP": 3859,
+		"initialBRV": 785,
+		"maxBRV": 1500,
+		"ATK": 500,
+		"DEF": 424
+	},
+	{
+		"id": 27,
+		"character": "Vanille",
+		"role": null,
+		"series": {
+			"id": 13,
+			"name": "FF13"
+		},
+		"attributes": null,
+		"HP": 3859,
+		"initialBRV": 831,
+		"maxBRV": 1437,
+		"ATK": 471,
+		"DEF": 480
+	},
+	{
+		"id": 40,
+		"character": "Vincent",
+		"role": null,
+		"series": {
+			"id": 7,
+			"name": "FF7"
+		},
+		"attributes": ["Fire", "Thunder"],
+		"HP": 3859,
+		"initialBRV": 646,
+		"maxBRV": 1500,
+		"ATK": 500,
+		"DEF": 537
+	},
+	{
+		"id": 2,
+		"character": "Vivi",
+		"role": null,
+		"series": {
+			"id": 9,
+			"name": "FF9"
+		},
+		"attributes": ["Fire"],
+		"HP": 3859,
+		"initialBRV": 693,
+		"maxBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	{
+		"id": 29,
+		"character": "Wakka",
+		"role": null,
+		"series": {
+			"id": 10,
+			"name": "FF10"
+		},
+		"attributes": null,
+		"HP": 4265,
+		"initialBRV": 693,
+		"maxBRV": 1437,
+		"ATK": 500,
+		"DEF": 480
+	},
+	{
+		"id": 1,
+		"character": "Warrior of Light",
+		"role": null,
+		"series": {
+			"id": 1,
+			"name": "FF1"
+		},
+		"attributes": null,
+		"HP": 4265,
+		"initialBRV": 831,
+		"maxBRV": 1300,
+		"ATK": 480,
+		"DEF": 594
+	},
+	{
+		"id": 20,
+		"character": "Yang",
+		"role": null,
+		"series": {
+			"id": 4,
+			"name": "FF4"
+		},
+		"attributes": null,
+		"HP": 4468,
+		"initialBRV": 646,
+		"maxBRV": 1437,
+		"ATK": 509,
+		"DEF": 367
+	},
+	{
+		"id": 11,
+		"character": "Yda",
+		"role": null,
+		"series": {
+			"id": 15,
+			"name": "FF14"
+		},
+		"attributes": null,
+		"HP": 3859,
+		"initialBRV": 693,
+		"maxBRV": 1437,
+		"ATK": 500,
+		"DEF": 424
+	},
+	{
+		"id": 8,
+		"character": "Y'shtola",
+		"role": null,
+		"series": {
+			"id": 15,
+			"name": "FF14"
+		},
+		"attributes": ["Earth"],
+		"HP": 4265,
+		"initialBRV": 831,
+		"maxBRV": 1300,
+		"ATK": 471,
+		"DEF": 480
+	},
+	{
+		"id": 13,
+		"character": "Yuffie",
+		"role": null,
+		"series": {
+			"id": 7,
+			"name": "FF7"
+		},
+		"attributes": null,
+		"HP": 4062,
+		"initialBRV": 739,
+		"maxBRV": 1500,
+		"ATK": 452,
+		"DEF": 424
+	},
+	{
+		"id": 14,
+		"character": "Yuna",
+		"role": null,
+		"series": {
+			"id": 10,
+			"name": "FF10"
+		},
+		"attributes": null,
+		"HP": 4468,
+		"initialBRV": 831,
+		"maxBRV": 1227,
+		"ATK": 452,
+		"DEF": 537
+	},
+	{
+		"id": 38,
+		"character": "Zell",
+		"role": null,
+		"series": {
+			"id": 8,
+			"name": "FF8"
+		},
+		"attributes": ["Thunder"],
+		"HP": 4468,
+		"initialBRV": 646,
+		"maxBRV": 1437,
+		"ATK": 480,
+		"DEF": 367
+	},
+	{
+		"id": 9,
+		"character": "Zidane",
+		"role": null,
+		"series": {
+			"id": 9,
+			"name": "FF9"
+		},
+		"attributes": null,
+		"HP": 4062,
+		"initialBRV": 693,
+		"maxBRV": 1437,
+		"ATK": 480,
+		"DEF": 424
+	}
+]
