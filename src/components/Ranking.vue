@@ -1,5 +1,6 @@
 <template>
   <div class="ranking">
+    <input type="checkbox" id="checkbox" v-model="baseOnly"><label for="checkbox">Show base stats only</label>
     <vue-good-table
       :columns="columns"
       :rows="characters"
@@ -19,51 +20,60 @@
             <span :title="attribute" :class="attribute"></span> 
           </template>
         </td>
-        <td>
-          <template v-if="props.row.HP === minMaxValues.HP[1]">
-            <span class="highest">{{ props.row.HP }}</span>
-          </template>
-          <template v-else-if="props.row.HP === minMaxValues.HP[0]">
-            <span class="lowest">{{ props.row.HP }}</span>
-          </template>
-          <template v-else>{{ props.row.HP }}</template>
-        </td>
-        <td>
-          <template v-if="props.row.initialBRV === minMaxValues.initialBRV[1]">
-            <span class="highest">{{ props.row.initialBRV }}</span>
-          </template>
-          <template v-else-if="props.row.initialBRV === minMaxValues.initialBRV[0]">
-            <span class="lowest">{{ props.row.initialBRV }}</span>
-          </template>
-          <template v-else>{{ props.row.initialBRV }}</template>
-        </td>
-        <td>
-          <template v-if="props.row.maxBRV === minMaxValues.maxBRV[1]">
-            <span class="highest">{{ props.row.maxBRV }}</span>
-          </template>
-          <template v-else-if="props.row.maxBRV === minMaxValues.maxBRV[0]">
-            <span class="lowest">{{ props.row.maxBRV }}</span>
-          </template>
-          <template v-else>{{ props.row.maxBRV }}</template>
-        </td>
-        <td>
-          <template v-if="props.row.ATK === minMaxValues.ATK[1]">
-            <span class="highest">{{ props.row.ATK }}</span>
-          </template>
-          <template v-else-if="props.row.ATK === minMaxValues.ATK[0]">
-            <span class="lowest">{{ props.row.ATK }}</span>
-          </template>
-          <template v-else>{{ props.row.ATK }}</template>
-        </td>
-        <td>
-          <template v-if="props.row.DEF === minMaxValues.DEF[1]">
-            <span class="highest">{{ props.row.DEF }}</span>
-          </template>
-          <template v-else-if="props.row.DEF === minMaxValues.DEF[0]">
-            <span class="lowest">{{ props.row.DEF }}</span>
-          </template>
-          <template v-else>{{ props.row.DEF }}</template>
-        </td>
+        <template v-if="baseOnly">
+          <td>
+            <template v-if="props.row.HP === minMaxValues.HP[1]">
+              <span class="highest">{{ props.row.HP }}</span>
+            </template>
+            <template v-else-if="props.row.HP === minMaxValues.HP[0]">
+              <span class="lowest">{{ props.row.HP }}</span>
+            </template>
+            <template v-else>{{ props.row.HP }}</template>
+          </td>
+          <td>
+            <template v-if="props.row.initialBRV === minMaxValues.initialBRV[1]">
+              <span class="highest">{{ props.row.initialBRV }}</span>
+            </template>
+            <template v-else-if="props.row.initialBRV === minMaxValues.initialBRV[0]">
+              <span class="lowest">{{ props.row.initialBRV }}</span>
+            </template>
+            <template v-else>{{ props.row.initialBRV }}</template>
+          </td>
+          <td>
+            <template v-if="props.row.maxBRV === minMaxValues.maxBRV[1]">
+              <span class="highest">{{ props.row.maxBRV }}</span>
+            </template>
+            <template v-else-if="props.row.maxBRV === minMaxValues.maxBRV[0]">
+              <span class="lowest">{{ props.row.maxBRV }}</span>
+            </template>
+            <template v-else>{{ props.row.maxBRV }}</template>
+          </td>
+          <td>
+            <template v-if="props.row.ATK === minMaxValues.ATK[1]">
+              <span class="highest">{{ props.row.ATK }}</span>
+            </template>
+            <template v-else-if="props.row.ATK === minMaxValues.ATK[0]">
+              <span class="lowest">{{ props.row.ATK }}</span>
+            </template>
+            <template v-else>{{ props.row.ATK }}</template>
+          </td>
+          <td>
+            <template v-if="props.row.DEF === minMaxValues.DEF[1]">
+              <span class="highest">{{ props.row.DEF }}</span>
+            </template>
+            <template v-else-if="props.row.DEF === minMaxValues.DEF[0]">
+              <span class="lowest">{{ props.row.DEF }}</span>
+            </template>
+            <template v-else>{{ props.row.DEF }}</template>
+          </td>
+        </template>
+        <template v-else>
+          <td>{{ props.row.maxHP }}</td>
+          <td>{{ props.row.maxInitialBRV }}</td>
+          <td>{{ props.row.maxMaxBRV }}</td>
+          <td>{{ props.row.maxATK }}</td>
+          <td>{{ props.row.maxDEF }}</td>
+        </template>
       </template>
       <div slot="emptystate" class="ranking-disclaimer">
         No results
@@ -77,13 +87,14 @@ export default {
   name: 'Ranking',
   data () {
     return {
-      minMaxValues: {
-        HP: [3656, 4468],
-        initialBRV: [646, 831],
-        maxBRV: [1227, 1500],
-        ATK: [452, 509],
-        DEF: [367, 594]
+      baseOnly: true,
+      params: {
+        addWeapon: true,
+        addArmor: true,
+        addPassives: true,
+        addFourStar: true
       },
+      minMaxValues: {},
       columns: [
         {
           label: 'Order',
@@ -122,6 +133,7 @@ export default {
           field: 'HP',
           type: 'number',
           filterable: true,
+          hidden: false,
           sortable: true
         },
         {
@@ -129,6 +141,7 @@ export default {
           field: 'initialBRV',
           type: 'number',
           filterable: true,
+          hidden: false,
           sortable: true
         },
         {
@@ -136,6 +149,7 @@ export default {
           field: 'maxBRV',
           type: 'number',
           filterable: true,
+          hidden: false,
           sortable: true
         },
         {
@@ -143,6 +157,7 @@ export default {
           field: 'ATK',
           type: 'number',
           filterable: true,
+          hidden: false,
           sortable: true
         },
         {
@@ -150,13 +165,16 @@ export default {
           field: 'DEF',
           type: 'number',
           filterable: true,
+          hidden: false,
           sortable: true
         }
         // {
         //   label: 'BST',
-        //   field: 'baseStatsTotal',
+        //   // for base stats total sorting
+        //   field: this.baseStatsTotal,
         //   type: 'number',
-        //   filterable: true
+        //   filterable: true,
+        //   sortable: true
         // }
       ],
       characters: []
@@ -172,7 +190,7 @@ export default {
       }
     },
     baseStatsTotal: function (row) {
-      return row.HP + row.initialBRV + row.maxBRV + row.ATK + row.DEF
+      return parseInt(row.HP + row.initialBRV + row.maxBRV + row.ATK + row.DEF)
     },
     characterIcon: function (character) {
       let slug = character.toLowerCase().split(' ').join('_').split('\'').join('')
@@ -181,10 +199,96 @@ export default {
       } else {
         return null
       }
+    },
+    maxStat: function (prop, index) {
+      let maxStat = this.characters[index][prop]
+      if (this.characters[index].weapon !== undefined && this.params.addWeapon) {
+        maxStat += this.characters[index].weapon.stats[prop]
+        maxStat += parseInt(this.characters[index].weapon.stats[prop] / 5)
+      }
+      if (this.characters[index].armor !== undefined && this.params.addArmor) {
+        maxStat += this.characters[index].armor.stats[prop]
+        maxStat += parseInt(this.characters[index].armor.stats[prop] / 5)
+        if (this.characters[index].armor.bonus[prop] !== undefined) {
+          maxStat += this.characters[index].armor.bonus[prop]
+        }
+      }
+      if (this.characters[index].awakeningPassives !== undefined && this.params.addPassives) {
+        if (prop === 'HP' || prop === 'maxBRV') {
+          maxStat += (this.characters[index].awakeningPassives[prop] * 3)
+        } else if (prop === 'ATK' || prop === 'DEF') {
+          maxStat += (this.characters[index].awakeningPassives[prop] * 2)
+        }
+      }
+      if (this.characters[index].fourStarPassives !== undefined && this.params.addFourStar) {
+        if (this.characters[index].fourStarPassives.weapon[prop] !== undefined) {
+          maxStat += this.characters[index].fourStarPassives.weapon[prop]
+        }
+        if (this.characters[index].fourStarPassives.armor[prop] !== undefined) {
+          maxStat += this.characters[index].fourStarPassives.armor[prop]
+        }
+      }
+      return maxStat
+    },
+    getMinMaxStats: function () {
+      let minMax = {
+        HP: [],
+        initialBRV: [],
+        maxBRV: [],
+        ATK: [],
+        DEF: []
+      }
+      if (this.baseOnly) {
+        minMax.HP[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.HP }))
+        minMax.HP[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.HP }))
+        minMax.initialBRV[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.initialBRV }))
+        minMax.initialBRV[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.initialBRV }))
+        minMax.maxBRV[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.maxBRV }))
+        minMax.maxBRV[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.maxBRV }))
+        minMax.ATK[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.ATK }))
+        minMax.ATK[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.ATK }))
+        minMax.DEF[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.DEF }))
+        minMax.DEF[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.DEF }))
+      } else {
+        minMax.HP[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.maxHP }))
+        minMax.HP[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.maxHP }))
+        minMax.initialBRV[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.maxInitialBRV }))
+        minMax.initialBRV[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.maxInitialBRV }))
+        minMax.maxBRV[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.maxMaxBRV }))
+        minMax.maxBRV[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.maxMaxBRV }))
+        minMax.ATK[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.maxATK }))
+        minMax.ATK[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.maxATK }))
+        minMax.DEF[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.maxDEF }))
+        minMax.DEF[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.maxDEF }))
+      }
+      return minMax
+    },
+    setupStats: function () {
+      if (!this.baseOnly) {
+        this.columns[4].field = 'maxHP'
+        this.columns[5].field = 'maxInitialBRV'
+        this.columns[6].field = 'maxMaxBRV'
+        this.columns[7].field = 'maxATK'
+        this.columns[8].field = 'maxDEF'
+      }
+      for (let i = 0; i < this.characters.length; i++) {
+        this.characters[i].maxHP = this.maxStat('HP', i)
+        this.characters[i].maxInitialBRV = this.maxStat('initialBRV', i)
+        this.characters[i].maxMaxBRV = this.maxStat('maxBRV', i)
+        this.characters[i].maxATK = this.maxStat('ATK', i)
+        this.characters[i].maxDEF = this.maxStat('DEF', i)
+      }
+      this.minMaxValues = this.getMinMaxStats()
     }
   },
   created () {
     this.setCharactersTable()
+    this.setupStats()
+  },
+  watch: {
+    baseOnly: function () {
+      this.setupStats()
+    }
   }
 }
 </script>
@@ -316,7 +420,7 @@ table .left-align, table .right-align {
   overflow: hidden !important;
 }
 
-input {
+input[type="text"] {
   display: block;
   width: 50% !important;
   flex: 1;
@@ -330,8 +434,14 @@ input {
   margin-bottom: 15px;
 }
 
-input::placeholder {
+input[type="text"]::placeholder {
   color: #ccc;
+}
+
+input[type="checkbox"], label {
+  font-size: 12px;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .highest {
