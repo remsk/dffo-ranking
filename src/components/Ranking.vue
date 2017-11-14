@@ -1,6 +1,6 @@
 <template>
   <div class="ranking">
-    <h3 class="header">Welcome to DFFOO-Ranking</h3>
+    <h2 class="header">Welcome to DFFOO Ranking</h2>
     <div class="notes">
       <p>Stat values in this table are based on Lv50 fully awakened characters and 6* 35CP weapon/armor.</p>
       <p>Characters marked with a &#10007; don't have a 35CP weapon. 6* 15CP stats are used instead.</p>
@@ -181,13 +181,6 @@ export default {
           filterable: false,
           sortable: true
         },
-        // {
-        //   label: 'Series Name',
-        //   field: 'series.name',
-        //   filterable: true,
-        //   hidden: true,
-        //   sortable: false
-        // },
         {
           label: 'Attributes',
           field: 'attributes',
@@ -406,7 +399,6 @@ export default {
 
 div.ranking {
   max-width: 910px;
-  min-width: 500px;
   background-color: #43517a;
   margin: 0 auto;
   border-radius: 5px;
@@ -415,12 +407,12 @@ div.ranking {
 }
 
 div.notes {
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 15px;
 }
 
 div.notes p {
-  margin: 0;
+  margin: 5px auto;
 }
 
 /* Ranking Table styles */
@@ -428,7 +420,6 @@ div.notes p {
 table, .ranking-table {
   text-align: center;
   max-width: 900px;
-  min-width: 490px;
   font-size: 14px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
@@ -489,10 +480,6 @@ tbody tr {
   font-weight: bold;
 }
 
-/*.ranking-table td.for-search, .ranking-table th:nth-child(2) {
-  display: none;
-}*/
-
 .ranking-table td.attributes, td.role {
   width: 125px;
 }
@@ -544,7 +531,7 @@ table .left-align, table .right-align {
 
 input[type=text] {
   display: block;
-  width: 50% !important;
+  max-width: 400px;
   flex: 1;
   padding: 0.9em 1em;
   background-color: #273153;
@@ -572,7 +559,7 @@ input[type=checkbox] {
 }
 
 .base-checkbox, .gear-checkboxes, .passive-checkboxes {
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 5px;
 }
@@ -659,6 +646,34 @@ input[type=checkbox] {
 
   tbody tr {
     box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 436px) and (orientation: portrait) {
+  .ranking-table tr th:nth-child(2), .ranking-table tr td:nth-child(2), .ranking-table tr th:nth-child(3), .ranking-table tr td:nth-child(3) {
+    display: none;
+  }
+
+  .ranking-table th span {
+    font-size: 10px;
+  }
+  
+  .ranking-table td {
+    font-size: 12px;
+  }
+
+  .highest {
+    font-size: 14px;
+  }
+
+  .lowest {
+    font-size: 10px;
+  }
+
+  .exclusiveMissing:after {
+    content: '\2718';
+    display: inline-block;
+    font-size: 12px;
   }
 }
 </style>
