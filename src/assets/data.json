@@ -822,7 +822,45 @@
 		"initialBRV": 785,
 		"maxBRV": 1437,
 		"ATK": 500,
-		"DEF": 424
+		"DEF": 424,
+		"weapon": {
+			"type": "Sword",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 122,
+				"ATK": 27,
+				"DEF": 823
+			},
+			"bonus": {
+				"HP": 680,
+				"maxBRV": 220
+			}
+		},
+		"awakeningPassives": {
+			"HP": 260,
+			"maxBRV": 105,
+			"ATK": 35,
+			"DEF": 30
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"maxBRV": 110
+			},
+			"armor": {
+				"HP": 680
+			}
+		}
 	},
 	{
 		"id": 66,
@@ -896,7 +934,45 @@
 		"initialBRV": 646,
 		"maxBRV": 1300,
 		"ATK": 500,
-		"DEF": 594
+		"DEF": 594,
+		"weapon": {
+			"type": "Heavy Sword",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 50,
+				"initialBRV": 0,
+				"maxBRV": 12,
+				"ATK": 27,
+				"DEF": 904
+			},
+			"bonus": {
+				"HP": 680,
+				"DEF": 84
+			}
+		},
+		"awakeningPassives": {
+			"HP": 340,
+			"maxBRV": 95,
+			"ATK": 35,
+			"DEF": 42
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"DEF": 42
+			},
+			"armor": {
+				"initialBRV": 110
+			}
+		}
 	},
 	{
 		"id": 54,
@@ -1125,7 +1201,45 @@
 		"initialBRV": 739,
 		"maxBRV": 1364,
 		"ATK": 500,
-		"DEF": 424
+		"DEF": 424,
+		"weapon": {
+			"type": "Gun",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 63,
+				"initialBRV": 0,
+				"maxBRV": 59,
+				"ATK": 27,
+				"DEF": 823
+			},
+			"bonus": {
+				"initialBRV": 110,
+				"ATK": 72
+			}
+		},
+		"awakeningPassives": {
+			"HP": 300,
+			"maxBRV": 100,
+			"ATK": 35,
+			"DEF": 30
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"ATK": 36
+			},
+			"armor": {
+				"DEF": 84
+			}
+		}
 	},
 	{
 		"id": 44,
@@ -1243,7 +1357,45 @@
 		"initialBRV": 693,
 		"maxBRV": 1437,
 		"ATK": 500,
-		"DEF": 424
+		"DEF": 424,
+		"weapon": {
+			"type": "Gun",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 70,
+				"initialBRV": 0,
+				"maxBRV": 52,
+				"ATK": 27,
+				"DEF": 823
+			},
+			"bonus": {
+				"HP": 680,
+				"ATK": 72
+			}
+		},
+		"awakeningPassives": {
+			"HP": 340,
+			"maxBRV": 105,
+			"ATK": 35,
+			"DEF": 30
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"HP": 340
+			},
+			"armor": {
+				"DEF": 84
+			}
+		}
 	},
 	{
 		"id": 39,
@@ -1263,7 +1415,45 @@
 		"initialBRV": 739,
 		"maxBRV": 1437,
 		"ATK": 500,
-		"DEF": 480
+		"DEF": 480,
+		"weapon": {
+			"type": "Throwing Weapon",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 41,
+				"initialBRV": 0,
+				"maxBRV": 61,
+				"ATK": 27,
+				"DEF": 870
+			},
+			"bonus": {
+				"maxBRV": 220,
+				"ATK": 72
+			}
+		},
+		"awakeningPassives": {
+			"HP": 300,
+			"maxBRV": 105,
+			"ATK": 35,
+			"DEF": 34
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"ATK": 36
+			},
+			"armor": {
+				"HP": 680
+			}
+		}
 	},
 	{
 		"id": 49,
@@ -1866,7 +2056,45 @@
 		"initialBRV": 785,
 		"maxBRV": 1500,
 		"ATK": 452,
-		"DEF": 424
+		"DEF": 424,
+		"weapon": {
+			"type": "Dagger",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 28,
+				"initialBRV": 0,
+				"maxBRV": 112,
+				"ATK": 0,
+				"DEF": 823
+			},
+			"bonus": {
+				"initialBRV": 110,
+				"maxBRV": 220
+			}
+		},
+		"awakeningPassives": {
+			"HP": 280,
+			"maxBRV": 110,
+			"ATK": 32,
+			"DEF": 30
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"maxBRV": 110
+			},
+			"armor": {
+				"ATK": 72
+			}
+		}
 	},
 	{
 		"id": 43,
@@ -1935,7 +2163,45 @@
 		"initialBRV": 739,
 		"maxBRV": 1364,
 		"ATK": 500,
-		"DEF": 480
+		"DEF": 480,
+		"weapon": {
+			"type": "Gun",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 62,
+				"initialBRV": 0,
+				"maxBRV": 40,
+				"ATK": 27,
+				"DEF": 870
+			},
+			"bonus": {
+				"HP": 680,
+				"ATK": 72
+			}
+		},
+		"awakeningPassives": {
+			"HP": 320,
+			"maxBRV": 100,
+			"ATK": 35,
+			"DEF": 34
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"HP": 340
+			},
+			"armor": {
+				"initialBRV": 110
+			}
+		}
 	},
 	{
 		"id": 67,
@@ -2174,7 +2440,45 @@
 		"initialBRV": 831,
 		"maxBRV": 1227,
 		"ATK": 500,
-		"DEF": 367
+		"DEF": 367,
+		"weapon": {
+			"type": "Throwing Weapon",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 71,
+				"initialBRV": 0,
+				"maxBRV": 71,
+				"ATK": 27,
+				"DEF": 801
+			},
+			"bonus": {
+				"initialBRV": 110,
+				"ATK": 72
+			}
+		},
+		"awakeningPassives": {
+			"HP": 260,
+			"maxBRV": 90,
+			"ATK": 35,
+			"DEF": 26
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"initialBRV": 55
+			},
+			"armor": {
+				"maxBRV": 220
+			}
+		}
 	},
 	{
 		"id": 31,
@@ -2520,7 +2824,45 @@
 		"initialBRV": 739,
 		"maxBRV": 1437,
 		"ATK": 500,
-		"DEF": 424
+		"DEF": 424,
+		"weapon": {
+			"type": "Fists",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 32,
+				"initialBRV": 0,
+				"maxBRV": 90,
+				"ATK": 27,
+				"DEF": 823
+			},
+			"bonus": {
+				"maxBRV": 220,
+				"ATK": 72
+			}
+		},
+		"awakeningPassives": {
+			"HP": 280,
+			"maxBRV": 105,
+			"ATK": 35,
+			"DEF": 30
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"maxBRV": 110
+			},
+			"armor": {
+				"DEF": 84
+			}
+		}
 	},
 	{
 		"id": 19,
@@ -2711,7 +3053,45 @@
 		"initialBRV": 646,
 		"maxBRV": 1500,
 		"ATK": 500,
-		"DEF": 537
+		"DEF": 537,
+		"weapon": {
+			"type": "Gun",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 18,
+				"initialBRV": 0,
+				"maxBRV": 64,
+				"ATK": 27,
+				"DEF": 882
+			},
+			"bonus": {
+				"maxBRV": 220,
+				"ATK": 72
+			}
+		},
+		"awakeningPassives": {
+			"HP": 280,
+			"maxBRV": 110,
+			"ATK": 35,
+			"DEF": 38
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"maxBRV": 110
+			},
+			"armor": {
+				"initialBRV": 110
+			}
+		}
 	},
 	{
 		"id": 2,
@@ -2788,7 +3168,45 @@
 		"initialBRV": 693,
 		"maxBRV": 1437,
 		"ATK": 500,
-		"DEF": 480
+		"DEF": 480,
+		"weapon": {
+			"type": "Throwing Weapon",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 53,
+				"initialBRV": 0,
+				"maxBRV": 49,
+				"ATK": 27,
+				"DEF": 870
+			},
+			"bonus": {
+				"HP": 680,
+				"ATK": 72
+			}
+		},
+		"awakeningPassives": {
+			"HP": 320,
+			"maxBRV": 105,
+			"ATK": 35,
+			"DEF": 34
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"HP": 340
+			},
+			"armor": {
+				"initialBRV": 110
+			}
+		}
 	},
 	{
 		"id": 1,
@@ -2865,7 +3283,45 @@
 		"initialBRV": 646,
 		"maxBRV": 1437,
 		"ATK": 509,
-		"DEF": 367
+		"DEF": 367,
+		"weapon": {
+			"type": "Fists",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 78,
+				"initialBRV": 0,
+				"maxBRV": 58,
+				"ATK": 36,
+				"DEF": 801
+			},
+			"bonus": {
+				"HP": 680,
+				"ATK": 72
+			}
+		},
+		"awakeningPassives": {
+			"HP": 340,
+			"maxBRV": 105,
+			"ATK": 36,
+			"DEF": 26
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"HP": 340
+			},
+			"armor": {
+				"initialBRV": 110
+			}
+		}
 	},
 	{
 		"id": 11,
@@ -2999,7 +3455,45 @@
 		"initialBRV": 739,
 		"maxBRV": 1500,
 		"ATK": 452,
-		"DEF": 424
+		"DEF": 424,
+		"weapon": {
+			"type": "Throwing Weapon",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 48,
+				"initialBRV": 0,
+				"maxBRV": 92,
+				"ATK": 0,
+				"DEF": 823
+			},
+			"bonus": {
+				"HP": 680,
+				"maxBRV": 220
+			}
+		},
+		"awakeningPassives": {
+			"HP": 300,
+			"maxBRV": 110,
+			"ATK": 32,
+			"DEF": 30
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"maxBRV": 110
+			},
+			"armor": {
+				"ATK": 72
+			}
+		}
 	},
 	{
 		"id": 14,
@@ -3076,7 +3570,45 @@
 		"initialBRV": 646,
 		"maxBRV": 1437,
 		"ATK": 480,
-		"DEF": 367
+		"DEF": 367,
+		"weapon": {
+			"type": "Fists",
+			"stats": {
+				"HP": 0,
+				"initialBRV": 0,
+				"maxBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"notes": "No exclusive weapon yet."
+		},
+		"armor": {
+			"stats": {
+				"HP": 85,
+				"initialBRV": 0,
+				"maxBRV": 63,
+				"ATK": 18,
+				"DEF": 801
+			},
+			"bonus": {
+				"HP": 680,
+				"maxBRV": 220
+			}
+		},
+		"awakeningPassives": {
+			"HP": 340,
+			"maxBRV": 105,
+			"ATK": 34,
+			"DEF": 26
+		},
+		"fourStarPassives": {
+			"weapon": {
+				"HP": 340
+			},
+			"armor": {
+				"DEF": 84
+			}
+		}
 	},
 	{
 		"id": 9,
