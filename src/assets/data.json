@@ -826,11 +826,11 @@
 		"weapon": {
 			"type": "Sword",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 101,
+				"initialBRV": 221,
+				"maxBRV": 2616,
+				"ATK": 854,
+				"DEF": 58
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -938,11 +938,11 @@
 		"weapon": {
 			"type": "Heavy Sword",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 120,
+				"initialBRV": 183,
+				"maxBRV": 2449,
+				"ATK": 854,
+				"DEF": 75
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -1205,11 +1205,11 @@
 		"weapon": {
 			"type": "Gun",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 115,
+				"initialBRV": 220,
+				"maxBRV": 2550,
+				"ATK": 854,
+				"DEF": 55
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -1361,11 +1361,11 @@
 		"weapon": {
 			"type": "Gun",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 103,
+				"initialBRV": 184,
+				"maxBRV": 2616,
+				"ATK": 854,
+				"DEF": 55
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -1419,11 +1419,11 @@
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 103,
+				"initialBRV": 220,
+				"maxBRV": 2616,
+				"ATK": 854,
+				"DEF": 55
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -2060,11 +2060,11 @@
 		"weapon": {
 			"type": "Dagger",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 128,
+				"initialBRV": 221,
+				"maxBRV": 2683,
+				"ATK": 788,
+				"DEF": 55
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -2167,11 +2167,11 @@
 		"weapon": {
 			"type": "Gun",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 112,
+				"initialBRV": 220,
+				"maxBRV": 2550,
+				"ATK": 854,
+				"DEF": 62
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -2444,11 +2444,11 @@
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 142,
+				"initialBRV": 223,
+				"maxBRV": 2383,
+				"ATK": 854,
+				"DEF": 49
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -2828,11 +2828,11 @@
 		"weapon": {
 			"type": "Fists",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 101,
+				"initialBRV": 220,
+				"maxBRV": 2616,
+				"ATK": 854,
+				"DEF": 58
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -3057,11 +3057,11 @@
 		"weapon": {
 			"type": "Gun",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 84,
+				"initialBRV": 183,
+				"maxBRV": 2683,
+				"ATK": 854,
+				"DEF": 68
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -3172,11 +3172,11 @@
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 100,
+				"initialBRV": 184,
+				"maxBRV": 2616,
+				"ATK": 854,
+				"DEF": 62
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -3287,11 +3287,11 @@
 		"weapon": {
 			"type": "Fists",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 92,
+				"initialBRV": 183,
+				"maxBRV": 2616,
+				"ATK": 878,
+				"DEF": 49
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -3459,11 +3459,11 @@
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 128,
+				"initialBRV": 220,
+				"maxBRV": 2683,
+				"ATK": 788,
+				"DEF": 55
 			},
 			"notes": "No exclusive weapon yet."
 		},
@@ -3574,11 +3574,11 @@
 		"weapon": {
 			"type": "Fists",
 			"stats": {
-				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 117,
+				"initialBRV": 183,
+				"maxBRV": 2616,
+				"ATK": 850,
+				"DEF": 49
 			},
 			"notes": "No exclusive weapon yet."
 		},
