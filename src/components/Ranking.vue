@@ -10,8 +10,8 @@
       globalSearchPlaceholder="Search by character, attribute or stat"
       styleClass="ranking-table">
       <template slot="table-row" slot-scope="props">
-        <td class="character">
-          <span class="icon" :style="{ backgroundImage: 'url(' + characterIcon(props.row.character) + ')'}"></span>
+        <td :title="props.row.character" :class="isFinished(props.row) ? finishedClass : false">
+          <span v-if="isFinished(props.row)" class="icon" :style="{ backgroundImage: 'url(' + characterIcon(props.row.character) + ')'}"></span>
           {{ props.row.character }}
         </td>
         <td>{{ props.row.series.name }}</td>
@@ -68,11 +68,51 @@
           </td>
         </template>
         <template v-else>
-          <td>{{ props.row.maxHP }}</td>
-          <td>{{ props.row.maxInitialBRV }}</td>
-          <td>{{ props.row.maxMaxBRV }}</td>
-          <td>{{ props.row.maxATK }}</td>
-          <td>{{ props.row.maxDEF }}</td>
+          <td>
+            <template v-if="props.row.fullHP === minMaxValues.HP[1]">
+              <span class="highest">{{ props.row.fullHP }}</span>
+            </template>
+            <template v-else-if="props.row.fullHP === minMaxValues.HP[0]">
+              <span class="lowest">{{ props.row.fullHP }}</span>
+            </template>
+            <template v-else>{{ props.row.fullHP }}</template>
+          </td>
+          <td>
+            <template v-if="props.row.fullInitialBRV === minMaxValues.initialBRV[1]">
+              <span class="highest">{{ props.row.fullInitialBRV }}</span>
+            </template>
+            <template v-else-if="props.row.fullInitialBRV === minMaxValues.initialBRV[0]">
+              <span class="lowest">{{ props.row.fullInitialBRV }}</span>
+            </template>
+            <template v-else>{{ props.row.fullInitialBRV }}</template>
+          </td>
+          <td>
+            <template v-if="props.row.fullMaxBRV === minMaxValues.maxBRV[1]">
+              <span class="highest">{{ props.row.fullMaxBRV }}</span>
+            </template>
+            <template v-else-if="props.row.fullMaxBRV === minMaxValues.maxBRV[0]">
+              <span class="lowest">{{ props.row.fullMaxBRV }}</span>
+            </template>
+            <template v-else>{{ props.row.fullMaxBRV }}</template>
+          </td>
+          <td>
+            <template v-if="props.row.fullATK === minMaxValues.ATK[1]">
+              <span class="highest">{{ props.row.fullATK }}</span>
+            </template>
+            <template v-else-if="props.row.fullATK === minMaxValues.ATK[0]">
+              <span class="lowest">{{ props.row.fullATK }}</span>
+            </template>
+            <template v-else>{{ props.row.fullATK }}</template>
+          </td>
+          <td>
+            <template v-if="props.row.fullDEF === minMaxValues.DEF[1]">
+              <span class="highest">{{ props.row.fullDEF }}</span>
+            </template>
+            <template v-else-if="props.row.fullDEF === minMaxValues.DEF[0]">
+              <span class="lowest">{{ props.row.fullDEF }}</span>
+            </template>
+            <template v-else>{{ props.row.fullDEF }}</template>
+          </td>
         </template>
       </template>
       <div slot="emptystate" class="ranking-disclaimer">
@@ -88,6 +128,7 @@ export default {
   data () {
     return {
       baseOnly: true,
+      finishedClass: 'fullStatsReady',
       params: {
         addWeapon: true,
         addArmor: true,
@@ -99,6 +140,7 @@ export default {
         {
           label: 'Order',
           field: 'id',
+          type: 'number',
           filterable: false,
           hidden: true,
           sortable: false
@@ -200,35 +242,35 @@ export default {
         return null
       }
     },
-    maxStat: function (prop, index) {
-      let maxStat = this.characters[index][prop]
+    fullStat: function (prop, index) {
+      let fullStat = this.characters[index][prop]
       if (this.characters[index].weapon !== undefined && this.params.addWeapon) {
-        maxStat += this.characters[index].weapon.stats[prop]
-        maxStat += parseInt(this.characters[index].weapon.stats[prop] / 5)
+        fullStat += this.characters[index].weapon.stats[prop]
+        fullStat += parseInt(this.characters[index].weapon.stats[prop] / 5)
       }
       if (this.characters[index].armor !== undefined && this.params.addArmor) {
-        maxStat += this.characters[index].armor.stats[prop]
-        maxStat += parseInt(this.characters[index].armor.stats[prop] / 5)
+        fullStat += this.characters[index].armor.stats[prop]
+        fullStat += parseInt(this.characters[index].armor.stats[prop] / 5)
         if (this.characters[index].armor.bonus[prop] !== undefined) {
-          maxStat += this.characters[index].armor.bonus[prop]
+          fullStat += this.characters[index].armor.bonus[prop]
         }
       }
       if (this.characters[index].awakeningPassives !== undefined && this.params.addPassives) {
         if (prop === 'HP' || prop === 'maxBRV') {
-          maxStat += (this.characters[index].awakeningPassives[prop] * 3)
+          fullStat += (this.characters[index].awakeningPassives[prop] * 3)
         } else if (prop === 'ATK' || prop === 'DEF') {
-          maxStat += (this.characters[index].awakeningPassives[prop] * 2)
+          fullStat += (this.characters[index].awakeningPassives[prop] * 2)
         }
       }
       if (this.characters[index].fourStarPassives !== undefined && this.params.addFourStar) {
-        if (this.characters[index].fourStarPassives.weapon[prop] !== undefined) {
-          maxStat += this.characters[index].fourStarPassives.weapon[prop]
+        if (this.characters[index].fourStarPassives.weapon !== undefined && this.characters[index].fourStarPassives.weapon[prop] !== undefined) {
+          fullStat += this.characters[index].fourStarPassives.weapon[prop]
         }
-        if (this.characters[index].fourStarPassives.armor[prop] !== undefined) {
-          maxStat += this.characters[index].fourStarPassives.armor[prop]
+        if (this.characters[index].fourStarPassives.armor !== undefined && this.characters[index].fourStarPassives.armor[prop] !== undefined) {
+          fullStat += this.characters[index].fourStarPassives.armor[prop]
         }
       }
-      return maxStat
+      return fullStat
     },
     getMinMaxStats: function () {
       let minMax = {
@@ -250,35 +292,42 @@ export default {
         minMax.DEF[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.DEF }))
         minMax.DEF[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.DEF }))
       } else {
-        minMax.HP[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.maxHP }))
-        minMax.HP[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.maxHP }))
-        minMax.initialBRV[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.maxInitialBRV }))
-        minMax.initialBRV[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.maxInitialBRV }))
-        minMax.maxBRV[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.maxMaxBRV }))
-        minMax.maxBRV[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.maxMaxBRV }))
-        minMax.ATK[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.maxATK }))
-        minMax.ATK[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.maxATK }))
-        minMax.DEF[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.maxDEF }))
-        minMax.DEF[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.maxDEF }))
+        minMax.HP[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.fullHP }))
+        minMax.HP[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.fullHP }))
+        minMax.initialBRV[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.fullInitialBRV }))
+        minMax.initialBRV[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.fullInitialBRV }))
+        minMax.maxBRV[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.fullMaxBRV }))
+        minMax.maxBRV[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.fullMaxBRV }))
+        minMax.ATK[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.fullATK }))
+        minMax.ATK[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.fullATK }))
+        minMax.DEF[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.fullDEF }))
+        minMax.DEF[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.fullDEF }))
       }
       return minMax
     },
     setupStats: function () {
       if (!this.baseOnly) {
-        this.columns[4].field = 'maxHP'
-        this.columns[5].field = 'maxInitialBRV'
-        this.columns[6].field = 'maxMaxBRV'
-        this.columns[7].field = 'maxATK'
-        this.columns[8].field = 'maxDEF'
+        this.columns[4].field = 'fullHP'
+        this.columns[5].field = 'fullInitialBRV'
+        this.columns[6].field = 'fullMaxBRV'
+        this.columns[7].field = 'fullATK'
+        this.columns[8].field = 'fullDEF'
       }
       for (let i = 0; i < this.characters.length; i++) {
-        this.characters[i].maxHP = this.maxStat('HP', i)
-        this.characters[i].maxInitialBRV = this.maxStat('initialBRV', i)
-        this.characters[i].maxMaxBRV = this.maxStat('maxBRV', i)
-        this.characters[i].maxATK = this.maxStat('ATK', i)
-        this.characters[i].maxDEF = this.maxStat('DEF', i)
+        this.characters[i].fullHP = this.fullStat('HP', i)
+        this.characters[i].fullInitialBRV = this.fullStat('initialBRV', i)
+        this.characters[i].fullMaxBRV = this.fullStat('maxBRV', i)
+        this.characters[i].fullATK = this.fullStat('ATK', i)
+        this.characters[i].fullDEF = this.fullStat('DEF', i)
       }
       this.minMaxValues = this.getMinMaxStats()
+    },
+    isFinished: function (row) {
+      if (row.weapon !== undefined) {
+        return true
+      } else {
+        return false
+      }
     }
   },
   created () {
@@ -365,7 +414,7 @@ tbody tr {
   width: 100px;
 }
 
-.ranking-table td.character {
+.ranking-table td[title] {
   width: 150px;
   font-weight: bold;
 }
@@ -469,6 +518,11 @@ input[type="checkbox"], label {
   color: #212121;
   position: absolute;
 }*/
+
+.fullStatsReady:after {
+  content: '\2714';
+  display: inline-block;
+}
 
 .Dark {
   background-image: url('../assets/dark.png');
