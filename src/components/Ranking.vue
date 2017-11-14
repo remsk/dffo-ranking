@@ -33,7 +33,7 @@
       globalSearchPlaceholder="Search by character, attribute or stat"
       styleClass="ranking-table">
       <template slot="table-row" slot-scope="props">
-        <td :title="props.row.character" :class="isFinished(props.row) ? finishedClass : unfinishedClass">
+        <td :title="props.row.character" :class="isFinished(props.row) ? false : unfinishedClass">
           <span class="icon" :style="{ backgroundImage: 'url(' + characterIcon(props.row.character) + ')'}"></span>
           {{ props.row.character }}
         </td>
@@ -150,7 +150,6 @@ export default {
   name: 'Ranking',
   data () {
     return {
-      finishedClass: 'fullStatsReady',
       unfinishedClass: 'exclusiveMissing',
       params: {
         baseOnly: true,
@@ -424,6 +423,8 @@ div.notes p {
   margin: 0;
 }
 
+/* Ranking Table styles */
+
 table, .ranking-table {
   text-align: center;
   max-width: 900px;
@@ -538,34 +539,45 @@ table .left-align, table .right-align {
   overflow: hidden !important;
 }
 
-input[type="text"] {
+
+/* Inputs */
+
+input[type=text] {
   display: block;
   width: 50% !important;
   flex: 1;
-  padding: 0.6em 1em;
+  padding: 0.9em 1em;
   background-color: #273153;
   color: #ccc;
   border-style: none;
   border-radius: 5px;
   box-shadow: inset 0 0 10px #000000;
-  margin: 0 auto;
-  margin-bottom: 15px;
+  margin: 15px auto;
+  margin-top: 5px;
 }
 
-input[type="text"]::placeholder {
+input[type=text]::placeholder {
   color: #ccc;
 }
 
-input[type="checkbox"], label {
-  font-size: 12px;
+input[type=checkbox], label {
+  font-size: 14px;
+  height: 16px;
   vertical-align: middle;
   display: inline-block;
+}
+
+input[type=checkbox] {
+  width: 16px;
 }
 
 .base-checkbox, .gear-checkboxes, .passive-checkboxes {
   width: 400px;
   margin: 0 auto;
+  margin-bottom: 5px;
 }
+
+/* Markers */
 
 .highest {
   color: #d32f2f;
@@ -573,35 +585,18 @@ input[type="checkbox"], label {
   font-size: 16px;
 }
 
-/*.highest:after {
-  content: '1st';
-  font-size: 10px;
-  color: #212121;
-  position: absolute;
-}*/
-
 .lowest {
   color: #303f9f;
   font-weight: bold;
   font-size: 12px;
 }
 
-/*.lowest:after {
-  content: 'last';
-  font-size: 10px;
-  color: #212121;
-  position: absolute;
-}*/
-
-.fullStatsReady:after {
-  content: '\2714';
-  display: inline-block;
-}
-
 .exclusiveMissing:after {
   content: '\2718';
   display: inline-block;
 }
+
+/* Attribute classes */
 
 .Dark {
   background-image: url('../assets/dark.png');
@@ -650,6 +645,8 @@ input[type="checkbox"], label {
   background-position: center;
   background-size: cover;
 }
+
+/* IE and Edge */
 
 @supports (-ms-ime-align: auto) {
   thead tr:nth-child(2) {
