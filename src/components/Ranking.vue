@@ -1,6 +1,29 @@
 <template>
   <div class="ranking">
-    <input type="checkbox" id="checkbox" v-model="baseOnly"><label for="checkbox">Show base stats only</label>
+    <h3 class="header">Welcome to DFFOO-Ranking</h3>
+    <div class="notes">
+      <p>Stat values in this table are based on Lv50 fully awakened characters and 6* 35CP weapon/armor.</p>
+      <p>Characters marked with a &#10007; don't have a 35CP weapon. 6* 15CP stats are used instead.</p>
+    </div>
+
+    <div class="base-checkbox">
+      <input type="checkbox" id="baseStats" v-model="params.baseOnly">
+      <label for="baseStats">Show base stats only</label>
+    </div>
+    <div class="gear-checkboxes">
+      <input type="checkbox" id="addW" :disabled="params.baseOnly ? true : false" v-model="params.addWeapon">
+      <label for="addW">35cp stats</label>
+      <input type="checkbox" id="addA" :disabled="params.baseOnly ? true : false" v-model="params.addArmor">
+      <label for="addA">5* armor</label>
+      <input type="checkbox" id="addS" :disabled="params.baseOnly ? true : false" v-model="params.addSynergy">
+      <label for="addS">Synergy</label>
+    </div>
+    <div class="passive-checkboxes">
+      <input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">
+      <label for="addP">Lv50 passives (20 CP)</label>
+      <input type="checkbox" id="addF" :disabled="params.baseOnly ? true : false" v-model="params.addFourStar">
+      <label for="addF">4* passives (7 CP)</label>
+    </div>
     <vue-good-table
       :columns="columns"
       :rows="characters"
@@ -10,8 +33,8 @@
       globalSearchPlaceholder="Search by character, attribute or stat"
       styleClass="ranking-table">
       <template slot="table-row" slot-scope="props">
-        <td :title="props.row.character" :class="isFinished(props.row) ? finishedClass : false">
-          <span v-if="isFinished(props.row)" class="icon" :style="{ backgroundImage: 'url(' + characterIcon(props.row.character) + ')'}"></span>
+        <td :title="props.row.character" :class="isFinished(props.row) ? finishedClass : unfinishedClass">
+          <span class="icon" :style="{ backgroundImage: 'url(' + characterIcon(props.row.character) + ')'}"></span>
           {{ props.row.character }}
         </td>
         <td>{{ props.row.series.name }}</td>
@@ -20,7 +43,7 @@
             <span :title="attribute" :class="attribute"></span> 
           </template>
         </td>
-        <template v-if="baseOnly">
+        <template v-if="params.baseOnly">
           <td>
             <template v-if="props.row.HP === minMaxValues.HP[1]">
               <span class="highest">{{ props.row.HP }}</span>
@@ -127,13 +150,15 @@ export default {
   name: 'Ranking',
   data () {
     return {
-      baseOnly: true,
       finishedClass: 'fullStatsReady',
+      unfinishedClass: 'exclusiveMissing',
       params: {
-        addWeapon: true,
-        addArmor: true,
-        addPassives: true,
-        addFourStar: true
+        baseOnly: true,
+        addWeapon: false,
+        addArmor: false,
+        addPassives: false,
+        addFourStar: false,
+        addSynergy: false
       },
       minMaxValues: {},
       columns: [
@@ -243,13 +268,13 @@ export default {
       }
     },
     fullStat: function (prop, index) {
-      let fullStat = this.characters[index][prop]
+      let fullStat = this.getBaseSynergyValue(prop, index)
       if (this.characters[index].weapon !== undefined && this.params.addWeapon) {
-        fullStat += this.characters[index].weapon.stats[prop]
+        fullStat += this.getGearSynergyValue(prop, 'weapon', index)
         fullStat += parseInt(this.characters[index].weapon.stats[prop] / 5)
       }
       if (this.characters[index].armor !== undefined && this.params.addArmor) {
-        fullStat += this.characters[index].armor.stats[prop]
+        fullStat += this.getGearSynergyValue(prop, 'armor', index)
         fullStat += parseInt(this.characters[index].armor.stats[prop] / 5)
         if (this.characters[index].armor.bonus[prop] !== undefined) {
           fullStat += this.characters[index].armor.bonus[prop]
@@ -272,6 +297,20 @@ export default {
       }
       return fullStat
     },
+    getBaseSynergyValue: function (prop, index) {
+      let baseSynergyVal = this.characters[index][prop]
+      if (this.params.addSynergy) {
+        baseSynergyVal += parseInt(this.characters[index][prop] * 0.5)
+      }
+      return baseSynergyVal
+    },
+    getGearSynergyValue: function (prop, type, index) {
+      let gearSynergyVal = this.characters[index][type].stats[prop]
+      if (this.params.addSynergy) {
+        gearSynergyVal += parseInt(this.characters[index][type].stats[prop] * 0.3)
+      }
+      return gearSynergyVal
+    },
     getMinMaxStats: function () {
       let minMax = {
         HP: [],
@@ -280,7 +319,7 @@ export default {
         ATK: [],
         DEF: []
       }
-      if (this.baseOnly) {
+      if (this.params.baseOnly) {
         minMax.HP[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.HP }))
         minMax.HP[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.HP }))
         minMax.initialBRV[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.initialBRV }))
@@ -306,12 +345,18 @@ export default {
       return minMax
     },
     setupStats: function () {
-      if (!this.baseOnly) {
+      if (!this.params.baseOnly) {
         this.columns[4].field = 'fullHP'
         this.columns[5].field = 'fullInitialBRV'
         this.columns[6].field = 'fullMaxBRV'
         this.columns[7].field = 'fullATK'
         this.columns[8].field = 'fullDEF'
+      } else {
+        this.columns[4].field = 'HP'
+        this.columns[5].field = 'initialBRV'
+        this.columns[6].field = 'maxBRV'
+        this.columns[7].field = 'ATK'
+        this.columns[8].field = 'DEF'
       }
       for (let i = 0; i < this.characters.length; i++) {
         this.characters[i].fullHP = this.fullStat('HP', i)
@@ -323,7 +368,7 @@ export default {
       this.minMaxValues = this.getMinMaxStats()
     },
     isFinished: function (row) {
-      if (row.weapon !== undefined) {
+      if (row.weapon.notes === undefined) {
         return true
       } else {
         return false
@@ -335,7 +380,22 @@ export default {
     this.setupStats()
   },
   watch: {
-    baseOnly: function () {
+    'params.baseOnly': function () {
+      this.setupStats()
+    },
+    'params.addWeapon': function () {
+      this.setupStats()
+    },
+    'params.addArmor': function () {
+      this.setupStats()
+    },
+    'params.addPassives': function () {
+      this.setupStats()
+    },
+    'params.addFourStar': function () {
+      this.setupStats()
+    },
+    'params.addSynergy': function () {
       this.setupStats()
     }
   }
@@ -353,6 +413,15 @@ div.ranking {
   border-radius: 5px;
   padding: 15px 5px;
   box-shadow: inset 0 0 10px #000000;
+}
+
+div.notes {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+div.notes p {
+  margin: 0;
 }
 
 table, .ranking-table {
@@ -493,6 +562,11 @@ input[type="checkbox"], label {
   display: inline-block;
 }
 
+.base-checkbox, .gear-checkboxes, .passive-checkboxes {
+  width: 400px;
+  margin: 0 auto;
+}
+
 .highest {
   color: #d32f2f;
   font-weight: bold;
@@ -521,6 +595,11 @@ input[type="checkbox"], label {
 
 .fullStatsReady:after {
   content: '\2714';
+  display: inline-block;
+}
+
+.exclusiveMissing:after {
+  content: '\2718';
   display: inline-block;
 }
 
