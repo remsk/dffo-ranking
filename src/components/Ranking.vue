@@ -649,7 +649,7 @@ input[type=checkbox] {
   }
 }
 
-@media screen and (max-width: 436px) and (orientation: portrait) {
+@media screen and (max-width: 436px) {
   .ranking-table tr th:nth-child(2), .ranking-table tr td:nth-child(2), .ranking-table tr th:nth-child(3), .ranking-table tr td:nth-child(3) {
     display: none;
   }
