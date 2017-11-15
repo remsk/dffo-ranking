@@ -1,6 +1,6 @@
 <template>
   <div class="ranking">
-    <h2 class="header">Welcome to DFFOO Ranking</h2>
+    <h2 class="header">DFF Opera Omnia Ranking</h2>
     <div class="notes">
       <p>Stat values in this table are based on Lv50 fully awakened characters and 6* 35CP weapon/armor.</p>
       <p>Characters marked with a &#10007; don't have a 35CP weapon. 6* 15CP stats are used instead.</p>
@@ -33,7 +33,7 @@
       globalSearchPlaceholder="Search by character, attribute or stat"
       styleClass="ranking-table">
       <template slot="table-row" slot-scope="props">
-        <td :title="props.row.character" :class="isFinished(props.row) ? false : unfinishedClass">
+        <td :title="props.row.character" :class="isFinished(props.row)">
           <span class="icon" :style="{ backgroundImage: 'url(' + characterIcon(props.row.character) + ')'}"></span>
           {{ props.row.character }}
         </td>
@@ -246,8 +246,8 @@ export default {
       this.minMaxValues = this.getMinMaxStats()
     },
     isFinished: function (row) {
-      if (row.weapon.notes === undefined) {
-        return true
+      if (row.weapon.notes !== undefined) {
+        return this.unfinishedClass
       }
     },
     isExtremum: function (prop, value) {
@@ -275,6 +275,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Karla');
 
 div.ranking {
   max-width: 910px;
@@ -285,13 +286,20 @@ div.ranking {
   box-shadow: inset 0 0 10px #000000;
 }
 
+h2 {
+  font-family: 'Karla', sans-serif;
+  text-transform: uppercase;
+}
+
 div.notes {
   font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 15px;
+  padding: 0 15px;
 }
 
 div.notes p {
-  margin: 5px auto;
+  margin: 2.5px auto;
 }
 
 /* Ranking Table styles */
@@ -301,17 +309,21 @@ div.notes p {
   max-width: 900px;
   font-size: 14px;
   margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .ranking-table th, .ranking-table th.sorting-asc, .ranking-table th.sorting-desc {
   padding: 10px;
   color: #ccc !important;
   font-size: 10px;
+  cursor: pointer;
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;          /* Likely future */      
+}
+
+.ranking-table th:hover {
+  color: #eee !important;
 }
 
 .ranking-table thead tr:nth-child(2) {
@@ -334,6 +346,7 @@ div.notes p {
 }
 
 .ranking-table tbody {
+  font-family: 'Open Sans', sans-serif;
   background-color: #bdbdbd;
   box-shadow: inset 0px 10px 14px -10px #000000,  inset 0px -10px 14px -10px #000000;
 }
@@ -419,6 +432,7 @@ input[type=text] {
   box-shadow: inset 0 0 10px #000000;
   margin: 15px auto;
   margin-top: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 input[type=text]::placeholder {
@@ -428,7 +442,7 @@ input[type=text]::placeholder {
 input[type=checkbox], label {
   font-size: 14px;
   height: 16px;
-  vertical-align: middle;
+  vertical-align: top;
   display: inline-block;
 }
 
@@ -440,6 +454,7 @@ input[type=checkbox] {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Markers */
