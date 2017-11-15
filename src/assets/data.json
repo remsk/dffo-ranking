@@ -7,22 +7,26 @@
 			"name": "FFT0"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3656,
-		"initialBRV": 739,
-		"maxBRV": 1500,
-		"ATK": 500,
-		"DEF": 480,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3656,
+			"iBRV": 739,
+			"mBRV": 1500,
+			"ATK": 500,
+			"DEF": 480
+		},
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
 				"HP": 87,
-				"initialBRV": 270,
-				"maxBRV": 3001,
+				"iBRV": 270,
+				"mBRV": 3001,
 				"ATK": 957,
 				"DEF": 62
 			}
@@ -30,19 +34,19 @@
 		"armor": {
 			"stats": {
 				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 102,
+				"iBRV": 0,
+				"mBRV": 102,
 				"ATK": 27,
 				"DEF": 870
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 260,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 35,
 			"DEF": 34
 		},
@@ -61,22 +65,26 @@
 			"name": "FF7"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 785,
-		"maxBRV": 1500,
-		"ATK": 471,
-		"DEF": 594,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 785,
+			"mBRV": 1500,
+			"ATK": 471,
+			"DEF": 594
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 107,
-				"initialBRV": 273,
-				"maxBRV": 3001,
+				"iBRV": 273,
+				"mBRV": 3001,
 				"ATK": 908,
 				"DEF": 75
 			}
@@ -84,19 +92,19 @@
 		"armor": {
 			"stats": {
 				"HP": 20,
-				"initialBRV": 0,
-				"maxBRV": 54,
+				"iBRV": 0,
+				"mBRV": 54,
 				"ATK": 9,
 				"DEF": 904
 			},
 			"bonus": {
-				"initialBRV": 110,
+				"iBRV": 110,
 				"DEF": 84
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 33,
 			"DEF": 42
 		}
@@ -110,22 +118,26 @@
 			"name": "FF12"
 		},
 		"attributes": ["Holy"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 739,
-		"maxBRV": 1364,
-		"ATK": 500,
-		"DEF": 537,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 739,
+			"mBRV": 1364,
+			"ATK": 500,
+			"DEF": 537
+		},
 		"weapon": {
 			"type": "Heavy Sword",
 			"stats": {
 				"HP": 109,
-				"initialBRV": 270,
-				"maxBRV": 2850,
+				"iBRV": 270,
+				"mBRV": 2850,
 				"ATK": 957,
 				"DEF": 68
 			}
@@ -133,8 +145,8 @@
 		"armor": {
 			"stats": {
 				"HP": 41,
-				"initialBRV": 0,
-				"maxBRV": 41,
+				"iBRV": 0,
+				"mBRV": 41,
 				"ATK": 27,
 				"DEF": 882
 			},
@@ -145,7 +157,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 100,
+			"mBRV": 100,
 			"ATK": 35,
 			"DEF": 38
 		}
@@ -159,22 +171,26 @@
 			"name": "FF10"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4000,
-		"initialBRV": 739,
-		"maxBRV": 1437,
-		"ATK": 509,
-		"DEF": 537,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4000,
+			"iBRV": 739,
+			"mBRV": 1437,
+			"ATK": 509,
+			"DEF": 537
+		},
 		"weapon": {
 			"type": "Heavy Sword",
 			"stats": {
 				"HP": 84,
-				"initialBRV": 273,
-				"maxBRV": 2925,
+				"iBRV": 273,
+				"mBRV": 2925,
 				"ATK": 984,
 				"DEF": 68
 			}
@@ -182,19 +198,19 @@
 		"armor": {
 			"stats": {
 				"HP": 31,
-				"initialBRV": 0,
-				"maxBRV": 45,
+				"iBRV": 0,
+				"mBRV": 45,
 				"ATK": 36,
 				"DEF": 882
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 36,
 			"DEF": 38
 		}
@@ -208,22 +224,26 @@
 			"name": "FF12"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 785,
-		"maxBRV": 1437,
-		"ATK": 480,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 785,
+			"mBRV": 1437,
+			"ATK": 480,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Gun",
 			"stats": {
 				"HP": 115,
-				"initialBRV": 273,
-				"maxBRV": 2925,
+				"iBRV": 273,
+				"mBRV": 2925,
 				"ATK": 950,
 				"DEF": 55
 			}
@@ -231,25 +251,25 @@
 		"armor": {
 			"stats": {
 				"HP": 32,
-				"initialBRV": 0,
-				"maxBRV": 96,
+				"iBRV": 0,
+				"mBRV": 96,
 				"ATK": 18,
 				"DEF": 823
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 34,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
 				"HP": 680
@@ -265,22 +285,26 @@
 			"name": "FF5"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 739,
-		"maxBRV": 1437,
-		"ATK": 500,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 739,
+			"mBRV": 1437,
+			"ATK": 500,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Sword",
 			"stats": {
 				"HP": 103,
-				"initialBRV": 270,
-				"maxBRV": 2925,
+				"iBRV": 270,
+				"mBRV": 2925,
 				"ATK": 957,
 				"DEF": 55
 			}
@@ -288,25 +312,25 @@
 		"armor": {
 			"stats": {
 				"HP": 50,
-				"initialBRV": 0,
-				"maxBRV": 72,
+				"iBRV": 0,
+				"mBRV": 72,
 				"ATK": 27,
 				"DEF": 823
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 35,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
 				"DEF": 84
@@ -322,22 +346,26 @@
 			"name": "FFT0"
 		},
 		"attributes": ["Ice"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 831,
-		"maxBRV": 1364,
-		"ATK": 500,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 831,
+			"mBRV": 1364,
+			"ATK": 500,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Gun",
 			"stats": {
 				"HP": 117,
-				"initialBRV": 276,
-				"maxBRV": 2850,
+				"iBRV": 276,
+				"mBRV": 2850,
 				"ATK": 957,
 				"DEF": 50
 			}
@@ -345,19 +373,19 @@
 		"armor": {
 			"stats": {
 				"HP": 61,
-				"initialBRV": 0,
-				"maxBRV": 61,
+				"iBRV": 0,
+				"mBRV": 61,
 				"ATK": 27,
 				"DEF": 823
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 100,
+			"mBRV": 100,
 			"ATK": 35,
 			"DEF": 30
 		}
@@ -371,22 +399,26 @@
 			"name": "FF4"
 		},
 		"attributes": ["Dark"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4468,
-		"initialBRV": 646,
-		"maxBRV": 1364,
-		"ATK": 509,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4468,
+			"iBRV": 646,
+			"mBRV": 1364,
+			"ATK": 509,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Heavy Sword",
 			"stats": {
 				"HP": 103,
-				"initialBRV": 230,
-				"maxBRV": 2850,
+				"iBRV": 230,
+				"mBRV": 2850,
 				"ATK": 984,
 				"DEF": 55
 			}
@@ -394,8 +426,8 @@
 		"armor": {
 			"stats": {
 				"HP": 78,
-				"initialBRV": 0,
-				"maxBRV": 38,
+				"iBRV": 0,
+				"mBRV": 38,
 				"ATK": 36,
 				"DEF": 823
 			},
@@ -406,7 +438,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 340,
-			"maxBRV": 100,
+			"mBRV": 100,
 			"ATK": 36,
 			"DEF": 30
 		},
@@ -415,7 +447,7 @@
 				"HP": 340
 			},
 			"armor": {
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		}
 	},
@@ -428,22 +460,26 @@
 			"name": "FF6"
 		},
 		"attributes": ["Ice"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4265,
-		"initialBRV": 785,
-		"maxBRV": 1364,
-		"ATK": 480,
-		"DEF": 594,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4265,
+			"iBRV": 785,
+			"mBRV": 1364,
+			"ATK": 480,
+			"DEF": 594
+		},
 		"weapon": {
 			"type": "Heavy Sword",
 			"stats": {
 				"HP": 120,
-				"initialBRV": 273,
-				"maxBRV": 2850,
+				"iBRV": 273,
+				"mBRV": 2850,
 				"ATK": 950,
 				"DEF": 75
 			}
@@ -451,8 +487,8 @@
 		"armor": {
 			"stats": {
 				"HP": 41,
-				"initialBRV": 0,
-				"maxBRV": 27,
+				"iBRV": 0,
+				"mBRV": 27,
 				"ATK": 18,
 				"DEF": 904
 			},
@@ -463,7 +499,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 320,
-			"maxBRV": 100,
+			"mBRV": 100,
 			"ATK": 34,
 			"DEF": 42
 		}
@@ -477,22 +513,26 @@
 			"name": "FF7"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 739,
-		"maxBRV": 1437,
-		"ATK": 509,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 739,
+			"mBRV": 1437,
+			"ATK": 509,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Heavy Sword",
 			"stats": {
 				"HP": 90,
-				"initialBRV": 270,
-				"maxBRV": 2925,
+				"iBRV": 270,
+				"mBRV": 2925,
 				"ATK": 984,
 				"DEF": 55
 			}
@@ -500,19 +540,19 @@
 		"armor": {
 			"stats": {
 				"HP": 29,
-				"initialBRV": 0,
-				"maxBRV": 87,
+				"iBRV": 0,
+				"mBRV": 87,
 				"ATK": 36,
 				"DEF": 823
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 36,
 			"DEF": 30
 		},
@@ -534,22 +574,26 @@
 			"name": "FF6"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4265,
-		"initialBRV": 785,
-		"maxBRV": 1300,
-		"ATK": 509,
-		"DEF": 480,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4265,
+			"iBRV": 785,
+			"mBRV": 1300,
+			"ATK": 509,
+			"DEF": 480
+		},
 		"weapon": {
 			"type": "Heavy Sword",
 			"stats": {
 				"HP": 102,
-				"initialBRV": 273,
-				"maxBRV": 2740,
+				"iBRV": 273,
+				"mBRV": 2740,
 				"ATK": 984,
 				"DEF": 74
 			}
@@ -557,8 +601,8 @@
 		"armor": {
 			"stats": {
 				"HP": 76,
-				"initialBRV": 0,
-				"maxBRV": 20,
+				"iBRV": 0,
+				"mBRV": 20,
 				"ATK": 36,
 				"DEF": 870
 			},
@@ -569,13 +613,13 @@
 		},
 		"awakeningPassives": {
 			"HP": 320,
-			"maxBRV": 95,
+			"mBRV": 95,
 			"ATK": 36,
 			"DEF": 34
 		},
 		"fourStarPassives": {
 			"armor": {
-				"maxBRV": 220
+				"mBRV": 220
 			}
 		}
 	},
@@ -588,22 +632,26 @@
 			"name": "FF6"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 739,
-		"maxBRV": 1437,
-		"ATK": 500,
-		"DEF": 537,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 739,
+			"mBRV": 1437,
+			"ATK": 500,
+			"DEF": 537
+		},
 		"weapon": {
 			"type": "Spear",
 			"stats": {
 				"HP": 97,
-				"initialBRV": 270,
-				"maxBRV": 2925,
+				"iBRV": 270,
+				"mBRV": 2925,
 				"ATK": 957,
 				"DEF": 68
 			}
@@ -611,8 +659,8 @@
 		"armor": {
 			"stats": {
 				"HP": 33,
-				"initialBRV": 0,
-				"maxBRV": 49,
+				"iBRV": 0,
+				"mBRV": 49,
 				"ATK": 27,
 				"DEF": 882
 			},
@@ -623,13 +671,13 @@
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 35,
 			"DEF": 38
 		},
 		"fourStarPassives": {
 			"armor": {
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		}
 	},
@@ -642,22 +690,26 @@
 			"name": "FF4"
 		},
 		"attributes": ["Thunder"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 785,
-		"maxBRV": 1437,
-		"ATK": 480,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 785,
+			"mBRV": 1437,
+			"ATK": 480,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Dagger",
 			"stats": {
 				"HP": 113,
-				"initialBRV": 273,
-				"maxBRV": 2925,
+				"iBRV": 273,
+				"mBRV": 2925,
 				"ATK": 950,
 				"DEF": 58
 			}
@@ -665,25 +717,25 @@
 		"armor": {
 			"stats": {
 				"HP": 32,
-				"initialBRV": 0,
-				"maxBRV": 96,
+				"iBRV": 0,
+				"mBRV": 96,
 				"ATK": 18,
 				"DEF": 823
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 34,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"initialBRV": 55
+				"iBRV": 55
 			},
 			"armor": {
 				"HP": 680
@@ -699,22 +751,26 @@
 			"name": "FF9"
 		},
 		"attributes": ["Holy"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 831,
-		"maxBRV": 1300,
-		"ATK": 500,
-		"DEF": 537,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 831,
+			"mBRV": 1300,
+			"ATK": 500,
+			"DEF": 537
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 122,
-				"initialBRV": 276,
-				"maxBRV": 2740,
+				"iBRV": 276,
+				"mBRV": 2740,
 				"ATK": 957,
 				"DEF": 68
 			}
@@ -722,28 +778,28 @@
 		"armor": {
 			"stats": {
 				"HP": 55,
-				"initialBRV": 0,
-				"maxBRV": 27,
+				"iBRV": 0,
+				"mBRV": 27,
 				"ATK": 27,
 				"DEF": 882
 			},
 			"bonus": {
 				"HP": 680,
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 95,
+			"mBRV": 95,
 			"ATK": 35,
 			"DEF": 38
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"initialBRV": 55
+				"iBRV": 55
 			},
 			"armor": {
-				"maxBRV": 220
+				"mBRV": 220
 			}
 		}
 	},
@@ -756,22 +812,26 @@
 			"name": "FF5"
 		},
 		"attributes": ["Water"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 785,
-		"maxBRV": 1500,
-		"ATK": 471,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 785,
+			"mBRV": 1500,
+			"ATK": 471,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Dagger",
 			"stats": {
 				"HP": 115,
-				"initialBRV": 273,
-				"maxBRV": 3001,
+				"iBRV": 273,
+				"mBRV": 3001,
 				"ATK": 908,
 				"DEF": 55
 			}
@@ -779,25 +839,25 @@
 		"armor": {
 			"stats": {
 				"HP": 45,
-				"initialBRV": 0,
-				"maxBRV": 89,
+				"iBRV": 0,
+				"mBRV": 89,
 				"ATK": 9,
 				"DEF": 823
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 33,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
 				"ATK": 72
@@ -813,22 +873,26 @@
 			"name": "FF2"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3656,
-		"initialBRV": 785,
-		"maxBRV": 1437,
-		"ATK": 500,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3656,
+			"iBRV": 785,
+			"mBRV": 1437,
+			"ATK": 500,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Sword",
 			"stats": {
 				"HP": 101,
-				"initialBRV": 221,
-				"maxBRV": 2616,
+				"iBRV": 221,
+				"mBRV": 2616,
 				"ATK": 854,
 				"DEF": 58
 			},
@@ -837,25 +901,25 @@
 		"armor": {
 			"stats": {
 				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 122,
+				"iBRV": 0,
+				"mBRV": 122,
 				"ATK": 27,
 				"DEF": 823
 			},
 			"bonus": {
 				"HP": 680,
-				"maxBRV": 220
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 260,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 35,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
 				"HP": 680
@@ -871,22 +935,26 @@
 			"name": "FF8"
 		},
 		"attributes": ["Wind"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 785,
-		"maxBRV": 1437,
-		"ATK": 480,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 785,
+			"mBRV": 1437,
+			"ATK": 480,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
 				"HP": 117,
-				"initialBRV": 273,
-				"maxBRV": 2925,
+				"iBRV": 273,
+				"mBRV": 2925,
 				"ATK": 950,
 				"DEF": 49
 			}
@@ -894,19 +962,19 @@
 		"armor": {
 			"stats": {
 				"HP": 37,
-				"initialBRV": 0,
-				"maxBRV": 111,
+				"iBRV": 0,
+				"mBRV": 111,
 				"ATK": 18,
 				"DEF": 801
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 34,
 			"DEF": 26
 		},
@@ -925,22 +993,26 @@
 			"name": "FF5"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4468,
-		"initialBRV": 646,
-		"maxBRV": 1300,
-		"ATK": 500,
-		"DEF": 594,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4468,
+			"iBRV": 646,
+			"mBRV": 1300,
+			"ATK": 500,
+			"DEF": 594
+		},
 		"weapon": {
 			"type": "Heavy Sword",
 			"stats": {
 				"HP": 120,
-				"initialBRV": 183,
-				"maxBRV": 2449,
+				"iBRV": 183,
+				"mBRV": 2449,
 				"ATK": 854,
 				"DEF": 75
 			},
@@ -949,8 +1021,8 @@
 		"armor": {
 			"stats": {
 				"HP": 50,
-				"initialBRV": 0,
-				"maxBRV": 12,
+				"iBRV": 0,
+				"mBRV": 12,
 				"ATK": 27,
 				"DEF": 904
 			},
@@ -961,7 +1033,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 340,
-			"maxBRV": 95,
+			"mBRV": 95,
 			"ATK": 35,
 			"DEF": 42
 		},
@@ -970,7 +1042,7 @@
 				"DEF": 42
 			},
 			"armor": {
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		}
 	},
@@ -983,22 +1055,26 @@
 			"name": "FF9"
 		},
 		"attributes": ["Thunder", "Water"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 831,
-		"maxBRV": 1300,
-		"ATK": 500,
-		"DEF": 594,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 831,
+			"mBRV": 1300,
+			"ATK": 500,
+			"DEF": 594
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 120,
-				"initialBRV": 276,
-				"maxBRV": 2740,
+				"iBRV": 276,
+				"mBRV": 2740,
 				"ATK": 957,
 				"DEF": 75
 			}
@@ -1006,19 +1082,19 @@
 		"armor": {
 			"stats": {
 				"HP": 31,
-				"initialBRV": 0,
-				"maxBRV": 31,
+				"iBRV": 0,
+				"mBRV": 31,
 				"ATK": 27,
 				"DEF": 904
 			},
 			"bonus": {
-				"initialBRV": 110,
+				"iBRV": 110,
 				"DEF": 84
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 95,
+			"mBRV": 95,
 			"ATK": 35,
 			"DEF": 42
 		}
@@ -1032,22 +1108,26 @@
 			"name": "FF13"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 785,
-		"maxBRV": 1437,
-		"ATK": 471,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 785,
+			"mBRV": 1437,
+			"ATK": 471,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
 				"HP": 128,
-				"initialBRV": 273,
-				"maxBRV": 2925,
+				"iBRV": 273,
+				"mBRV": 2925,
 				"ATK": 908,
 				"DEF": 55
 			}
@@ -1055,25 +1135,25 @@
 		"armor": {
 			"stats": {
 				"HP": 54,
-				"initialBRV": 0,
-				"maxBRV": 80,
+				"iBRV": 0,
+				"mBRV": 80,
 				"ATK": 9,
 				"DEF": 823
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 33,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"initialBRV": 55
+				"iBRV": 55
 			},
 			"armor": {
 				"ATK": 72
@@ -1089,22 +1169,26 @@
 			"name": "FF8"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3656,
-		"initialBRV": 739,
-		"maxBRV": 1500,
-		"ATK": 500,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3656,
+			"iBRV": 739,
+			"mBRV": 1500,
+			"ATK": 500,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Gun",
 			"stats": {
 				"HP": 94,
-				"initialBRV": 270,
-				"maxBRV": 3001,
+				"iBRV": 270,
+				"mBRV": 3001,
 				"ATK": 957,
 				"DEF": 49
 			}
@@ -1112,19 +1196,19 @@
 		"armor": {
 			"stats": {
 				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 142,
+				"iBRV": 0,
+				"mBRV": 142,
 				"ATK": 27,
 				"DEF": 801
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 260,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 35,
 			"DEF": 26
 		},
@@ -1143,22 +1227,26 @@
 			"name": "FF4"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4468,
-		"initialBRV": 739,
-		"maxBRV": 1300,
-		"ATK": 509,
-		"DEF": 537,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4468,
+			"iBRV": 739,
+			"mBRV": 1300,
+			"ATK": 509,
+			"DEF": 537
+		},
 		"weapon": {
 			"type": "Spear",
 			"stats": {
 				"HP": 109,
-				"initialBRV": 270,
-				"maxBRV": 2740,
+				"iBRV": 270,
+				"mBRV": 2740,
 				"ATK": 984,
 				"DEF": 68
 			}
@@ -1166,8 +1254,8 @@
 		"armor": {
 			"stats": {
 				"HP": 61,
-				"initialBRV": 0,
-				"maxBRV": 15,
+				"iBRV": 0,
+				"mBRV": 15,
 				"ATK": 36,
 				"DEF": 882
 			},
@@ -1178,7 +1266,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 340,
-			"maxBRV": 95,
+			"mBRV": 95,
 			"ATK": 36,
 			"DEF": 38
 		}
@@ -1192,22 +1280,26 @@
 			"name": "FFT0"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 739,
-		"maxBRV": 1364,
-		"ATK": 500,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 739,
+			"mBRV": 1364,
+			"ATK": 500,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Gun",
 			"stats": {
 				"HP": 115,
-				"initialBRV": 220,
-				"maxBRV": 2550,
+				"iBRV": 220,
+				"mBRV": 2550,
 				"ATK": 854,
 				"DEF": 55
 			},
@@ -1216,19 +1308,19 @@
 		"armor": {
 			"stats": {
 				"HP": 63,
-				"initialBRV": 0,
-				"maxBRV": 59,
+				"iBRV": 0,
+				"mBRV": 59,
 				"ATK": 27,
 				"DEF": 823
 			},
 			"bonus": {
-				"initialBRV": 110,
+				"iBRV": 110,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 100,
+			"mBRV": 100,
 			"ATK": 35,
 			"DEF": 30
 		},
@@ -1250,22 +1342,26 @@
 			"name": "FF5"
 		},
 		"attributes": ["Thunder"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 831,
-		"maxBRV": 1437,
-		"ATK": 471,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 831,
+			"mBRV": 1437,
+			"ATK": 471,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 128,
-				"initialBRV": 276,
-				"maxBRV": 2925,
+				"iBRV": 276,
+				"mBRV": 2925,
 				"ATK": 908,
 				"DEF": 55
 			}
@@ -1273,19 +1369,19 @@
 		"armor": {
 			"stats": {
 				"HP": 56,
-				"initialBRV": 0,
-				"maxBRV": 78,
+				"iBRV": 0,
+				"mBRV": 78,
 				"ATK": 9,
 				"DEF": 823
 			},
 			"bonus": {
-				"initialBRV": 110,
+				"iBRV": 110,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 33,
 			"DEF": 30
 		}
@@ -1299,22 +1395,26 @@
 			"name": "FF9"
 		},
 		"attributes": ["Holy"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 785,
-		"maxBRV": 1500,
-		"ATK": 480,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 785,
+			"mBRV": 1500,
+			"ATK": 480,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Other",
 			"stats": {
 				"HP": 107,
-				"initialBRV": 273,
-				"maxBRV": 3001,
+				"iBRV": 273,
+				"mBRV": 3001,
 				"ATK": 950,
 				"DEF": 44
 			}
@@ -1322,19 +1422,19 @@
 		"armor": {
 			"stats": {
 				"HP": 26,
-				"initialBRV": 0,
-				"maxBRV": 122,
+				"iBRV": 0,
+				"mBRV": 122,
 				"ATK": 18,
 				"DEF": 801
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 34,
 			"DEF": 26
 		}
@@ -1348,22 +1448,26 @@
 			"name": "FF8"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4468,
-		"initialBRV": 693,
-		"maxBRV": 1437,
-		"ATK": 500,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4468,
+			"iBRV": 693,
+			"mBRV": 1437,
+			"ATK": 500,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Gun",
 			"stats": {
 				"HP": 103,
-				"initialBRV": 184,
-				"maxBRV": 2616,
+				"iBRV": 184,
+				"mBRV": 2616,
 				"ATK": 854,
 				"DEF": 55
 			},
@@ -1372,8 +1476,8 @@
 		"armor": {
 			"stats": {
 				"HP": 70,
-				"initialBRV": 0,
-				"maxBRV": 52,
+				"iBRV": 0,
+				"mBRV": 52,
 				"ATK": 27,
 				"DEF": 823
 			},
@@ -1384,7 +1488,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 340,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 35,
 			"DEF": 30
 		},
@@ -1406,22 +1510,26 @@
 			"name": "FFCC"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 739,
-		"maxBRV": 1437,
-		"ATK": 500,
-		"DEF": 480,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 739,
+			"mBRV": 1437,
+			"ATK": 500,
+			"DEF": 480
+		},
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
 				"HP": 103,
-				"initialBRV": 220,
-				"maxBRV": 2616,
+				"iBRV": 220,
+				"mBRV": 2616,
 				"ATK": 854,
 				"DEF": 55
 			},
@@ -1430,19 +1538,19 @@
 		"armor": {
 			"stats": {
 				"HP": 41,
-				"initialBRV": 0,
-				"maxBRV": 61,
+				"iBRV": 0,
+				"mBRV": 61,
 				"ATK": 27,
 				"DEF": 870
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 35,
 			"DEF": 34
 		},
@@ -1464,22 +1572,26 @@
 			"name": "FF13"
 		},
 		"attributes": ["Thunder"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 831,
-		"maxBRV": 1500,
-		"ATK": 480,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 831,
+			"mBRV": 1500,
+			"ATK": 480,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Sword",
 			"stats": {
 				"HP": 98,
-				"initialBRV": 276,
-				"maxBRV": 3001,
+				"iBRV": 276,
+				"mBRV": 3001,
 				"ATK": 950,
 				"DEF": 67
 			}
@@ -1487,19 +1599,19 @@
 		"armor": {
 			"stats": {
 				"HP": 28,
-				"initialBRV": 0,
-				"maxBRV": 100,
+				"iBRV": 0,
+				"mBRV": 100,
 				"ATK": 18,
 				"DEF": 823
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 34,
 			"DEF": 30
 		},
@@ -1518,22 +1630,26 @@
 			"name": "FF11"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4468,
-		"initialBRV": 693,
-		"maxBRV": 1500,
-		"ATK": 480,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4468,
+			"iBRV": 693,
+			"mBRV": 1500,
+			"ATK": 480,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Dagger",
 			"stats": {
 				"HP": 108,
-				"initialBRV": 233,
-				"maxBRV": 3001,
+				"iBRV": 233,
+				"mBRV": 3001,
 				"ATK": 950,
 				"DEF": 49
 			}
@@ -1541,8 +1657,8 @@
 		"armor": {
 			"stats": {
 				"HP": 74,
-				"initialBRV": 0,
-				"maxBRV": 74,
+				"iBRV": 0,
+				"mBRV": 74,
 				"ATK": 18,
 				"DEF": 801
 			},
@@ -1553,7 +1669,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 340,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 34,
 			"DEF": 26
 		}
@@ -1567,22 +1683,26 @@
 			"name": "FF2"
 		},
 		"attributes": ["Wind"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4265,
-		"initialBRV": 785,
-		"maxBRV": 1437,
-		"ATK": 480,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4265,
+			"iBRV": 785,
+			"mBRV": 1437,
+			"ATK": 480,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Bow",
 			"stats": {
 				"HP": 116,
-				"initialBRV": 273,
-				"maxBRV": 2925,
+				"iBRV": 273,
+				"mBRV": 2925,
 				"ATK": 950,
 				"DEF": 52
 			}
@@ -1590,19 +1710,19 @@
 		"armor": {
 			"stats": {
 				"HP": 64,
-				"initialBRV": 0,
-				"maxBRV": 64,
+				"iBRV": 0,
+				"mBRV": 64,
 				"ATK": 18,
 				"DEF": 823
 			},
 			"bonus": {
 				"HP": 680,
-				"maxBRV": 220
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 320,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 34,
 			"DEF": 30
 		}
@@ -1616,22 +1736,26 @@
 			"name": "FF3"
 		},
 		"attributes": ["Ice"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 785,
-		"maxBRV": 1500,
-		"ATK": 480,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 785,
+			"mBRV": 1500,
+			"ATK": 480,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Sword",
 			"stats": {
 				"HP": 105,
-				"initialBRV": 273,
-				"maxBRV": 3001,
+				"iBRV": 273,
+				"mBRV": 3001,
 				"ATK": 950,
 				"DEF": 49
 			}
@@ -1639,25 +1763,25 @@
 		"armor": {
 			"stats": {
 				"HP": 30,
-				"initialBRV": 0,
-				"maxBRV": 118,
+				"iBRV": 0,
+				"mBRV": 118,
 				"ATK": 18,
 				"DEF": 801
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 34,
 			"DEF": 26
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
 				"DEF": 84
@@ -1673,22 +1797,26 @@
 			"name": "FF4"
 		},
 		"attributes": ["Ice"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3656,
-		"initialBRV": 831,
-		"maxBRV": 1500,
-		"ATK": 509,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3656,
+			"iBRV": 831,
+			"mBRV": 1500,
+			"ATK": 509,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 82,
-				"initialBRV": 276,
-				"maxBRV": 3001,
+				"iBRV": 276,
+				"mBRV": 3001,
 				"ATK": 984,
 				"DEF": 44
 			}
@@ -1696,19 +1824,19 @@
 		"armor": {
 			"stats": {
 				"HP": 24,
-				"initialBRV": 0,
-				"maxBRV": 112,
+				"iBRV": 0,
+				"mBRV": 112,
 				"ATK": 36,
 				"DEF": 801
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 260,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 36,
 			"DEF": 26
 		}
@@ -1722,22 +1850,26 @@
 			"name": "FF14"
 		},
 		"attributes": ["Fire", "Ice"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 785,
-		"maxBRV": 1364,
-		"ATK": 500,
-		"DEF": 480,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 785,
+			"mBRV": 1364,
+			"ATK": 500,
+			"DEF": 480
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 113,
-				"initialBRV": 273,
-				"maxBRV": 2850,
+				"iBRV": 273,
+				"mBRV": 2850,
 				"ATK": 957,
 				"DEF": 60
 			}
@@ -1745,19 +1877,19 @@
 		"armor": {
 			"stats": {
 				"HP": 51,
-				"initialBRV": 0,
-				"maxBRV": 51,
+				"iBRV": 0,
+				"mBRV": 51,
 				"ATK": 27,
 				"DEF": 870
 			},
 			"bonus": {
-				"initialBRV": 110,
+				"iBRV": 110,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 100,
+			"mBRV": 100,
 			"ATK": 35,
 			"DEF": 34
 		},
@@ -1776,22 +1908,26 @@
 			"name": "FF12"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 831,
-		"maxBRV": 1364,
-		"ATK": 471,
-		"DEF": 594,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 831,
+			"mBRV": 1364,
+			"ATK": 471,
+			"DEF": 594
+		},
 		"weapon": {
 			"type": "Dagger",
 			"stats": {
 				"HP": 132,
-				"initialBRV": 276,
-				"maxBRV": 2850,
+				"iBRV": 276,
+				"mBRV": 2850,
 				"ATK": 908,
 				"DEF": 75
 			}
@@ -1799,19 +1935,19 @@
 		"armor": {
 			"stats": {
 				"HP": 37,
-				"initialBRV": 0,
-				"maxBRV": 37,
+				"iBRV": 0,
+				"mBRV": 37,
 				"ATK": 9,
 				"DEF": 904
 			},
 			"bonus": {
-				"initialBRV": 110,
+				"iBRV": 110,
 				"DEF": 84
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 100,
+			"mBRV": 100,
 			"ATK": 33,
 			"DEF": 42
 		},
@@ -1833,22 +1969,26 @@
 			"name": "FF11"
 		},
 		"attributes": ["Fire", "Holy", "Wind"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 739,
-		"maxBRV": 1500,
-		"ATK": 480,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 739,
+			"mBRV": 1500,
+			"ATK": 480,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Fists",
 			"stats": {
 				"HP": 105,
-				"initialBRV": 270,
-				"maxBRV": 3001,
+				"iBRV": 270,
+				"mBRV": 3001,
 				"ATK": 950,
 				"DEF": 49
 			}
@@ -1856,25 +1996,25 @@
 		"armor": {
 			"stats": {
 				"HP": 50,
-				"initialBRV": 0,
-				"maxBRV": 98,
+				"iBRV": 0,
+				"mBRV": 98,
 				"ATK": 18,
 				"DEF": 801
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 34,
 			"DEF": 26
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
 				"DEF": 84
@@ -1890,22 +2030,26 @@
 			"name": "FF8"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 785,
-		"maxBRV": 1500,
-		"ATK": 480,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 785,
+			"mBRV": 1500,
+			"ATK": 480,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Whip",
 			"stats": {
 				"HP": 103,
-				"initialBRV": 273,
-				"maxBRV": 3001,
+				"iBRV": 273,
+				"mBRV": 3001,
 				"ATK": 950,
 				"DEF": 55
 			}
@@ -1913,19 +2057,19 @@
 		"armor": {
 			"stats": {
 				"HP": 43,
-				"initialBRV": 0,
-				"maxBRV": 85,
+				"iBRV": 0,
+				"mBRV": 85,
 				"ATK": 18,
 				"DEF": 823
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 34,
 			"DEF": 30
 		}
@@ -1939,22 +2083,26 @@
 			"name": "FF8"
 		},
 		"attributes": ["Thunder"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 693,
-		"maxBRV": 1437,
-		"ATK": 509,
-		"DEF": 480,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 693,
+			"mBRV": 1437,
+			"ATK": 509,
+			"DEF": 480
+		},
 		"weapon": {
 			"type": "Spear",
 			"stats": {
 				"HP": 87,
-				"initialBRV": 233,
-				"maxBRV": 2925,
+				"iBRV": 233,
+				"mBRV": 2925,
 				"ATK": 984,
 				"DEF": 62
 			}
@@ -1962,25 +2110,25 @@
 		"armor": {
 			"stats": {
 				"HP": 39,
-				"initialBRV": 0,
-				"maxBRV": 57,
+				"iBRV": 0,
+				"mBRV": 57,
 				"ATK": 36,
 				"DEF": 870
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 36,
 			"DEF": 34
 		},
 		"fourStarPassives": {
 			"armor": {
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		}
 	},
@@ -1993,22 +2141,26 @@
 			"name": "FFT"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 785,
-		"maxBRV": 1364,
-		"ATK": 500,
-		"DEF": 537,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 785,
+			"mBRV": 1364,
+			"ATK": 500,
+			"DEF": 537
+		},
 		"weapon": {
 			"type": "Sword",
 			"stats": {
 				"HP": 109,
-				"initialBRV": 270,
-				"maxBRV": 2850,
+				"iBRV": 270,
+				"mBRV": 2850,
 				"ATK": 957,
 				"DEF": 68
 			}
@@ -2016,8 +2168,8 @@
 		"armor": {
 			"stats": {
 				"HP": 27,
-				"initialBRV": 0,
-				"maxBRV": 55,
+				"iBRV": 0,
+				"mBRV": 55,
 				"ATK": 27,
 				"DEF": 882
 			},
@@ -2028,7 +2180,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 100,
+			"mBRV": 100,
 			"ATK": 35,
 			"DEF": 38
 		},
@@ -2047,22 +2199,26 @@
 			"name": "FFT0"
 		},
 		"attributes": ["Ice"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 785,
-		"maxBRV": 1500,
-		"ATK": 452,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 785,
+			"mBRV": 1500,
+			"ATK": 452,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Dagger",
 			"stats": {
 				"HP": 128,
-				"initialBRV": 221,
-				"maxBRV": 2683,
+				"iBRV": 221,
+				"mBRV": 2683,
 				"ATK": 788,
 				"DEF": 55
 			},
@@ -2071,25 +2227,25 @@
 		"armor": {
 			"stats": {
 				"HP": 28,
-				"initialBRV": 0,
-				"maxBRV": 112,
+				"iBRV": 0,
+				"mBRV": 112,
 				"ATK": 0,
 				"DEF": 823
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 32,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
 				"ATK": 72
@@ -2105,22 +2261,26 @@
 			"name": "FF6"
 		},
 		"attributes": ["Holy", "Wind"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 785,
-		"maxBRV": 1437,
-		"ATK": 509,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 785,
+			"mBRV": 1437,
+			"ATK": 509,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Fists",
 			"stats": {
 				"HP": 90,
-				"initialBRV": 273,
-				"maxBRV": 2925,
+				"iBRV": 273,
+				"mBRV": 2925,
 				"ATK": 984,
 				"DEF": 55
 			}
@@ -2128,8 +2288,8 @@
 		"armor": {
 			"stats": {
 				"HP": 47,
-				"initialBRV": 0,
-				"maxBRV": 69,
+				"iBRV": 0,
+				"mBRV": 69,
 				"ATK": 36,
 				"DEF": 823
 			},
@@ -2140,7 +2300,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 36,
 			"DEF": 30
 		}
@@ -2154,22 +2314,26 @@
 			"name": "FF13"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4265,
-		"initialBRV": 739,
-		"maxBRV": 1364,
-		"ATK": 500,
-		"DEF": 480,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4265,
+			"iBRV": 739,
+			"mBRV": 1364,
+			"ATK": 500,
+			"DEF": 480
+		},
 		"weapon": {
 			"type": "Gun",
 			"stats": {
 				"HP": 112,
-				"initialBRV": 220,
-				"maxBRV": 2550,
+				"iBRV": 220,
+				"mBRV": 2550,
 				"ATK": 854,
 				"DEF": 62
 			},
@@ -2178,8 +2342,8 @@
 		"armor": {
 			"stats": {
 				"HP": 62,
-				"initialBRV": 0,
-				"maxBRV": 40,
+				"iBRV": 0,
+				"mBRV": 40,
 				"ATK": 27,
 				"DEF": 870
 			},
@@ -2190,7 +2354,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 320,
-			"maxBRV": 100,
+			"mBRV": 100,
 			"ATK": 35,
 			"DEF": 34
 		},
@@ -2199,7 +2363,7 @@
 				"HP": 340
 			},
 			"armor": {
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		}
 	},
@@ -2212,22 +2376,26 @@
 			"name": "FF8"
 		},
 		"attributes": ["Wind"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4265,
-		"initialBRV": 693,
-		"maxBRV": 1437,
-		"ATK": 480,
-		"DEF": 594,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4265,
+			"iBRV": 693,
+			"mBRV": 1437,
+			"ATK": 480,
+			"DEF": 594
+		},
 		"weapon": {
 			"type": "Heavy Sword",
 			"stats": {
 				"HP": 107,
-				"initialBRV": 233,
-				"maxBRV": 2925,
+				"iBRV": 233,
+				"mBRV": 2925,
 				"ATK": 950,
 				"DEF": 75
 			}
@@ -2235,25 +2403,25 @@
 		"armor": {
 			"stats": {
 				"HP": 34,
-				"initialBRV": 0,
-				"maxBRV": 34,
+				"iBRV": 0,
+				"mBRV": 34,
 				"ATK": 18,
 				"DEF": 904
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"DEF": 84
 			}
 		},
 		"awakeningPassives": {
 			"HP": 320,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 34,
 			"DEF": 42
 		},
 		"fourStarPassives": {
 			"armor": {
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		}
 	},
@@ -2266,22 +2434,26 @@
 			"name": "FF13-2"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4265,
-		"initialBRV": 785,
-		"maxBRV": 1364,
-		"ATK": 480,
-		"DEF": 480,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4265,
+			"iBRV": 785,
+			"mBRV": 1364,
+			"ATK": 480,
+			"DEF": 480
+		},
 		"weapon": {
 			"type": "Bow",
 			"stats": {
 				"HP": 125,
-				"initialBRV": 273,
-				"maxBRV": 2850,
+				"iBRV": 273,
+				"mBRV": 2850,
 				"ATK": 950,
 				"DEF": 62
 			}
@@ -2289,19 +2461,19 @@
 		"armor": {
 			"stats": {
 				"HP": 68,
-				"initialBRV": 0,
-				"maxBRV": 40,
+				"iBRV": 0,
+				"mBRV": 40,
 				"ATK": 18,
 				"DEF": 870
 			},
 			"bonus": {
 				"HP": 680,
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		},
 		"awakeningPassives": {
 			"HP": 320,
-			"maxBRV": 100,
+			"mBRV": 100,
 			"ATK": 34,
 			"DEF": 34
 		},
@@ -2320,22 +2492,26 @@
 			"name": "FF6"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 831,
-		"maxBRV": 1500,
-		"ATK": 452,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 831,
+			"mBRV": 1500,
+			"ATK": 452,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
 				"HP": 130,
-				"initialBRV": 276,
-				"maxBRV": 3001,
+				"iBRV": 276,
+				"mBRV": 3001,
 				"ATK": 882,
 				"DEF": 49
 			}
@@ -2343,25 +2519,25 @@
 		"armor": {
 			"stats": {
 				"HP": 52,
-				"initialBRV": 0,
-				"maxBRV": 108,
+				"iBRV": 0,
+				"mBRV": 108,
 				"ATK": 0,
 				"DEF": 801
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 32,
 			"DEF": 26
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
 				"ATK": 72
@@ -2377,22 +2553,26 @@
 			"name": "FF10"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 785,
-		"maxBRV": 1500,
-		"ATK": 509,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 785,
+			"mBRV": 1500,
+			"ATK": 509,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 78,
-				"initialBRV": 273,
-				"maxBRV": 3001,
+				"iBRV": 273,
+				"mBRV": 3001,
 				"ATK": 984,
 				"DEF": 53
 			}
@@ -2400,19 +2580,19 @@
 		"armor": {
 			"stats": {
 				"HP": 28,
-				"initialBRV": 0,
-				"maxBRV": 108,
+				"iBRV": 0,
+				"mBRV": 108,
 				"ATK": 36,
 				"DEF": 801
 			},
 			"bonus": {
-				"initialBRV": 110,
+				"iBRV": 110,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 36,
 			"DEF": 26
 		},
@@ -2431,22 +2611,26 @@
 			"name": "FF6"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3656,
-		"initialBRV": 831,
-		"maxBRV": 1227,
-		"ATK": 500,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3656,
+			"iBRV": 831,
+			"mBRV": 1227,
+			"ATK": 500,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
 				"HP": 142,
-				"initialBRV": 223,
-				"maxBRV": 2383,
+				"iBRV": 223,
+				"mBRV": 2383,
 				"ATK": 854,
 				"DEF": 49
 			},
@@ -2455,28 +2639,28 @@
 		"armor": {
 			"stats": {
 				"HP": 71,
-				"initialBRV": 0,
-				"maxBRV": 71,
+				"iBRV": 0,
+				"mBRV": 71,
 				"ATK": 27,
 				"DEF": 801
 			},
 			"bonus": {
-				"initialBRV": 110,
+				"iBRV": 110,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 260,
-			"maxBRV": 90,
+			"mBRV": 90,
 			"ATK": 35,
 			"DEF": 26
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"initialBRV": 55
+				"iBRV": 55
 			},
 			"armor": {
-				"maxBRV": 220
+				"mBRV": 220
 			}
 		}
 	},
@@ -2489,22 +2673,26 @@
 			"name": "FF11"
 		},
 		"attributes": ["Dark", "Wind"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 693,
-		"maxBRV": 1500,
-		"ATK": 509,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 693,
+			"mBRV": 1500,
+			"ATK": 509,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 81,
-				"initialBRV": 233,
-				"maxBRV": 3001,
+				"iBRV": 233,
+				"mBRV": 3001,
 				"ATK": 984,
 				"DEF": 47
 			}
@@ -2512,19 +2700,19 @@
 		"armor": {
 			"stats": {
 				"HP": 48,
-				"initialBRV": 0,
-				"maxBRV": 88,
+				"iBRV": 0,
+				"mBRV": 88,
 				"ATK": 36,
 				"DEF": 801
 			},
 			"bonus": {
 				"HP": 680,
-				"maxBRV": 220
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 36,
 			"DEF": 26
 		},
@@ -2546,22 +2734,26 @@
 			"name": "FF13"
 		},
 		"attributes": ["Ice"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4468,
-		"initialBRV": 739,
-		"maxBRV": 1300,
-		"ATK": 480,
-		"DEF": 537,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4468,
+			"iBRV": 739,
+			"mBRV": 1300,
+			"ATK": 480,
+			"DEF": 537
+		},
 		"weapon": {
 			"type": "Fists",
 			"stats": {
 				"HP": 134,
-				"initialBRV": 273,
-				"maxBRV": 2740,
+				"iBRV": 273,
+				"mBRV": 2740,
 				"ATK": 950,
 				"DEF": 68
 			}
@@ -2569,8 +2761,8 @@
 		"armor": {
 			"stats": {
 				"HP": 71,
-				"initialBRV": 0,
-				"maxBRV": 17,
+				"iBRV": 0,
+				"mBRV": 17,
 				"ATK": 18,
 				"DEF": 882
 			},
@@ -2581,7 +2773,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 340,
-			"maxBRV": 95,
+			"mBRV": 95,
 			"ATK": 33,
 			"DEF": 38
 		}
@@ -2595,22 +2787,26 @@
 			"name": "FF8"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 693,
-		"maxBRV": 1500,
-		"ATK": 509,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 693,
+			"mBRV": 1500,
+			"ATK": 509,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Heavy Sword",
 			"stats": {
 				"HP": 80,
-				"initialBRV": 233,
-				"maxBRV": 3001,
+				"iBRV": 233,
+				"mBRV": 3001,
 				"ATK": 984,
 				"DEF": 49
 			}
@@ -2618,19 +2814,19 @@
 		"armor": {
 			"stats": {
 				"HP": 44,
-				"initialBRV": 0,
-				"maxBRV": 92,
+				"iBRV": 0,
+				"mBRV": 92,
 				"ATK": 36,
 				"DEF": 801
 			},
 			"bonus": {
-				"initialBRV": 110,
+				"iBRV": 110,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 36,
 			"DEF": 26
 		},
@@ -2652,22 +2848,26 @@
 			"name": "FF9"
 		},
 		"attributes": ["Fire"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4265,
-		"initialBRV": 646,
-		"maxBRV": 1300,
-		"ATK": 509,
-		"DEF": 480,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4265,
+			"iBRV": 646,
+			"mBRV": 1300,
+			"ATK": 509,
+			"DEF": 480
+		},
 		"weapon": {
 			"type": "Heavy Sword",
 			"stats": {
 				"HP": 112,
-				"initialBRV": 230,
-				"maxBRV": 2740,
+				"iBRV": 230,
+				"mBRV": 2740,
 				"ATK": 984,
 				"DEF": 62
 			}
@@ -2675,8 +2875,8 @@
 		"armor": {
 			"stats": {
 				"HP": 72,
-				"initialBRV": 0,
-				"maxBRV": 24,
+				"iBRV": 0,
+				"mBRV": 24,
 				"ATK": 36,
 				"DEF": 870
 			},
@@ -2687,7 +2887,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 320,
-			"maxBRV": 95,
+			"mBRV": 95,
 			"ATK": 36,
 			"DEF": 34
 		},
@@ -2696,7 +2896,7 @@
 				"ATK": 36
 			},
 			"armor": {
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		}
 	},
@@ -2709,22 +2909,26 @@
 			"name": "FF13"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3656,
-		"initialBRV": 785,
-		"maxBRV": 1437,
-		"ATK": 480,
-		"DEF": 500,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3656,
+			"iBRV": 785,
+			"mBRV": 1437,
+			"ATK": 480,
+			"DEF": 500
+		},
 		"weapon": {
 			"type": "Dagger",
 			"stats": {
 				"HP": 112,
-				"initialBRV": 273,
-				"maxBRV": 2925,
+				"iBRV": 273,
+				"mBRV": 2925,
 				"ATK": 950,
 				"DEF": 62
 			}
@@ -2732,19 +2936,19 @@
 		"armor": {
 			"stats": {
 				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 108,
+				"iBRV": 0,
+				"mBRV": 108,
 				"ATK": 18,
 				"DEF": 870
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 260,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 34,
 			"DEF": 38
 		}
@@ -2758,22 +2962,26 @@
 			"name": "FF10"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 785,
-		"maxBRV": 1437,
-		"ATK": 480,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 785,
+			"mBRV": 1437,
+			"ATK": 480,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Sword",
 			"stats": {
 				"HP": 115,
-				"initialBRV": 273,
-				"maxBRV": 2925,
+				"iBRV": 273,
+				"mBRV": 2925,
 				"ATK": 986,
 				"DEF": 55
 			}
@@ -2781,25 +2989,25 @@
 		"armor": {
 			"stats": {
 				"HP": 40,
-				"initialBRV": 0,
-				"maxBRV": 88,
+				"iBRV": 0,
+				"mBRV": 88,
 				"ATK": 18,
 				"DEF": 823
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 34,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"initialBRV": 55
+				"iBRV": 55
 			},
 			"armor": {
 				"HP": 680
@@ -2815,22 +3023,26 @@
 			"name": "FF7"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 739,
-		"maxBRV": 1437,
-		"ATK": 500,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 739,
+			"mBRV": 1437,
+			"ATK": 500,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Fists",
 			"stats": {
 				"HP": 101,
-				"initialBRV": 220,
-				"maxBRV": 2616,
+				"iBRV": 220,
+				"mBRV": 2616,
 				"ATK": 854,
 				"DEF": 58
 			},
@@ -2839,25 +3051,25 @@
 		"armor": {
 			"stats": {
 				"HP": 32,
-				"initialBRV": 0,
-				"maxBRV": 90,
+				"iBRV": 0,
+				"mBRV": 90,
 				"ATK": 27,
 				"DEF": 823
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 35,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
 				"DEF": 84
@@ -2873,22 +3085,26 @@
 			"name": "FF6"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3656,
-		"initialBRV": 831,
-		"maxBRV": 1500,
-		"ATK": 509,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3656,
+			"iBRV": 831,
+			"mBRV": 1500,
+			"ATK": 509,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Sword",
 			"stats": {
 				"HP": 80,
-				"initialBRV": 276,
-				"maxBRV": 3001,
+				"iBRV": 276,
+				"mBRV": 3001,
 				"ATK": 984,
 				"DEF": 49
 			}
@@ -2896,25 +3112,25 @@
 		"armor": {
 			"stats": {
 				"HP": 0,
-				"initialBRV": 0,
-				"maxBRV": 136,
+				"iBRV": 0,
+				"mBRV": 136,
 				"ATK": 36,
 				"DEF": 801
 			},
 			"bonus": {
-				"initialBRV": 110,
+				"iBRV": 110,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 260,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 36,
 			"DEF": 26
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"initialBRV": 55
+				"iBRV": 55
 			},
 			"armor": {
 				"HP": 680
@@ -2930,22 +3146,26 @@
 			"name": "FF12"
 		},
 		"attributes": ["Holy", "Ice", "Wind"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 785,
-		"maxBRV": 1500,
-		"ATK": 500,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 785,
+			"mBRV": 1500,
+			"ATK": 500,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Sword",
 			"stats": {
 				"HP": 90,
-				"initialBRV": 273,
-				"maxBRV": 3001,
+				"iBRV": 273,
+				"mBRV": 3001,
 				"ATK": 957,
 				"DEF": 55
 			}
@@ -2953,25 +3173,25 @@
 		"armor": {
 			"stats": {
 				"HP": 22,
-				"initialBRV": 0,
-				"maxBRV": 100,
+				"iBRV": 0,
+				"mBRV": 100,
 				"ATK": 27,
 				"DEF": 823
 			},
 			"bonus": {
-				"initialBRV": 110,
-				"maxBRV": 220
+				"iBRV": 110,
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 35,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
 				"DEF": 84
@@ -2987,22 +3207,26 @@
 			"name": "FF13"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 831,
-		"maxBRV": 1437,
-		"ATK": 471,
-		"DEF": 480,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 831,
+			"mBRV": 1437,
+			"ATK": 471,
+			"DEF": 480
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 125,
-				"initialBRV": 276,
-				"maxBRV": 2925,
+				"iBRV": 276,
+				"mBRV": 2925,
 				"ATK": 908,
 				"DEF": 62
 			}
@@ -3010,25 +3234,25 @@
 		"armor": {
 			"stats": {
 				"HP": 28,
-				"initialBRV": 0,
-				"maxBRV": 86,
+				"iBRV": 0,
+				"mBRV": 86,
 				"ATK": 9,
 				"DEF": 870
 			},
 			"bonus": {
 				"HP": 680,
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 33,
 			"DEF": 34
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"initialBRV": 55
+				"iBRV": 55
 			},
 			"armor": {
 				"ATK": 72
@@ -3044,22 +3268,26 @@
 			"name": "FF7"
 		},
 		"attributes": ["Fire", "Thunder"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 646,
-		"maxBRV": 1500,
-		"ATK": 500,
-		"DEF": 537,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 646,
+			"mBRV": 1500,
+			"ATK": 500,
+			"DEF": 537
+		},
 		"weapon": {
 			"type": "Gun",
 			"stats": {
 				"HP": 84,
-				"initialBRV": 183,
-				"maxBRV": 2683,
+				"iBRV": 183,
+				"mBRV": 2683,
 				"ATK": 854,
 				"DEF": 68
 			},
@@ -3068,28 +3296,28 @@
 		"armor": {
 			"stats": {
 				"HP": 18,
-				"initialBRV": 0,
-				"maxBRV": 64,
+				"iBRV": 0,
+				"mBRV": 64,
 				"ATK": 27,
 				"DEF": 882
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 35,
 			"DEF": 38
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		}
 	},
@@ -3102,22 +3330,26 @@
 			"name": "FF9"
 		},
 		"attributes": ["Fire"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 693,
-		"maxBRV": 1500,
-		"ATK": 509,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 693,
+			"mBRV": 1500,
+			"ATK": 509,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 80,
-				"initialBRV": 233,
-				"maxBRV": 3001,
+				"iBRV": 233,
+				"mBRV": 3001,
 				"ATK": 984,
 				"DEF": 49
 			}
@@ -3125,19 +3357,19 @@
 		"armor": {
 			"stats": {
 				"HP": 28,
-				"initialBRV": 0,
-				"maxBRV": 108,
+				"iBRV": 0,
+				"mBRV": 108,
 				"ATK": 36,
 				"DEF": 801
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 36,
 			"DEF": 26
 		},
@@ -3159,22 +3391,26 @@
 			"name": "FF10"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4265,
-		"initialBRV": 693,
-		"maxBRV": 1437,
-		"ATK": 500,
-		"DEF": 480,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4265,
+			"iBRV": 693,
+			"mBRV": 1437,
+			"ATK": 500,
+			"DEF": 480
+		},
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
 				"HP": 100,
-				"initialBRV": 184,
-				"maxBRV": 2616,
+				"iBRV": 184,
+				"mBRV": 2616,
 				"ATK": 854,
 				"DEF": 62
 			},
@@ -3183,8 +3419,8 @@
 		"armor": {
 			"stats": {
 				"HP": 53,
-				"initialBRV": 0,
-				"maxBRV": 49,
+				"iBRV": 0,
+				"mBRV": 49,
 				"ATK": 27,
 				"DEF": 870
 			},
@@ -3195,7 +3431,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 320,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 35,
 			"DEF": 34
 		},
@@ -3204,7 +3440,7 @@
 				"HP": 340
 			},
 			"armor": {
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		}
 	},
@@ -3217,22 +3453,26 @@
 			"name": "FF1"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4265,
-		"initialBRV": 831,
-		"maxBRV": 1300,
-		"ATK": 480,
-		"DEF": 594,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4265,
+			"iBRV": 831,
+			"mBRV": 1300,
+			"ATK": 480,
+			"DEF": 594
+		},
 		"weapon": {
 			"type": "Sword",
 			"stats": {
 				"HP": 132,
-				"initialBRV": 276,
-				"maxBRV": 2740,
+				"iBRV": 276,
+				"mBRV": 2740,
 				"ATK": 950,
 				"DEF": 75
 			}
@@ -3240,19 +3480,19 @@
 		"armor": {
 			"stats": {
 				"HP": 52,
-				"initialBRV": 0,
-				"maxBRV": 16,
+				"iBRV": 0,
+				"mBRV": 16,
 				"ATK": 18,
 				"DEF": 904
 			},
 			"bonus": {
-				"initialBRV": 110,
+				"iBRV": 110,
 				"DEF": 84
 			}
 		},
 		"awakeningPassives": {
 			"HP": 320,
-			"maxBRV": 95,
+			"mBRV": 95,
 			"ATK": 34,
 			"DEF": 42
 		},
@@ -3261,7 +3501,7 @@
 				"DEF": 42
 			},
 			"armor": {
-				"maxBRV": 220
+				"mBRV": 220
 			}
 		}
 	},
@@ -3274,22 +3514,26 @@
 			"name": "FF4"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4468,
-		"initialBRV": 646,
-		"maxBRV": 1437,
-		"ATK": 509,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4468,
+			"iBRV": 646,
+			"mBRV": 1437,
+			"ATK": 509,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Fists",
 			"stats": {
 				"HP": 92,
-				"initialBRV": 183,
-				"maxBRV": 2616,
+				"iBRV": 183,
+				"mBRV": 2616,
 				"ATK": 878,
 				"DEF": 49
 			},
@@ -3298,8 +3542,8 @@
 		"armor": {
 			"stats": {
 				"HP": 78,
-				"initialBRV": 0,
-				"maxBRV": 58,
+				"iBRV": 0,
+				"mBRV": 58,
 				"ATK": 36,
 				"DEF": 801
 			},
@@ -3310,7 +3554,7 @@
 		},
 		"awakeningPassives": {
 			"HP": 340,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 36,
 			"DEF": 26
 		},
@@ -3319,7 +3563,7 @@
 				"HP": 340
 			},
 			"armor": {
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		}
 	},
@@ -3332,22 +3576,26 @@
 			"name": "FF14"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 3859,
-		"initialBRV": 693,
-		"maxBRV": 1437,
-		"ATK": 500,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 3859,
+			"iBRV": 693,
+			"mBRV": 1437,
+			"ATK": 500,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Fists",
 			"stats": {
 				"HP": 100,
-				"initialBRV": 233,
-				"maxBRV": 2925,
+				"iBRV": 233,
+				"mBRV": 2925,
 				"ATK": 957,
 				"DEF": 62
 			}
@@ -3355,19 +3603,19 @@
 		"armor": {
 			"stats": {
 				"HP": 26,
-				"initialBRV": 0,
-				"maxBRV": 96,
+				"iBRV": 0,
+				"mBRV": 96,
 				"ATK": 27,
 				"DEF": 823
 			},
 			"bonus": {
-				"maxBRV": 220,
+				"mBRV": 220,
 				"ATK": 72
 			}
 		},
 		"awakeningPassives": {
 			"HP": 280,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 35,
 			"DEF": 30
 		},
@@ -3389,22 +3637,26 @@
 			"name": "FF14"
 		},
 		"attributes": ["Earth"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4265,
-		"initialBRV": 831,
-		"maxBRV": 1300,
-		"ATK": 471,
-		"DEF": 480,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4265,
+			"iBRV": 831,
+			"mBRV": 1300,
+			"ATK": 471,
+			"DEF": 480
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 150,
-				"initialBRV": 276,
-				"maxBRV": 2740,
+				"iBRV": 276,
+				"mBRV": 2740,
 				"ATK": 908,
 				"DEF": 62
 			}
@@ -3412,28 +3664,28 @@
 		"armor": {
 			"stats": {
 				"HP": 86,
-				"initialBRV": 0,
-				"maxBRV": 28,
+				"iBRV": 0,
+				"mBRV": 28,
 				"ATK": 9,
 				"DEF": 870
 			},
 			"bonus": {
 				"HP": 680,
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		},
 		"awakeningPassives": {
 			"HP": 320,
-			"maxBRV": 95,
+			"mBRV": 95,
 			"ATK": 33,
 			"DEF": 34
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"initialBRV": 55
+				"iBRV": 55
 			},
 			"armor": {
-				"maxBRV": 220
+				"mBRV": 220
 			}
 		}
 	},
@@ -3446,22 +3698,26 @@
 			"name": "FF7"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 739,
-		"maxBRV": 1500,
-		"ATK": 452,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 739,
+			"mBRV": 1500,
+			"ATK": 452,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Throwing Weapon",
 			"stats": {
 				"HP": 128,
-				"initialBRV": 220,
-				"maxBRV": 2683,
+				"iBRV": 220,
+				"mBRV": 2683,
 				"ATK": 788,
 				"DEF": 55
 			},
@@ -3470,25 +3726,25 @@
 		"armor": {
 			"stats": {
 				"HP": 48,
-				"initialBRV": 0,
-				"maxBRV": 92,
+				"iBRV": 0,
+				"mBRV": 92,
 				"ATK": 0,
 				"DEF": 823
 			},
 			"bonus": {
 				"HP": 680,
-				"maxBRV": 220
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 110,
+			"mBRV": 110,
 			"ATK": 32,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
 				"ATK": 72
@@ -3504,22 +3760,26 @@
 			"name": "FF10"
 		},
 		"attributes": ["Thunder"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4468,
-		"initialBRV": 831,
-		"maxBRV": 1227,
-		"ATK": 452,
-		"DEF": 537,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4468,
+			"iBRV": 831,
+			"mBRV": 1227,
+			"ATK": 452,
+			"DEF": 537
+		},
 		"weapon": {
 			"type": "Rod",
 			"stats": {
 				"HP": 172,
-				"initialBRV": 276,
-				"maxBRV": 2665,
+				"iBRV": 276,
+				"mBRV": 2665,
 				"ATK": 882,
 				"DEF": 68
 			}
@@ -3527,19 +3787,19 @@
 		"armor": {
 			"stats": {
 				"HP": 100,
-				"initialBRV": 0,
-				"maxBRV": 0,
+				"iBRV": 0,
+				"mBRV": 0,
 				"ATK": 0,
 				"DEF": 882
 			},
 			"bonus": {
 				"HP": 680,
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		},
 		"awakeningPassives": {
 			"HP": 340,
-			"maxBRV": 90,
+			"mBRV": 90,
 			"ATK": 32,
 			"DEF": 38
 		},
@@ -3548,7 +3808,7 @@
 				"HP": 340
 			},
 			"armor": {
-				"maxBRV": 220
+				"mBRV": 220
 			}
 		}
 	},
@@ -3561,22 +3821,26 @@
 			"name": "FF8"
 		},
 		"attributes": ["Thunder"],
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4468,
-		"initialBRV": 646,
-		"maxBRV": 1437,
-		"ATK": 480,
-		"DEF": 367,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4468,
+			"iBRV": 646,
+			"mBRV": 1437,
+			"ATK": 480,
+			"DEF": 367
+		},
 		"weapon": {
 			"type": "Fists",
 			"stats": {
 				"HP": 117,
-				"initialBRV": 183,
-				"maxBRV": 2616,
+				"iBRV": 183,
+				"mBRV": 2616,
 				"ATK": 850,
 				"DEF": 49
 			},
@@ -3585,19 +3849,19 @@
 		"armor": {
 			"stats": {
 				"HP": 85,
-				"initialBRV": 0,
-				"maxBRV": 63,
+				"iBRV": 0,
+				"mBRV": 63,
 				"ATK": 18,
 				"DEF": 801
 			},
 			"bonus": {
 				"HP": 680,
-				"maxBRV": 220
+				"mBRV": 220
 			}
 		},
 		"awakeningPassives": {
 			"HP": 340,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 34,
 			"DEF": 26
 		},
@@ -3619,22 +3883,26 @@
 			"name": "FF9"
 		},
 		"attributes": null,
-		"fullHP": 0,
-		"fullInitialBRV": 0,
-		"fullMaxBRV": 0,
-		"fullATK": 0,
-		"fullDEF": 0,
-		"HP": 4062,
-		"initialBRV": 693,
-		"maxBRV": 1437,
-		"ATK": 480,
-		"DEF": 424,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 693,
+			"mBRV": 1437,
+			"ATK": 480,
+			"DEF": 424
+		},
 		"weapon": {
 			"type": "Dagger",
 			"stats": {
 				"HP": 115,
-				"initialBRV": 230,
-				"maxBRV": 2925,
+				"iBRV": 230,
+				"mBRV": 2925,
 				"ATK": 950,
 				"DEF": 55
 			}
@@ -3642,8 +3910,8 @@
 		"armor": {
 			"stats": {
 				"HP": 53,
-				"initialBRV": 0,
-				"maxBRV": 75,
+				"iBRV": 0,
+				"mBRV": 75,
 				"ATK": 18,
 				"DEF": 823
 			},
@@ -3654,16 +3922,16 @@
 		},
 		"awakeningPassives": {
 			"HP": 300,
-			"maxBRV": 105,
+			"mBRV": 105,
 			"ATK": 34,
 			"DEF": 30
 		},
 		"fourStarPassives": {
 			"weapon": {
-				"maxBRV": 110
+				"mBRV": 110
 			},
 			"armor": {
-				"initialBRV": 110
+				"iBRV": 110
 			}
 		}
 	}
