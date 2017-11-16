@@ -21,8 +21,8 @@
 			"ATK": 500,
 			"DEF": 480
 		},
-		"weapon": {
-			"type": "Throwing Weapon",
+		"weaponType": "Throwing Weapon",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 87,
 				"iBRV": 270,
@@ -79,8 +79,8 @@
 			"ATK": 471,
 			"DEF": 594
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 107,
 				"iBRV": 273,
@@ -132,8 +132,8 @@
 			"ATK": 500,
 			"DEF": 537
 		},
-		"weapon": {
-			"type": "Heavy Sword",
+		"weaponType": "Heavy Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 109,
 				"iBRV": 270,
@@ -185,8 +185,8 @@
 			"ATK": 509,
 			"DEF": 537
 		},
-		"weapon": {
-			"type": "Heavy Sword",
+		"weaponType": "Heavy Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 84,
 				"iBRV": 273,
@@ -238,8 +238,8 @@
 			"ATK": 480,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Gun",
+		"weaponType": "Gun",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 115,
 				"iBRV": 273,
@@ -299,8 +299,8 @@
 			"ATK": 500,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Sword",
+		"weaponType": "Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 103,
 				"iBRV": 270,
@@ -360,8 +360,8 @@
 			"ATK": 500,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Gun",
+		"weaponType": "Gun",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 117,
 				"iBRV": 276,
@@ -413,8 +413,8 @@
 			"ATK": 509,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Heavy Sword",
+		"weaponType": "Heavy Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 103,
 				"iBRV": 230,
@@ -474,8 +474,8 @@
 			"ATK": 480,
 			"DEF": 594
 		},
-		"weapon": {
-			"type": "Heavy Sword",
+		"weaponType": "Heavy Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 120,
 				"iBRV": 273,
@@ -527,8 +527,8 @@
 			"ATK": 509,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Heavy Sword",
+		"weaponType": "Heavy Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 90,
 				"iBRV": 270,
@@ -588,8 +588,8 @@
 			"ATK": 509,
 			"DEF": 480
 		},
-		"weapon": {
-			"type": "Heavy Sword",
+		"weaponType": "Heavy Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 102,
 				"iBRV": 273,
@@ -646,8 +646,8 @@
 			"ATK": 500,
 			"DEF": 537
 		},
-		"weapon": {
-			"type": "Spear",
+		"weaponType": "Spear",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 97,
 				"iBRV": 270,
@@ -704,8 +704,8 @@
 			"ATK": 480,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Dagger",
+		"weaponType": "Dagger",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 113,
 				"iBRV": 273,
@@ -765,8 +765,8 @@
 			"ATK": 500,
 			"DEF": 537
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 122,
 				"iBRV": 276,
@@ -826,8 +826,8 @@
 			"ATK": 471,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Dagger",
+		"weaponType": "Dagger",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 115,
 				"iBRV": 273,
@@ -887,16 +887,15 @@
 			"ATK": 500,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Sword",
+		"weaponType": "Sword",
+		"baseWeapon": {
 			"stats": {
 				"HP": 101,
 				"iBRV": 221,
 				"mBRV": 2616,
 				"ATK": 854,
 				"DEF": 58
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -949,8 +948,8 @@
 			"ATK": 480,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Throwing Weapon",
+		"weaponType": "Throwing Weapon",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 117,
 				"iBRV": 273,
@@ -1007,16 +1006,15 @@
 			"ATK": 500,
 			"DEF": 594
 		},
-		"weapon": {
-			"type": "Heavy Sword",
+		"weaponType": "Heavy Sword",
+		"baseWeapon": {
 			"stats": {
 				"HP": 120,
 				"iBRV": 183,
 				"mBRV": 2449,
 				"ATK": 854,
 				"DEF": 75
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -1069,8 +1067,8 @@
 			"ATK": 500,
 			"DEF": 594
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 120,
 				"iBRV": 276,
@@ -1122,8 +1120,8 @@
 			"ATK": 471,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Throwing Weapon",
+		"weaponType": "Throwing Weapon",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 128,
 				"iBRV": 273,
@@ -1183,8 +1181,8 @@
 			"ATK": 500,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Gun",
+		"weaponType": "Gun",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 94,
 				"iBRV": 270,
@@ -1241,8 +1239,8 @@
 			"ATK": 509,
 			"DEF": 537
 		},
-		"weapon": {
-			"type": "Spear",
+		"weaponType": "Spear",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 109,
 				"iBRV": 270,
@@ -1294,16 +1292,15 @@
 			"ATK": 500,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Gun",
+		"weaponType": "Gun",
+		"baseWeapon": {
 			"stats": {
 				"HP": 115,
 				"iBRV": 220,
 				"mBRV": 2550,
 				"ATK": 854,
 				"DEF": 55
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -1356,8 +1353,8 @@
 			"ATK": 471,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 128,
 				"iBRV": 276,
@@ -1409,8 +1406,8 @@
 			"ATK": 480,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Other",
+		"weaponType": "Other",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 107,
 				"iBRV": 273,
@@ -1462,16 +1459,15 @@
 			"ATK": 500,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Gun",
+		"weaponType": "Gun",
+		"baseWeapon": {
 			"stats": {
 				"HP": 103,
 				"iBRV": 184,
 				"mBRV": 2616,
 				"ATK": 854,
 				"DEF": 55
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -1524,16 +1520,15 @@
 			"ATK": 500,
 			"DEF": 480
 		},
-		"weapon": {
-			"type": "Throwing Weapon",
+		"weaponType": "Throwing Weapon",
+		"baseWeapon": {
 			"stats": {
 				"HP": 103,
 				"iBRV": 220,
 				"mBRV": 2616,
 				"ATK": 854,
 				"DEF": 55
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -1586,8 +1581,8 @@
 			"ATK": 480,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Sword",
+		"weaponType": "Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 98,
 				"iBRV": 276,
@@ -1644,8 +1639,8 @@
 			"ATK": 480,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Dagger",
+		"weaponType": "Dagger",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 108,
 				"iBRV": 233,
@@ -1697,8 +1692,8 @@
 			"ATK": 480,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Bow",
+		"weaponType": "Bow",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 116,
 				"iBRV": 273,
@@ -1750,8 +1745,8 @@
 			"ATK": 480,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Sword",
+		"weaponType": "Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 105,
 				"iBRV": 273,
@@ -1811,8 +1806,8 @@
 			"ATK": 509,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 82,
 				"iBRV": 276,
@@ -1864,8 +1859,8 @@
 			"ATK": 500,
 			"DEF": 480
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 113,
 				"iBRV": 273,
@@ -1922,8 +1917,8 @@
 			"ATK": 471,
 			"DEF": 594
 		},
-		"weapon": {
-			"type": "Dagger",
+		"weaponType": "Dagger",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 132,
 				"iBRV": 276,
@@ -1983,8 +1978,8 @@
 			"ATK": 480,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Fists",
+		"weaponType": "Fists",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 105,
 				"iBRV": 270,
@@ -2044,8 +2039,8 @@
 			"ATK": 480,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Whip",
+		"weaponType": "Whip",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 103,
 				"iBRV": 273,
@@ -2097,8 +2092,8 @@
 			"ATK": 509,
 			"DEF": 480
 		},
-		"weapon": {
-			"type": "Spear",
+		"weaponType": "Spear",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 87,
 				"iBRV": 233,
@@ -2155,8 +2150,8 @@
 			"ATK": 500,
 			"DEF": 537
 		},
-		"weapon": {
-			"type": "Sword",
+		"weaponType": "Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 109,
 				"iBRV": 270,
@@ -2213,16 +2208,15 @@
 			"ATK": 452,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Dagger",
+		"weaponType": "Dagger",
+		"baseWeapon": {
 			"stats": {
 				"HP": 128,
 				"iBRV": 221,
 				"mBRV": 2683,
 				"ATK": 788,
 				"DEF": 55
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -2275,8 +2269,8 @@
 			"ATK": 509,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Fists",
+		"weaponType": "Fists",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 90,
 				"iBRV": 273,
@@ -2328,16 +2322,15 @@
 			"ATK": 500,
 			"DEF": 480
 		},
-		"weapon": {
-			"type": "Gun",
+		"weaponType": "Gun",
+		"baseWeapon": {
 			"stats": {
 				"HP": 112,
 				"iBRV": 220,
 				"mBRV": 2550,
 				"ATK": 854,
 				"DEF": 62
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -2390,8 +2383,8 @@
 			"ATK": 480,
 			"DEF": 594
 		},
-		"weapon": {
-			"type": "Heavy Sword",
+		"weaponType": "Heavy Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 107,
 				"iBRV": 233,
@@ -2448,8 +2441,8 @@
 			"ATK": 480,
 			"DEF": 480
 		},
-		"weapon": {
-			"type": "Bow",
+		"weaponType": "Bow",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 125,
 				"iBRV": 273,
@@ -2506,8 +2499,8 @@
 			"ATK": 452,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Throwing Weapon",
+		"weaponType": "Throwing Weapon",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 130,
 				"iBRV": 276,
@@ -2567,8 +2560,8 @@
 			"ATK": 509,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 78,
 				"iBRV": 273,
@@ -2625,16 +2618,15 @@
 			"ATK": 500,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Throwing Weapon",
+		"weaponType": "Throwing Weapon",
+		"baseWeapon": {
 			"stats": {
 				"HP": 142,
 				"iBRV": 223,
 				"mBRV": 2383,
 				"ATK": 854,
 				"DEF": 49
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -2687,8 +2679,8 @@
 			"ATK": 509,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 81,
 				"iBRV": 233,
@@ -2748,8 +2740,8 @@
 			"ATK": 480,
 			"DEF": 537
 		},
-		"weapon": {
-			"type": "Fists",
+		"weaponType": "Fists",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 134,
 				"iBRV": 273,
@@ -2801,8 +2793,8 @@
 			"ATK": 509,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Heavy Sword",
+		"weaponType": "Heavy Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 80,
 				"iBRV": 233,
@@ -2862,8 +2854,8 @@
 			"ATK": 509,
 			"DEF": 480
 		},
-		"weapon": {
-			"type": "Heavy Sword",
+		"weaponType": "Heavy Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 112,
 				"iBRV": 230,
@@ -2923,8 +2915,8 @@
 			"ATK": 480,
 			"DEF": 500
 		},
-		"weapon": {
-			"type": "Dagger",
+		"weaponType": "Dagger",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 112,
 				"iBRV": 273,
@@ -2976,8 +2968,8 @@
 			"ATK": 480,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Sword",
+		"weaponType": "Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 115,
 				"iBRV": 273,
@@ -3037,16 +3029,15 @@
 			"ATK": 500,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Fists",
+		"weaponType": "Fists",
+		"baseWeapon": {
 			"stats": {
 				"HP": 101,
 				"iBRV": 220,
 				"mBRV": 2616,
 				"ATK": 854,
 				"DEF": 58
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -3099,8 +3090,8 @@
 			"ATK": 509,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Sword",
+		"weaponType": "Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 80,
 				"iBRV": 276,
@@ -3160,8 +3151,8 @@
 			"ATK": 500,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Sword",
+		"weaponType": "Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 90,
 				"iBRV": 273,
@@ -3221,8 +3212,8 @@
 			"ATK": 471,
 			"DEF": 480
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 125,
 				"iBRV": 276,
@@ -3282,16 +3273,15 @@
 			"ATK": 500,
 			"DEF": 537
 		},
-		"weapon": {
-			"type": "Gun",
+		"weaponType": "Gun",
+		"baseWeapon": {
 			"stats": {
 				"HP": 84,
 				"iBRV": 183,
 				"mBRV": 2683,
 				"ATK": 854,
 				"DEF": 68
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -3344,8 +3334,8 @@
 			"ATK": 509,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 80,
 				"iBRV": 233,
@@ -3405,16 +3395,15 @@
 			"ATK": 500,
 			"DEF": 480
 		},
-		"weapon": {
-			"type": "Throwing Weapon",
+		"weaponType": "Throwing Weapon",
+		"baseWeapon": {
 			"stats": {
 				"HP": 100,
 				"iBRV": 184,
 				"mBRV": 2616,
 				"ATK": 854,
 				"DEF": 62
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -3467,8 +3456,8 @@
 			"ATK": 480,
 			"DEF": 594
 		},
-		"weapon": {
-			"type": "Sword",
+		"weaponType": "Sword",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 132,
 				"iBRV": 276,
@@ -3528,16 +3517,15 @@
 			"ATK": 509,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Fists",
+		"weaponType": "Fists",
+		"baseWeapon": {
 			"stats": {
 				"HP": 92,
 				"iBRV": 183,
 				"mBRV": 2616,
 				"ATK": 878,
 				"DEF": 49
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -3590,8 +3578,8 @@
 			"ATK": 500,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Fists",
+		"weaponType": "Fists",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 100,
 				"iBRV": 233,
@@ -3651,8 +3639,8 @@
 			"ATK": 471,
 			"DEF": 480
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 150,
 				"iBRV": 276,
@@ -3712,16 +3700,15 @@
 			"ATK": 452,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Throwing Weapon",
+		"weaponType": "Throwing Weapon",
+		"baseWeapon": {
 			"stats": {
 				"HP": 128,
 				"iBRV": 220,
 				"mBRV": 2683,
 				"ATK": 788,
 				"DEF": 55
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -3774,8 +3761,8 @@
 			"ATK": 452,
 			"DEF": 537
 		},
-		"weapon": {
-			"type": "Rod",
+		"weaponType": "Staff",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 172,
 				"iBRV": 276,
@@ -3835,16 +3822,15 @@
 			"ATK": 480,
 			"DEF": 367
 		},
-		"weapon": {
-			"type": "Fists",
+		"weaponType": "Fists",
+		"baseWeapon": {
 			"stats": {
 				"HP": 117,
 				"iBRV": 183,
 				"mBRV": 2616,
 				"ATK": 850,
 				"DEF": 49
-			},
-			"notes": "No exclusive weapon yet."
+			}
 		},
 		"armor": {
 			"stats": {
@@ -3897,8 +3883,8 @@
 			"ATK": 480,
 			"DEF": 424
 		},
-		"weapon": {
-			"type": "Dagger",
+		"weaponType": "Dagger",
+		"exclusiveWeapon": {
 			"stats": {
 				"HP": 115,
 				"iBRV": 230,

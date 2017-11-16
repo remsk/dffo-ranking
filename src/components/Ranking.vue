@@ -172,9 +172,12 @@ export default {
     fullStat: function (prop, index) {
       let fullStat = this.getBaseSynergyValue(prop, index)
       if (!this.params.baseOnly) {
-        if (this.characters[index].weapon !== undefined && this.params.addWeapon) {
-          fullStat += this.getGearSynergyValue(prop, 'weapon', index)
-          fullStat += parseInt(this.characters[index].weapon.stats[prop] / 5)
+        if (this.characters[index].exclusiveWeapon !== undefined && this.params.addWeapon) {
+          fullStat += this.getGearSynergyValue(prop, 'exclusiveWeapon', index)
+          fullStat += parseInt(this.characters[index].exclusiveWeapon.stats[prop] / 5)
+        } else if (this.characters[index].baseWeapon !== undefined && this.params.addWeapon) {
+          fullStat += this.getGearSynergyValue(prop, 'baseWeapon', index)
+          fullStat += parseInt(this.characters[index].baseWeapon.stats[prop] / 5)
         }
         if (this.characters[index].armor !== undefined && this.params.addArmor) {
           fullStat += this.getGearSynergyValue(prop, 'armor', index)
@@ -246,7 +249,7 @@ export default {
       this.minMaxValues = this.getMinMaxStats()
     },
     isFinished: function (row) {
-      if (row.weapon.notes !== undefined) {
+      if (row.exclusiveWeapon === undefined) {
         return this.unfinishedClass
       }
     },
