@@ -8,28 +8,48 @@
 
     <div class="base-checkbox">
       <input type="checkbox" id="baseStats" v-model="params.baseOnly">
-      <label for="baseStats">Show base stats only</label>
+      <label title="Show base stats only" for="baseStats">Base stats only</label>
     </div>
-    <div class="gear-checkboxes">
-      <input type="checkbox" id="addW" :disabled="params.baseOnly ? true : false" v-model="params.addWeapon">
-      <label for="addW">35cp stats</label>
-      <input type="checkbox" id="addA" :disabled="params.baseOnly ? true : false" v-model="params.addArmor">
-      <label for="addA">5* armor</label>
-      <input type="checkbox" id="addS" :disabled="params.baseOnly ? true : false" v-model="params.addSynergy">
-      <label for="addS">Synergy</label>
-    </div>
-    <div class="passive-checkboxes">
-      <input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">
-      <label for="addP">Lv50 passives (20 CP)</label>
-      <input type="checkbox" id="addF" :disabled="params.baseOnly ? true : false" v-model="params.addFourStar">
-      <label for="addF">4* passives (7 CP)</label>
-    </div>
+    <table class="additional-options" v-if="!params.baseOnly">
+      <tbody>
+        <tr>
+          <td title="Equip exclusive weapon">
+            <input type="checkbox" id="addW" :disabled="params.baseOnly ? true : false" v-model="params.addWeapon">
+            <label for="addW">35cp stats</label>
+          </td>
+          <td title="Equip 5* armor and its passive">
+            <input type="checkbox" id="addA" :disabled="params.baseOnly ? true : false" v-model="params.addArmor">
+            <label for="addA">5* armor</label>
+          </td>
+        </tr>
+        <tr>
+          <td title="Equip all Lv50 passives (20CP)">
+            <input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">
+            <label for="addP">Lv50 Passives</label>
+        </td>
+          <td title="Equip 4* weapon and armor passives (7CP)">
+            <input type="checkbox" id="addF" :disabled="params.baseOnly ? true : false" v-model="params.addFourStar">
+            <label for="addF">4* Passives</label>
+          </td>
+        </tr>
+        <tr>
+          <td title="Equip ATK passives only">
+            <input type="checkbox" id="addATK" :disabled="params.baseOnly ? true : false" v-model="params.ATKOnly">
+            <label for="addATK">ATK only</label>
+          </td>
+          <td title="Enable synergy">
+            <input type="checkbox" id="addS" :disabled="params.baseOnly ? true : false" v-model="params.addSynergy">
+            <label for="addS">Synergy</label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <vue-good-table
       :columns="columns"
       :rows="characters"
       :globalSearch="true"
       :lineNumbers="false"
-      :defaultSortBy="{field: 'id', type: 'asc'}"
+      :defaultSortBy="{field: 'id', type: 'desc'}"
       globalSearchPlaceholder="Search by character, attribute or stat"
       styleClass="ranking-table">
       <template slot="table-row" slot-scope="props">
@@ -58,6 +78,7 @@
         <td>
           <span :class="isExtremum('DEF', props.row.full.DEF)">{{ props.row.full.DEF }}</span>
         </td>
+        <td>{{ baseStatsTotal(props.row) }}</td>
       </template>
       <div slot="emptystate" class="ranking-disclaimer">
         No results
@@ -74,11 +95,13 @@ export default {
       unfinishedClass: 'exclusiveMissing',
       params: {
         baseOnly: true,
+        addAwakening: true,
         addWeapon: false,
         addArmor: false,
         addPassives: false,
         addFourStar: false,
-        addSynergy: false
+        addSynergy: false,
+        ATKOnly: false
       },
       minMaxValues: {},
       columns: [
@@ -147,6 +170,14 @@ export default {
           filterable: true,
           hidden: false,
           sortable: true
+        },
+        {
+          label: 'BST',
+          field: this.baseStatsTotal,
+          type: 'number',
+          filterable: false,
+          hidden: false,
+          sortable: true
         }
       ],
       characters: []
@@ -154,18 +185,17 @@ export default {
   },
   methods: {
     setCharactersTable: function () {
-      if (require('../assets/data.json') !== undefined) {
+      try {
         this.characters = require('../assets/data.json')
-      } else {
-        this.characters = []
-        console.log("Can't find data.json")
+      } catch (e) {
+        console.log('Unable to load database.')
       }
     },
     characterIcon: function (character) {
       let slug = character.toLowerCase().split(' ').join('_').split('\'').join('')
-      if (require('../assets/icons/' + slug + '.png') !== undefined) {
+      try {
         return require('../assets/icons/' + slug + '.png')
-      } else {
+      } catch (e) {
         return null
       }
     },
@@ -186,6 +216,9 @@ export default {
             fullStat += this.characters[index].armor.bonus[prop]
           }
         }
+        if (this.params.ATKOnly && prop !== 'ATK') {
+          return fullStat
+        }
         if (this.characters[index].awakeningPassives !== undefined && this.params.addPassives) {
           if (prop === 'HP' || prop === 'mBRV') {
             fullStat += (this.characters[index].awakeningPassives[prop] * 3)
@@ -204,8 +237,27 @@ export default {
       }
       return fullStat
     },
+    addAwakeningStats: function (prop, index) {
+      let baseStat = this.characters[index].base[prop]
+      if (!this.params.addAwakening) {
+        switch (prop) {
+          case 'iBRV':
+            return baseStat
+          case 'mBRV':
+            baseStat -= parseInt(Math.ceil(this.characters[index].awakeningPassives[prop] / 2) * 9)
+            return baseStat
+          case 'HP':
+            baseStat -= parseInt(((this.characters[index].awakeningPassives[prop] + 100) / 2) * 10)
+            return baseStat
+          default:
+            baseStat -= parseInt((this.characters[index].awakeningPassives[prop] / 2) * 10)
+            return baseStat
+        }
+      }
+      return baseStat
+    },
     getBaseSynergyValue: function (prop, index) {
-      let baseSynergyVal = this.characters[index].base[prop]
+      let baseSynergyVal = this.addAwakeningStats(prop, index)
       if (this.params.addSynergy && !this.params.baseOnly) {
         baseSynergyVal += parseInt(this.characters[index].base[prop] * 0.5)
       }
@@ -243,6 +295,9 @@ export default {
         this.characters[i].full.ATK = this.fullStat('ATK', i)
         this.characters[i].full.DEF = this.fullStat('DEF', i)
       }
+    },
+    baseStatsTotal: function (row) {
+      return parseInt(row.base.HP + row.base.iBRV + row.base.mBRV + row.base.ATK + row.base.DEF)
     },
     setupStats: function () {
       this.prepareFullStats()
@@ -452,11 +507,20 @@ input[type=checkbox] {
   width: 16px;
 }
 
-.base-checkbox, .gear-checkboxes, .passive-checkboxes {
+.additional-options tr, .base-checkbox {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 5px;
   font-family: 'Open Sans', sans-serif;
+}
+
+.additional-options {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.additional-options td {
+  text-align: left;
 }
 
 /* Markers */
@@ -541,6 +605,12 @@ input[type=checkbox] {
 
   tbody tr {
     box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ranking-table tr th:nth-child(9), .ranking-table tr td:nth-child(9) {
+    display: none;
   }
 }
 
