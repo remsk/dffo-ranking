@@ -54,7 +54,7 @@
       styleClass="ranking-table">
       <template slot="table-row" slot-scope="props">
         <td :title="props.row.character" :class="isFinished(props.row)">
-          <span class="icon" :style="{ backgroundImage: 'url(' + characterIcon(props.row.character) + ')'}"></span>
+          <span class="icon" :style="characterIcon(props.row.character) ? { backgroundImage: 'url(' + characterIcon(props.row.character) + ')'} : false"></span>
           {{ props.row.character }}
         </td>
         <td>{{ props.row.series.name }}</td>
@@ -78,7 +78,7 @@
         <td>
           <span :class="isExtremum('DEF', props.row.full.DEF)">{{ props.row.full.DEF }}</span>
         </td>
-        <td>{{ baseStatsTotal(props.row) }}</td>
+        <td class="bst"><span>{{ baseStatsTotal(props.row) }}</span></td>
       </template>
       <div slot="emptystate" class="ranking-disclaimer">
         No results
@@ -196,7 +196,7 @@ export default {
       try {
         return require('../assets/icons/' + slug + '.png')
       } catch (e) {
-        return null
+        return false
       }
     },
     fullStat: function (prop, index) {
@@ -537,6 +537,15 @@ input[type=checkbox] {
   font-size: 12px;
 }
 
+.bst {
+  background-color: rgba(39, 49, 83, 0.2);
+}
+
+.bst span {
+  color: rgb(39, 49, 83);
+  font-weight: bold;
+}
+
 .exclusiveMissing:after {
   content: '\2718';
   display: inline-block;
@@ -603,8 +612,8 @@ input[type=checkbox] {
     box-shadow: none;
   }
 
-  tbody tr {
-    box-shadow: none;
+  tbody tr, thead tr {
+    box-shadow: none !important;
   }
 }
 

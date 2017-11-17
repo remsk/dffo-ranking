@@ -1314,61 +1314,6 @@
 		}
 	},
 	{
-		"id": 68,
-		"character": "Kefka",
-		"role": null,
-		"series": {
-			"id": 6,
-			"name": "FF6"
-		},
-		"attributes": null,
-		"full": {
-			"HP": 0,
-			"iBRV": 0,
-			"mBRV": 0,
-			"ATK": 0,
-			"DEF": 0
-		},
-		"base": {
-			"HP": 0,
-			"iBRV": 0,
-			"mBRV": 0,
-			"ATK": 0,
-			"DEF": 0
-		},
-		"weaponType": "Spear",
-		"exclusiveWeapon": {
-			"name": null,
-			"stats": {
-				"HP": 0,
-				"iBRV": 0,
-				"mBRV": 0,
-				"ATK": 0,
-				"DEF": 0
-			}
-		},
-		"armor": {
-			"name": null,
-			"stats": {
-				"HP": 0,
-				"iBRV": 0,
-				"mBRV": 0,
-				"ATK": 0,
-				"DEF": 0
-			},
-			"bonus": {
-				"HP": 0,
-				"ATK": 0
-			}
-		},
-		"awakeningPassives": {
-			"HP": 0,
-			"mBRV": 0,
-			"ATK": 0,
-			"DEF": 0
-		}
-	},
-	{
 		"id": 16,
 		"character": "King",
 		"role": null,
