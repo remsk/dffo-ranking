@@ -23,6 +23,7 @@
 		},
 		"weaponType": "Throwing Weapon",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 87,
 				"iBRV": 270,
@@ -32,6 +33,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 0,
 				"iBRV": 0,
@@ -81,6 +83,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 107,
 				"iBRV": 273,
@@ -90,6 +93,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 20,
 				"iBRV": 0,
@@ -134,6 +138,7 @@
 		},
 		"weaponType": "Heavy Sword",
 		"exclusiveWeapon": {
+			"name": "Defender",
 			"stats": {
 				"HP": 109,
 				"iBRV": 270,
@@ -143,6 +148,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 41,
 				"iBRV": 0,
@@ -187,6 +193,7 @@
 		},
 		"weaponType": "Heavy Sword",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 84,
 				"iBRV": 273,
@@ -196,6 +203,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 31,
 				"iBRV": 0,
@@ -240,6 +248,7 @@
 		},
 		"weaponType": "Gun",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 115,
 				"iBRV": 273,
@@ -249,6 +258,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 32,
 				"iBRV": 0,
@@ -301,6 +311,7 @@
 		},
 		"weaponType": "Sword",
 		"exclusiveWeapon": {
+			"name": "Mithril Sword",
 			"stats": {
 				"HP": 103,
 				"iBRV": 270,
@@ -310,6 +321,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 50,
 				"iBRV": 0,
@@ -362,6 +374,7 @@
 		},
 		"weaponType": "Gun",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 117,
 				"iBRV": 276,
@@ -371,6 +384,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 61,
 				"iBRV": 0,
@@ -415,6 +429,7 @@
 		},
 		"weaponType": "Heavy Sword",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 103,
 				"iBRV": 230,
@@ -424,6 +439,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 78,
 				"iBRV": 0,
@@ -476,6 +492,7 @@
 		},
 		"weaponType": "Heavy Sword",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 120,
 				"iBRV": 273,
@@ -485,6 +502,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 41,
 				"iBRV": 0,
@@ -529,6 +547,7 @@
 		},
 		"weaponType": "Heavy Sword",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 90,
 				"iBRV": 270,
@@ -538,6 +557,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 29,
 				"iBRV": 0,
@@ -590,6 +610,7 @@
 		},
 		"weaponType": "Heavy Sword",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 102,
 				"iBRV": 273,
@@ -599,6 +620,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 76,
 				"iBRV": 0,
@@ -648,6 +670,7 @@
 		},
 		"weaponType": "Spear",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 97,
 				"iBRV": 270,
@@ -657,6 +680,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 33,
 				"iBRV": 0,
@@ -706,6 +730,7 @@
 		},
 		"weaponType": "Dagger",
 		"exclusiveWeapon": {
+			"name": "Ashura",
 			"stats": {
 				"HP": 113,
 				"iBRV": 273,
@@ -715,6 +740,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 32,
 				"iBRV": 0,
@@ -767,6 +793,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 122,
 				"iBRV": 276,
@@ -776,6 +803,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 55,
 				"iBRV": 0,
@@ -828,6 +856,7 @@
 		},
 		"weaponType": "Dagger",
 		"exclusiveWeapon": {
+			"name": "Orichalcum Dirk",
 			"stats": {
 				"HP": 115,
 				"iBRV": 273,
@@ -837,6 +866,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 45,
 				"iBRV": 0,
@@ -889,6 +919,7 @@
 		},
 		"weaponType": "Sword",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 101,
 				"iBRV": 221,
@@ -898,6 +929,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 0,
 				"iBRV": 0,
@@ -950,6 +982,7 @@
 		},
 		"weaponType": "Throwing Weapon",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 117,
 				"iBRV": 273,
@@ -959,6 +992,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 37,
 				"iBRV": 0,
@@ -1008,6 +1042,7 @@
 		},
 		"weaponType": "Heavy Sword",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 120,
 				"iBRV": 183,
@@ -1017,6 +1052,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 50,
 				"iBRV": 0,
@@ -1069,6 +1105,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 120,
 				"iBRV": 276,
@@ -1078,6 +1115,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 31,
 				"iBRV": 0,
@@ -1122,6 +1160,7 @@
 		},
 		"weaponType": "Throwing Weapon",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 128,
 				"iBRV": 273,
@@ -1131,6 +1170,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 54,
 				"iBRV": 0,
@@ -1183,6 +1223,7 @@
 		},
 		"weaponType": "Gun",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 94,
 				"iBRV": 270,
@@ -1192,6 +1233,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 0,
 				"iBRV": 0,
@@ -1241,6 +1283,7 @@
 		},
 		"weaponType": "Spear",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 109,
 				"iBRV": 270,
@@ -1250,6 +1293,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 61,
 				"iBRV": 0,
@@ -1267,6 +1311,61 @@
 			"mBRV": 95,
 			"ATK": 36,
 			"DEF": 38
+		}
+	},
+	{
+		"id": 68,
+		"character": "Kefka",
+		"role": null,
+		"series": {
+			"id": 6,
+			"name": "FF6"
+		},
+		"attributes": null,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"weaponType": "Spear",
+		"exclusiveWeapon": {
+			"name": null,
+			"stats": {
+				"HP": 0,
+				"iBRV": 0,
+				"mBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			}
+		},
+		"armor": {
+			"name": null,
+			"stats": {
+				"HP": 0,
+				"iBRV": 0,
+				"mBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"bonus": {
+				"HP": 0,
+				"ATK": 0
+			}
+		},
+		"awakeningPassives": {
+			"HP": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
 		}
 	},
 	{
@@ -1294,6 +1393,7 @@
 		},
 		"weaponType": "Gun",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 115,
 				"iBRV": 220,
@@ -1303,6 +1403,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 63,
 				"iBRV": 0,
@@ -1355,6 +1456,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 128,
 				"iBRV": 276,
@@ -1364,6 +1466,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 56,
 				"iBRV": 0,
@@ -1408,6 +1511,7 @@
 		},
 		"weaponType": "Other",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 107,
 				"iBRV": 273,
@@ -1417,6 +1521,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 26,
 				"iBRV": 0,
@@ -1461,6 +1566,7 @@
 		},
 		"weaponType": "Gun",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 103,
 				"iBRV": 184,
@@ -1470,6 +1576,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 70,
 				"iBRV": 0,
@@ -1522,6 +1629,7 @@
 		},
 		"weaponType": "Throwing Weapon",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 103,
 				"iBRV": 220,
@@ -1531,6 +1639,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 41,
 				"iBRV": 0,
@@ -1583,6 +1692,7 @@
 		},
 		"weaponType": "Sword",
 		"exclusiveWeapon": {
+			"name": "Flamberge",
 			"stats": {
 				"HP": 98,
 				"iBRV": 276,
@@ -1592,6 +1702,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 28,
 				"iBRV": 0,
@@ -1641,6 +1752,7 @@
 		},
 		"weaponType": "Dagger",
 		"exclusiveWeapon": {
+			"name": "Misericorde",
 			"stats": {
 				"HP": 108,
 				"iBRV": 233,
@@ -1650,6 +1762,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 74,
 				"iBRV": 0,
@@ -1694,6 +1807,7 @@
 		},
 		"weaponType": "Bow",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 116,
 				"iBRV": 273,
@@ -1703,6 +1817,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 64,
 				"iBRV": 0,
@@ -1747,6 +1862,7 @@
 		},
 		"weaponType": "Sword",
 		"exclusiveWeapon": {
+			"name": "Wightslayer",
 			"stats": {
 				"HP": 105,
 				"iBRV": 273,
@@ -1756,6 +1872,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 30,
 				"iBRV": 0,
@@ -1808,6 +1925,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 82,
 				"iBRV": 276,
@@ -1817,6 +1935,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 24,
 				"iBRV": 0,
@@ -1861,6 +1980,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 113,
 				"iBRV": 273,
@@ -1870,6 +1990,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 51,
 				"iBRV": 0,
@@ -1919,6 +2040,7 @@
 		},
 		"weaponType": "Dagger",
 		"exclusiveWeapon": {
+			"name": "Platinum Dagger",
 			"stats": {
 				"HP": 132,
 				"iBRV": 276,
@@ -1928,6 +2050,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 37,
 				"iBRV": 0,
@@ -1980,6 +2103,7 @@
 		},
 		"weaponType": "Fists",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 105,
 				"iBRV": 270,
@@ -1989,6 +2113,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 50,
 				"iBRV": 0,
@@ -2041,6 +2166,7 @@
 		},
 		"weaponType": "Whip",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 103,
 				"iBRV": 273,
@@ -2050,6 +2176,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 43,
 				"iBRV": 0,
@@ -2094,6 +2221,7 @@
 		},
 		"weaponType": "Spear",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 87,
 				"iBRV": 233,
@@ -2103,6 +2231,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 39,
 				"iBRV": 0,
@@ -2152,6 +2281,7 @@
 		},
 		"weaponType": "Sword",
 		"exclusiveWeapon": {
+			"name": "Platinum Sword",
 			"stats": {
 				"HP": 109,
 				"iBRV": 270,
@@ -2161,6 +2291,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 27,
 				"iBRV": 0,
@@ -2210,6 +2341,7 @@
 		},
 		"weaponType": "Dagger",
 		"baseWeapon": {
+			"name": "Survival Edge",
 			"stats": {
 				"HP": 128,
 				"iBRV": 221,
@@ -2219,6 +2351,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 28,
 				"iBRV": 0,
@@ -2271,6 +2404,7 @@
 		},
 		"weaponType": "Fists",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 90,
 				"iBRV": 273,
@@ -2280,6 +2414,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 47,
 				"iBRV": 0,
@@ -2324,6 +2459,7 @@
 		},
 		"weaponType": "Gun",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 112,
 				"iBRV": 220,
@@ -2333,6 +2469,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 62,
 				"iBRV": 0,
@@ -2385,6 +2522,7 @@
 		},
 		"weaponType": "Heavy Sword",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 107,
 				"iBRV": 233,
@@ -2394,6 +2532,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 34,
 				"iBRV": 0,
@@ -2443,6 +2582,7 @@
 		},
 		"weaponType": "Bow",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 125,
 				"iBRV": 273,
@@ -2452,6 +2592,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 68,
 				"iBRV": 0,
@@ -2501,6 +2642,7 @@
 		},
 		"weaponType": "Throwing Weapon",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 130,
 				"iBRV": 276,
@@ -2510,6 +2652,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 52,
 				"iBRV": 0,
@@ -2562,6 +2705,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 78,
 				"iBRV": 273,
@@ -2571,6 +2715,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 28,
 				"iBRV": 0,
@@ -2620,6 +2765,7 @@
 		},
 		"weaponType": "Throwing Weapon",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 142,
 				"iBRV": 223,
@@ -2629,6 +2775,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 71,
 				"iBRV": 0,
@@ -2681,6 +2828,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 81,
 				"iBRV": 233,
@@ -2690,6 +2838,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 48,
 				"iBRV": 0,
@@ -2742,6 +2891,7 @@
 		},
 		"weaponType": "Fists",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 134,
 				"iBRV": 273,
@@ -2751,6 +2901,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 71,
 				"iBRV": 0,
@@ -2795,6 +2946,7 @@
 		},
 		"weaponType": "Heavy Sword",
 		"exclusiveWeapon": {
+			"name": "Cutting Trigger",
 			"stats": {
 				"HP": 80,
 				"iBRV": 233,
@@ -2804,6 +2956,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 44,
 				"iBRV": 0,
@@ -2856,6 +3009,7 @@
 		},
 		"weaponType": "Heavy Sword",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 112,
 				"iBRV": 230,
@@ -2865,6 +3019,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 72,
 				"iBRV": 0,
@@ -2917,6 +3072,7 @@
 		},
 		"weaponType": "Dagger",
 		"exclusiveWeapon": {
+			"name": "Yoshimitsu",
 			"stats": {
 				"HP": 112,
 				"iBRV": 273,
@@ -2926,6 +3082,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 0,
 				"iBRV": 0,
@@ -2970,6 +3127,7 @@
 		},
 		"weaponType": "Sword",
 		"exclusiveWeapon": {
+			"name": "Brotherhood",
 			"stats": {
 				"HP": 115,
 				"iBRV": 273,
@@ -2979,6 +3137,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 40,
 				"iBRV": 0,
@@ -3031,6 +3190,7 @@
 		},
 		"weaponType": "Fists",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 101,
 				"iBRV": 220,
@@ -3040,6 +3200,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 32,
 				"iBRV": 0,
@@ -3092,6 +3253,7 @@
 		},
 		"weaponType": "Sword",
 		"exclusiveWeapon": {
+			"name": "Enhancer",
 			"stats": {
 				"HP": 80,
 				"iBRV": 276,
@@ -3101,6 +3263,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 0,
 				"iBRV": 0,
@@ -3153,6 +3316,7 @@
 		},
 		"weaponType": "Sword",
 		"exclusiveWeapon": {
+			"name": "Zwill Blade",
 			"stats": {
 				"HP": 90,
 				"iBRV": 273,
@@ -3162,6 +3326,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 22,
 				"iBRV": 0,
@@ -3214,6 +3379,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 125,
 				"iBRV": 276,
@@ -3223,6 +3389,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 28,
 				"iBRV": 0,
@@ -3275,6 +3442,7 @@
 		},
 		"weaponType": "Gun",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 84,
 				"iBRV": 183,
@@ -3284,6 +3452,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 18,
 				"iBRV": 0,
@@ -3336,6 +3505,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 80,
 				"iBRV": 233,
@@ -3345,6 +3515,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 28,
 				"iBRV": 0,
@@ -3397,6 +3568,7 @@
 		},
 		"weaponType": "Throwing Weapon",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 100,
 				"iBRV": 184,
@@ -3406,6 +3578,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 53,
 				"iBRV": 0,
@@ -3458,6 +3631,7 @@
 		},
 		"weaponType": "Sword",
 		"exclusiveWeapon": {
+			"name": "Flame Sword",
 			"stats": {
 				"HP": 132,
 				"iBRV": 276,
@@ -3467,6 +3641,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 52,
 				"iBRV": 0,
@@ -3519,6 +3694,7 @@
 		},
 		"weaponType": "Fists",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 92,
 				"iBRV": 183,
@@ -3528,6 +3704,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 78,
 				"iBRV": 0,
@@ -3580,6 +3757,7 @@
 		},
 		"weaponType": "Fists",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 100,
 				"iBRV": 233,
@@ -3589,6 +3767,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 26,
 				"iBRV": 0,
@@ -3641,6 +3820,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 150,
 				"iBRV": 276,
@@ -3650,6 +3830,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 86,
 				"iBRV": 0,
@@ -3702,6 +3883,7 @@
 		},
 		"weaponType": "Throwing Weapon",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 128,
 				"iBRV": 220,
@@ -3711,6 +3893,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 48,
 				"iBRV": 0,
@@ -3763,6 +3946,7 @@
 		},
 		"weaponType": "Staff",
 		"exclusiveWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 172,
 				"iBRV": 276,
@@ -3772,6 +3956,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 100,
 				"iBRV": 0,
@@ -3824,6 +4009,7 @@
 		},
 		"weaponType": "Fists",
 		"baseWeapon": {
+			"name": null,
 			"stats": {
 				"HP": 117,
 				"iBRV": 183,
@@ -3833,6 +4019,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 85,
 				"iBRV": 0,
@@ -3885,6 +4072,7 @@
 		},
 		"weaponType": "Dagger",
 		"exclusiveWeapon": {
+			"name": "Butterfly Sword",
 			"stats": {
 				"HP": 115,
 				"iBRV": 230,
@@ -3894,6 +4082,7 @@
 			}
 		},
 		"armor": {
+			"name": null,
 			"stats": {
 				"HP": 53,
 				"iBRV": 0,
