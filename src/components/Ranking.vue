@@ -96,9 +96,9 @@ export default {
       params: {
         baseOnly: true,
         addAwakening: true,
-        addWeapon: false,
-        addArmor: false,
-        addPassives: false,
+        addWeapon: true,
+        addArmor: true,
+        addPassives: true,
         addFourStar: false,
         addSynergy: false,
         ATKOnly: false
@@ -110,8 +110,7 @@ export default {
           field: 'id',
           type: 'number',
           filterable: false,
-          hidden: true,
-          sortable: false
+          hidden: true
         },
         {
           label: 'Character',
@@ -250,7 +249,7 @@ export default {
             baseStat -= parseInt(((this.characters[index].awakeningPassives[prop] + 100) / 2) * 10)
             return baseStat
           default:
-            baseStat -= parseInt((this.characters[index].awakeningPassives[prop] / 2) * 10)
+            baseStat -= parseInt(Math.ceil(this.characters[index].awakeningPassives[prop] / 2) * 10)
             return baseStat
         }
       }
