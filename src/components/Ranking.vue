@@ -50,6 +50,7 @@
       :globalSearch="true"
       :lineNumbers="false"
       :defaultSortBy="{field: 'id', type: 'desc'}"
+      secondarySortType="asc"
       globalSearchPlaceholder="Search by character, attribute or stat"
       styleClass="ranking-table">
       <template slot="table-row" slot-scope="props">
