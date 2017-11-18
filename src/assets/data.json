@@ -1314,6 +1314,61 @@
 		}
 	},
 	{
+		"id": 68,
+		"character": "Kefka",
+		"role": null,
+		"series": {
+			"id": 6,
+			"name": "FF6"
+		},
+		"attributes": null,
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 4062,
+			"iBRV": 831,
+			"mBRV": 1437,
+			"ATK": 500,
+			"DEF": 480
+		},
+		"weaponType": "Other",
+		"exclusiveWeapon": {
+			"name": null,
+			"stats": {
+				"HP": 102,
+				"iBRV": 276,
+				"mBRV": 2925,
+				"ATK": 957,
+				"DEF": 56
+			}
+		},
+		"armor": {
+			"name": null,
+			"stats": {
+				"HP": 41,
+				"iBRV": 0,
+				"mBRV": 61,
+				"ATK": 27,
+				"DEF": 870
+			},
+			"bonus": {
+				"iBRV": 110,
+				"ATK": 72
+			}
+		},
+		"awakeningPassives": {
+			"HP": 300,
+			"mBRV": 105,
+			"ATK": 36,
+			"DEF": 34
+		}
+	},
+	{
 		"id": 16,
 		"character": "King",
 		"role": null,
@@ -3141,6 +3196,16 @@
 				"iBRV": 220,
 				"mBRV": 2616,
 				"ATK": 854,
+				"DEF": 58
+			}
+		},
+		"exclusiveWeapon": {
+			"name": null,
+			"stats": {
+				"HP": 101,
+				"iBRV": 270,
+				"mBRV": 2925,
+				"ATK": 957,
 				"DEF": 58
 			}
 		},
