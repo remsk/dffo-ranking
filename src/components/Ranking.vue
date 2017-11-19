@@ -354,7 +354,7 @@ div.ranking {
   box-shadow: inset 0 0 10px #000000;
 }
 
-h2 {
+ h2 {
   font-family: 'Karla', sans-serif;
   text-transform: uppercase;
 }
@@ -366,8 +366,28 @@ div.notes {
   padding: 0 15px;
 }
 
-div.notes p {
+p {
   margin: 2.5px auto;
+}
+
+input[type=checkbox] {
+  width: 16px;
+}
+
+.additional-options tr, .base-checkbox {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.additional-options {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.additional-options td {
+  text-align: left;
 }
 
 /* Ranking Table styles */
@@ -513,26 +533,6 @@ input[type=checkbox], label {
   height: 16px;
   vertical-align: top;
   display: inline-block;
-}
-
-input[type=checkbox] {
-  width: 16px;
-}
-
-.additional-options tr, .base-checkbox {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 5px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.additional-options {
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-.additional-options td {
-  text-align: left;
 }
 
 /* Markers */
