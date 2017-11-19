@@ -13,17 +13,17 @@
     <table class="additional-options" v-if="!params.baseOnly">
       <tbody>
         <tr>
-          <td title="Equip exclusive weapon">
+          <td title="Equip 6* exclusive weapon">
             <input type="checkbox" id="addW" :disabled="params.baseOnly ? true : false" v-model="params.addWeapon">
-            <label for="addW">35cp stats</label>
+            <label for="addW">Weapon</label>
           </td>
-          <td title="Equip 5* armor and its passive">
+          <td title="Equip 6* armor and its passive">
             <input type="checkbox" id="addA" :disabled="params.baseOnly ? true : false" v-model="params.addArmor">
-            <label for="addA">5* armor</label>
+            <label for="addA">Armor</label>
           </td>
         </tr>
         <tr>
-          <td title="Equip all Lv50 passives (20CP)">
+          <td title="Equip Lv5 to Lv50 stat passives (20CP)">
             <input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">
             <label for="addP">Lv50 Passives</label>
         </td>
@@ -37,7 +37,7 @@
             <input type="checkbox" id="addATK" :disabled="params.baseOnly ? true : false" v-model="params.ATKOnly">
             <label for="addATK">ATK only</label>
           </td>
-          <td title="Enable synergy">
+          <td title="Enable synergy bonus">
             <input type="checkbox" id="addS" :disabled="params.baseOnly ? true : false" v-model="params.addSynergy">
             <label for="addS">Synergy</label>
           </td>
@@ -53,6 +53,9 @@
       secondarySortType="asc"
       globalSearchPlaceholder="Search by character, attribute or stat"
       styleClass="ranking-table">
+      <template slot="table-column" slot-scope="props">
+        <span :title="(props.column.label === 'BST' ? 'Base stats total' : false)">{{ props.column.label }}</span>
+      </template>
       <template slot="table-row" slot-scope="props">
         <td :title="props.row.character" :class="isFinished(props.row)">
           <span class="icon" :style="characterIcon(props.row.character) ? { backgroundImage: 'url(' + characterIcon(props.row.character) + ')'} : false"></span>
@@ -61,7 +64,7 @@
         <td>{{ props.row.series.name }}</td>
         <td class="attributes">
           <template v-for="attribute in props.row.attributes">
-            <span :title="attribute" :class="attribute"></span> 
+            <span :title="attribute" class="attribute" :style="attributeIcon(attribute) ? { backgroundImage: 'url(' + attributeIcon(attribute) + ')'} : false"></span> 
           </template>
         </td>
         <td>
@@ -81,7 +84,7 @@
         </td>
         <td class="bst"><span>{{ baseStatsTotal(props.row) }}</span></td>
       </template>
-      <div slot="emptystate" class="ranking-disclaimer">
+      <div slot="emptystate" class="empty">
         No results
       </div>
     </vue-good-table>
@@ -175,7 +178,7 @@ export default {
           label: 'BST',
           field: this.baseStatsTotal,
           type: 'number',
-          filterable: false,
+          filterable: true,
           hidden: false,
           sortable: true
         }
@@ -186,7 +189,7 @@ export default {
   methods: {
     setCharactersTable: function () {
       try {
-        this.characters = require('../assets/data.json')
+        this.characters = require('../../static/db/data.json')
       } catch (e) {
         console.log('Unable to load database.')
       }
@@ -194,7 +197,15 @@ export default {
     characterIcon: function (character) {
       let slug = character.toLowerCase().split(' ').join('_').split('\'').join('')
       try {
-        return require('../assets/icons/' + slug + '.png')
+        return require('../../static/assets/icons/characters/' + slug + '.png')
+      } catch (e) {
+        return false
+      }
+    },
+    attributeIcon: function (attribute) {
+      let slug = attribute.toLowerCase().split(' ').join('_').split('\'').join('')
+      try {
+        return require('../../static/assets/icons/attributes/' + slug + '.png')
       } catch (e) {
         return false
       }
@@ -339,7 +350,7 @@ div.ranking {
   background-color: #43517a;
   margin: 0 auto;
   border-radius: 5px;
-  padding: 15px 5px;
+  padding: 15px;
   box-shadow: inset 0 0 10px #000000;
 }
 
@@ -363,7 +374,6 @@ div.notes p {
 
 .ranking-table {
   text-align: center;
-  max-width: 900px;
   font-size: 14px;
   margin: 0 auto;
 }
@@ -441,8 +451,10 @@ div.notes p {
   margin: 0 auto;
 }
 
-.ranking-table th.ranking-disclaimer {
-  font-size: 11px;
+.ranking-table div.empty {
+  font-size: 14px;
+  padding: 10px 5px;
+  padding-top: 7px;
 }
 
 .ranking-table td.attributes span {
@@ -528,13 +540,13 @@ input[type=checkbox] {
 .highest {
   color: #d32f2f;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.15em;
 }
 
 .lowest {
   color: #303f9f;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.85em;
 }
 
 .bst {
@@ -551,52 +563,7 @@ input[type=checkbox] {
   display: inline-block;
 }
 
-/* Attribute classes */
-
-.Dark {
-  background-image: url('../assets/dark.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.Holy {
-  background-image: url('../assets/holy.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.Earth {
-  background-image: url('../assets/earth.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.Wind {
-  background-image: url('../assets/wind.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.Water {
-  background-image: url('../assets/water.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.Thunder {
-  background-image: url('../assets/thunder.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.Ice {
-  background-image: url('../assets/ice.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.Fire {
-  background-image: url('../assets/fire.png');
+.attribute {
   background-position: center;
   background-size: cover;
 }
@@ -636,18 +603,29 @@ input[type=checkbox] {
     font-size: 12px;
   }
 
-  .highest {
-    font-size: 14px;
-  }
-
-  .lowest {
-    font-size: 10px;
+  .ranking-table th.sorting-asc:after, .ranking-table th.sorting-desc:after {
+    margin: 5px 4px !important;
+    border-width: 4px !important;
   }
 
   .exclusiveMissing:after {
     content: '\2718';
     display: inline-block;
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .ranking-table td span.icon {
+    width: 49.875px;
+    height: 33.75px;
+  }
+
+  .ranking-table td {
+    font-size: 0.75em;
+    padding: 3px;
+    padding-top: 6px;
   }
 }
 </style>

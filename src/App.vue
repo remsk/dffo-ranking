@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/logo.png">
+    <a href="/" class="logo"><img title="DFF OPERA OMNIA" src="../static/assets/logo.png"></a>
     <Ranking/>
   </div>
 </template>
@@ -19,10 +19,9 @@ export default {
 <style>
 body {
   background-color: #0b0b0b;
-  background-image: url('./assets/bg_under_repeat.jpg');
+  background-image: url('../static/assets/bg.jpg');
   background-repeat: repeat-y;
   background-position: top center;
-  background-size: cover;
 }
 
 #app {
@@ -33,8 +32,20 @@ body {
   color: #cfd8dc;
 }
 
-.logo {
-  max-width: 514px;
+a.logo {
+  display: block;
+  margin: 15px auto;
+  max-width: 430px;
+  line-height: 0;
+}
+
+a.logo img {
   width: 100%;
+}
+
+@media screen and (min-width: 1800px) {
+  body {
+    background-size: cover;
+  }
 }
 </style>
