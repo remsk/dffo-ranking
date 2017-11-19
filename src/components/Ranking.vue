@@ -189,7 +189,7 @@ export default {
   methods: {
     setCharactersTable: function () {
       try {
-        this.characters = require('./data.json')
+        this.characters = require('../data.json')
       } catch (e) {
         console.log('Unable to load database.')
       }
@@ -197,7 +197,7 @@ export default {
     characterIcon: function (character) {
       let slug = character.toLowerCase().split(' ').join('_').split('\'').join('')
       try {
-        return require('./images/icons/characters/' + slug + '.png')
+        return require('../images/icons/characters/' + slug + '.png')
       } catch (e) {
         return false
       }
@@ -205,7 +205,7 @@ export default {
     attributeIcon: function (attribute) {
       let slug = attribute.toLowerCase().split(' ').join('_').split('\'').join('')
       try {
-        return require('./images/icons/attributes/' + slug + '.png')
+        return require('../images/icons/attributes/' + slug + '.png')
       } catch (e) {
         return false
       }

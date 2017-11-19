@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <a href="/" class="logo"><img title="DFF OPERA OMNIA" src="../static/assets/logo.png"></a>
+    <a href="/" class="logo"><img title="DFF OPERA OMNIA" src="./images/logo.png"></a>
     <Ranking/>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
 <style>
 body {
   background-color: #0b0b0b;
-  background-image: url('../static/assets/bg.jpg');
+  background-image: url('./images/bg.jpg');
   background-repeat: repeat-y;
   background-position: top center;
 }
