@@ -63,8 +63,8 @@
         </td>
         <td>{{ props.row.series.name }}</td>
         <td class="attributes">
-          <template v-for="attribute in props.row.attributes">
-            <span :title="attribute" class="attribute" :style="attributeIcon(attribute) ? { backgroundImage: 'url(' + attributeIcon(attribute) + ')'} : false"></span> 
+          <template v-if="props.row.attributes.length > 0">
+            <span v-for="attribute in props.row.attributes" :title="attribute" class="attribute" :style="attributeIcon(attribute) ? { backgroundImage: 'url(' + attributeIcon(attribute) + ')'} : false"></span> 
           </template>
         </td>
         <td>
@@ -506,7 +506,6 @@ input[type=checkbox] {
   overflow: hidden !important;
 }
 
-
 /* Inputs */
 
 input[type=text] {
@@ -585,15 +584,18 @@ input[type=checkbox], label {
 }
 
 @media screen and (max-width: 768px) {
-  .ranking-table tr th:nth-child(9), .ranking-table tr td:nth-child(9) {
+  .ranking-table tr th:nth-child(10), .ranking-table tr td:nth-child(10) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .ranking-table tr th:nth-child(3), .ranking-table tr td:nth-child(3), .ranking-table tr th:nth-child(4), .ranking-table tr td:nth-child(4) {
     display: none;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .ranking-table tr th:nth-child(2), .ranking-table tr td:nth-child(2), .ranking-table tr th:nth-child(3), .ranking-table tr td:nth-child(3) {
-    display: none;
-  }
 
   .ranking-table th span {
     font-size: 10px;
@@ -626,6 +628,12 @@ input[type=checkbox], label {
     font-size: 0.75em;
     padding: 3px;
     padding-top: 6px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .ranking-table tr th:nth-child(2), .ranking-table tr td:nth-child(2) {
+    display: none;
   }
 }
 </style>
