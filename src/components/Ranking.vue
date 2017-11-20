@@ -584,7 +584,7 @@ input[type=checkbox], label {
 }
 
 @media screen and (max-width: 768px) {
-  .ranking-table tr th:nth-child(10), .ranking-table tr td:nth-child(10) {
+  .ranking-table tr th:nth-child(9), .ranking-table tr td:nth-child(9) {
     display: none;
   }
 }

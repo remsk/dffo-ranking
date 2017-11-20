@@ -2,6 +2,7 @@
   <div id="app">
     <a href="/" class="logo"><img title="DFF OPERA OMNIA" src="./images/logo.png"></a>
     <Ranking/>
+    <footer>All materials are the property of KOEI TECMO GAMES/SQUARE ENIX CO., LTD. All Rights Reserved. </footer>
   </div>
 </template>
 
@@ -41,6 +42,11 @@ a.logo {
 
 a.logo img {
   width: 100%;
+}
+
+footer {
+  font-size: 12px;
+  padding: 5px 15px;
 }
 
 @media screen and (min-width: 1800px) {
