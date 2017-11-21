@@ -12,8 +12,8 @@
     </div>
 
     <div class="ranking-options">
-      <label for="lv50"><input type="radio" id="lv50" v-model="params.lv60ready" :value="false">Lv50</label>
-      <label for="lv60"><input type="radio" id="lv60" v-model="params.lv60ready" :value="true">Lv60</label>
+      <label title="Show all characters" for="lv50"><input type="radio" id="lv50" v-model="params.lv60ready" :value="false">Lv50</label>
+      <label title="Show only Lv60 ready characters" for="lv60"><input type="radio" id="lv60" v-model="params.lv60ready" :value="true">Lv60</label>
     </div>
     <div class="base-checkbox">
       <label title="Show base stats only" for="baseStats"><input type="checkbox" id="baseStats" v-model="params.baseOnly">Base stats only</label>
@@ -48,7 +48,7 @@
     </table>
     <vue-good-table
       :columns="columns"
-      :rows="characters"
+      :rows="listCharacters()"
       :globalSearch="true"
       :lineNumbers="false"
       :defaultSortBy="{field: 'id', type: 'desc'}"
@@ -193,9 +193,6 @@ export default {
     setCharactersTable: function () {
       try {
         this.characters = require('../data.json')
-        if (this.params.lv60ready === true) {
-          this.characters = this.characters.filter(function (character) { return character.lv60 === true })
-        }
       } catch (e) {
         console.log('Unable to load database.')
       }
@@ -216,7 +213,14 @@ export default {
         return false
       }
     },
+    listCharacters: function () {
+      if (this.params.lv60ready) {
+        return this.characters.filter(function (character) { return character.lv60 === true })
+      }
+      return this.characters
+    },
     fullStat: function (prop, index) {
+      // TODO Lv60 stat calculation
       let fullStat = this.getBaseSynergyValue(prop, index)
       if (!this.params.baseOnly) {
         if (this.characters[index].exclusiveWeapon !== undefined && this.params.addWeapon) {
@@ -254,7 +258,8 @@ export default {
       }
       return fullStat
     },
-    addAwakeningStats: function (prop, index) {
+    removeAwakeningStats: function (prop, index) {
+      // TODO Lv60 stat calculation
       let baseStat = this.characters[index].base[prop]
       if (!this.params.addAwakening) {
         switch (prop) {
@@ -274,7 +279,7 @@ export default {
       return baseStat
     },
     getBaseSynergyValue: function (prop, index) {
-      let baseSynergyVal = this.addAwakeningStats(prop, index)
+      let baseSynergyVal = this.removeAwakeningStats(prop, index)
       if (this.params.addSynergy && !this.params.baseOnly) {
         baseSynergyVal += parseInt(this.characters[index].base[prop] * 0.5)
       }
@@ -289,8 +294,8 @@ export default {
     },
     getMinMax: function (prop) {
       let minMax = []
-      minMax[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.full[prop] }))
-      minMax[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.full[prop] }))
+      minMax[0] = Math.min.apply(Math, this.listCharacters().map(function (character) { return character.full[prop] }))
+      minMax[1] = Math.max.apply(Math, this.listCharacters().map(function (character) { return character.full[prop] }))
       return minMax
     },
     getMinMaxStats: function () {
@@ -317,7 +322,6 @@ export default {
       return parseInt(row.base.HP + row.base.iBRV + row.base.mBRV + row.base.ATK + row.base.DEF)
     },
     setupStats: function () {
-      this.setCharactersTable()
       this.prepareFullStats()
       this.minMaxValues = this.getMinMaxStats()
     },
@@ -335,6 +339,7 @@ export default {
     }
   },
   created () {
+    this.setCharactersTable()
     this.setupStats()
   },
   watch: {
@@ -350,6 +355,13 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Karla|Open+Sans');
+
+label, th {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */    
+}
 
 div.ranking {
   max-width: 910px;
@@ -380,7 +392,8 @@ p {
 input[type=checkbox], input[type=radio] {
   width: 16px;
   height: 16px;
-  margin-right: 5px;
+  margin: 0 5px;
+  vertical-align: middle;
 }
 
 .additional-options tr, .base-checkbox, .ranking-options {
@@ -402,6 +415,7 @@ input[type=checkbox], input[type=radio] {
 /* Ranking Table styles */
 
 .ranking-table {
+  width: 100%;
   text-align: center;
   font-size: 0.875em;
   margin: 0 auto;
@@ -411,11 +425,12 @@ input[type=checkbox], input[type=radio] {
   padding: 10px;
   color: #ccc !important;
   font-size: 10px;
-  cursor: pointer;
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */      
+  width: 10.625% !important;
+  cursor: pointer;  
+}
+
+.ranking-table th:first-child {
+  width: 15% !important;
 }
 
 .ranking-table th:hover {
@@ -537,9 +552,8 @@ input[type=text]::placeholder {
   font-size: 1em;
 }
 
-input[type=checkbox], input[type=radio], label {
+label {
   font-size: 0.875em;
-  vertical-align: top;
   display: inline-block;
 }
 
@@ -600,6 +614,35 @@ input[type=checkbox], input[type=radio], label {
 
 @media screen and (max-width: 560px) {
   .ranking-table tr th:nth-child(3), .ranking-table tr td:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .ranking-table th span {
+    font-size: 10px;
+  }
+
+  .ranking-table th.sorting-asc:after, .ranking-table th.sorting-desc:after {
+    margin: 5px 4px !important;
+    border-width: 4px !important;
+  }
+  
+  .ranking-table td span.icon {
+    width: 49.875px;
+    height: 33.75px;
+  }
+
+  .ranking-table td {
+    font-size: 0.75em;
+    padding: 3px;
+    padding-top: 6px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .ranking-table tr th:nth-child(2), .ranking-table tr td:nth-child(2) {
     display: none;
   }
 }
