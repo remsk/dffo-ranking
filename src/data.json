@@ -1813,6 +1813,63 @@
 		"lv60": false
 	},
 	{
+		"id": 69,
+		"character": "Lenna",
+		"role": null,
+		"series": {
+			"id": 5,
+			"name": "FF5"
+		},
+		"attributes": [],
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"weaponType": "Bow",
+		"exclusiveWeapon": {
+			"name": null,
+			"stats": {
+				"HP": 0,
+				"iBRV": 0,
+				"mBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			}
+		},
+		"armor": {
+			"name": null,
+			"stats": {
+				"HP": 0,
+				"iBRV": 0,
+				"mBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"bonus": {
+				"HP": 0,
+				"ATK": 0
+			}
+		},
+		"awakeningPassives": {
+			"HP": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"lv60": false,
+		"placeholder": true
+	},
+	{
 		"id": 61,
 		"character": "Maria",
 		"role": null,
@@ -2599,6 +2656,63 @@
 			}
 		},
 		"lv60": false
+	},
+	{
+		"id": 70,
+		"character": "Sephiroth",
+		"role": null,
+		"series": {
+			"id": 7,
+			"name": "FF7"
+		},
+		"attributes": [],
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"weaponType": "Heavy Sword",
+		"exclusiveWeapon": {
+			"name": null,
+			"stats": {
+				"HP": 0,
+				"iBRV": 0,
+				"mBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			}
+		},
+		"armor": {
+			"name": null,
+			"stats": {
+				"HP": 0,
+				"iBRV": 0,
+				"mBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"bonus": {
+				"HP": 0,
+				"ATK": 0
+			}
+		},
+		"awakeningPassives": {
+			"HP": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"lv60": false,
+		"placeholder": true
 	},
 	{
 		"id": 56,

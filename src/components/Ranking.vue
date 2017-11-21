@@ -13,7 +13,7 @@
 
     <div class="ranking-options">
       <label title="Show all characters" for="lv50"><input type="radio" id="lv50" v-model="params.lv60ready" :value="false">Lv50</label>
-      <label title="Show only Lv60 ready characters" for="lv60"><input type="radio" id="lv60" v-model="params.lv60ready" :value="true">Lv60</label>
+      <label title="Coming soon" for="lv60"><input type="radio" id="lv60" v-model="params.lv60ready" :value="true" disabled>Lv60</label>
     </div>
     <div class="base-checkbox">
       <label title="Show base stats only" for="baseStats"><input type="checkbox" id="baseStats" v-model="params.baseOnly">Base stats only</label>
@@ -217,7 +217,7 @@ export default {
       if (this.params.lv60ready) {
         return this.characters.filter(function (character) { return character.lv60 === true })
       }
-      return this.characters
+      return this.characters.filter(function (character) { return character.placeholder !== true })
     },
     fullStat: function (prop, index) {
       // TODO Lv60 stat calculation
