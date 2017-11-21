@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <a href="/" class="logo"><img title="DFF OPERA OMNIA" src="./images/logo.png"></a>
-    <Ranking/>
+    <router-link :to="{ name: 'Ranking' }">
+      <header class="logo"><img title="DFF OPERA OMNIA" src="./images/logo.png"></header>
+    </router-link>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
     <footer>All materials are the property of KOEI TECMO GAMES/SQUARE ENIX CO., LTD. All Rights Reserved. </footer>
   </div>
 </template>
@@ -33,14 +37,14 @@ body {
   color: #cfd8dc;
 }
 
-a.logo {
+header.logo {
   display: block;
   margin: 15px auto;
   max-width: 430px;
   line-height: 0;
 }
 
-a.logo img {
+header.logo img {
   width: 100%;
 }
 

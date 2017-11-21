@@ -57,7 +57,7 @@
         <span :title="(props.column.label === 'BST' ? 'Base stats total' : false)">{{ props.column.label }}</span>
       </template>
       <template slot="table-row" slot-scope="props">
-        <td :title="props.row.character" :class="isFinished(props.row)">
+        <td :title="props.row.character" @click="openCharacterPage(props.row.character)" :class="isFinished(props.row)">
           <span class="icon" :style="characterIcon(props.row.character) ? { backgroundImage: 'url(' + characterIcon(props.row.character) + ')'} : false"></span>
           {{ props.row.character }}
         </td>
@@ -195,7 +195,7 @@ export default {
       }
     },
     characterIcon: function (character) {
-      let slug = character.toLowerCase().split(' ').join('_').split('\'').join('')
+      let slug = this.slugify(character)
       try {
         return require('../images/icons/characters/' + slug + '.png')
       } catch (e) {
@@ -203,7 +203,7 @@ export default {
       }
     },
     attributeIcon: function (attribute) {
-      let slug = attribute.toLowerCase().split(' ').join('_').split('\'').join('')
+      let slug = this.slugify(attribute)
       try {
         return require('../images/icons/attributes/' + slug + '.png')
       } catch (e) {
@@ -325,6 +325,14 @@ export default {
       } else if (value === this.minMaxValues[prop][1]) {
         return 'highest'
       }
+    },
+    openCharacterPage: function (character) {
+      let slug = this.slugify(character)
+
+      this.$router.push({name: 'Character', params: { slug }})
+    },
+    slugify: function (str) {
+      return str.toLowerCase().split(' ').join('_').split('\'').join('')
     }
   },
   created () {
@@ -456,6 +464,7 @@ input[type=checkbox] {
 .ranking-table td[title] {
   width: 150px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .ranking-table td.attributes, td.role {
