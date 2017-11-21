@@ -599,7 +599,7 @@ input[type=checkbox], input[type=radio], label {
 }
 
 @media screen and (max-width: 560px) {
-  .ranking-table tr th:nth-child(3), .ranking-table tr td:nth-child(3), .ranking-table tr th:nth-child(4), .ranking-table tr td:nth-child(4) {
+  .ranking-table tr th:nth-child(3), .ranking-table tr td:nth-child(3) {
     display: none;
   }
 }
