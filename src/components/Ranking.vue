@@ -2,44 +2,46 @@
   <div class="ranking">
     <h2 class="header">DFF Opera Omnia Ranking</h2>
     <div class="notes">
-      <p>Stat values in this table are based on Lv50 fully awakened characters and 6* 35CP weapon/armor.</p>
-      <p>Characters marked with a &#10007; don't have a 35CP weapon. 6* 15CP stats are used instead.</p>
+      <template v-if="params.lv60ready">
+        <p>Stat values are based on Lv60 fully awakened characters and 6* exclusive weapon/armor.</p>
+      </template>
+      <template v-else>
+        <p>Stat values are based on Lv50 fully awakened characters and 6* exclusive weapon/armor.</p>
+      </template>
+      <p>15CP weapons are used for characters lacking their exclusive weapon. (marked with <strong>&#10007;</strong>)</p>
     </div>
 
+    <div class="ranking-options">
+      <label for="lv50"><input type="radio" id="lv50" v-model="params.lv60ready" :value="false">Lv50</label>
+      <label for="lv60"><input type="radio" id="lv60" v-model="params.lv60ready" :value="true">Lv60</label>
+    </div>
     <div class="base-checkbox">
-      <input type="checkbox" id="baseStats" v-model="params.baseOnly">
-      <label title="Show base stats only" for="baseStats">Base stats only</label>
+      <label title="Show base stats only" for="baseStats"><input type="checkbox" id="baseStats" v-model="params.baseOnly">Base stats only</label>
     </div>
     <table class="additional-options" v-if="!params.baseOnly">
       <tbody>
         <tr>
           <td title="Equip 6* exclusive weapon">
-            <input type="checkbox" id="addW" :disabled="params.baseOnly ? true : false" v-model="params.addWeapon">
-            <label for="addW">Weapon</label>
+            <label for="addW"><input type="checkbox" id="addW" :disabled="params.baseOnly ? true : false" v-model="params.addWeapon">Weapon</label>
           </td>
           <td title="Equip 6* armor and its passive">
-            <input type="checkbox" id="addA" :disabled="params.baseOnly ? true : false" v-model="params.addArmor">
-            <label for="addA">Armor</label>
+            <label for="addA"><input type="checkbox" id="addA" :disabled="params.baseOnly ? true : false" v-model="params.addArmor">Armor</label>
           </td>
         </tr>
         <tr>
           <td title="Equip Lv5 to Lv50 stat passives (20CP)">
-            <input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">
-            <label for="addP">Lv50 Passives</label>
+            <label for="addP"><input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">Lv50 Passives</label>
         </td>
           <td title="Equip 4* weapon and armor passives (7CP)">
-            <input type="checkbox" id="addF" :disabled="params.baseOnly ? true : false" v-model="params.addFourStar">
-            <label for="addF">4* Passives</label>
+            <label for="addF"><input type="checkbox" id="addF" :disabled="params.baseOnly ? true : false" v-model="params.addFourStar">4* Passives</label>
           </td>
         </tr>
         <tr>
           <td title="Equip ATK passives only">
-            <input type="checkbox" id="addATK" :disabled="params.baseOnly ? true : false" v-model="params.ATKOnly">
-            <label for="addATK">ATK only</label>
+            <label for="addATK"><input type="checkbox" id="addATK" :disabled="params.baseOnly ? true : false" v-model="params.ATKOnly">ATK only</label>
           </td>
           <td title="Enable synergy bonus">
-            <input type="checkbox" id="addS" :disabled="params.baseOnly ? true : false" v-model="params.addSynergy">
-            <label for="addS">Synergy</label>
+            <label for="addS"><input type="checkbox" id="addS" :disabled="params.baseOnly ? true : false" v-model="params.addSynergy">Synergy</label>
           </td>
         </tr>
       </tbody>
@@ -98,6 +100,7 @@ export default {
     return {
       unfinishedClass: 'exclusiveMissing',
       params: {
+        lv60ready: false,
         baseOnly: true,
         addAwakening: true,
         addWeapon: true,
@@ -190,6 +193,9 @@ export default {
     setCharactersTable: function () {
       try {
         this.characters = require('../data.json')
+        if (this.params.lv60ready === true) {
+          this.characters = this.characters.filter(function (character) { return character.lv60 === true })
+        }
       } catch (e) {
         console.log('Unable to load database.')
       }
@@ -311,6 +317,7 @@ export default {
       return parseInt(row.base.HP + row.base.iBRV + row.base.mBRV + row.base.ATK + row.base.DEF)
     },
     setupStats: function () {
+      this.setCharactersTable()
       this.prepareFullStats()
       this.minMaxValues = this.getMinMaxStats()
     },
@@ -328,7 +335,6 @@ export default {
     }
   },
   created () {
-    this.setCharactersTable()
     this.setupStats()
   },
   watch: {
@@ -357,10 +363,11 @@ div.ranking {
  h2 {
   font-family: 'Karla', sans-serif;
   text-transform: uppercase;
+  font-size: 1.5em;
 }
 
 div.notes {
-  font-size: 14px;
+  font-size: 0.85em;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 15px;
   padding: 0 15px;
@@ -370,11 +377,13 @@ p {
   margin: 2.5px auto;
 }
 
-input[type=checkbox] {
+input[type=checkbox], input[type=radio] {
   width: 16px;
+  height: 16px;
+  margin-right: 5px;
 }
 
-.additional-options tr, .base-checkbox {
+.additional-options tr, .base-checkbox, .ranking-options {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 5px;
@@ -394,7 +403,7 @@ input[type=checkbox] {
 
 .ranking-table {
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875em;
   margin: 0 auto;
 }
 
@@ -429,7 +438,7 @@ input[type=checkbox] {
 }
 
 .ranking-table th span {
-  font-size: 12px;
+  font-size: 1.2em;
 }
 
 .ranking-table tbody {
@@ -472,8 +481,8 @@ input[type=checkbox] {
 }
 
 .ranking-table div.empty {
-  font-size: 14px;
-  padding: 10px 5px;
+  font-size: 1.15em;
+  padding: 10px 0;
   padding-top: 7px;
 }
 
@@ -525,11 +534,11 @@ input[type=text] {
 
 input[type=text]::placeholder {
   color: #ccc;
+  font-size: 1em;
 }
 
-input[type=checkbox], label {
-  font-size: 14px;
-  height: 16px;
+input[type=checkbox], input[type=radio], label {
+  font-size: 0.875em;
   vertical-align: top;
   display: inline-block;
 }
@@ -591,48 +600,6 @@ input[type=checkbox], label {
 
 @media screen and (max-width: 560px) {
   .ranking-table tr th:nth-child(3), .ranking-table tr td:nth-child(3), .ranking-table tr th:nth-child(4), .ranking-table tr td:nth-child(4) {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-
-  .ranking-table th span {
-    font-size: 10px;
-  }
-  
-  .ranking-table td {
-    font-size: 12px;
-  }
-
-  .ranking-table th.sorting-asc:after, .ranking-table th.sorting-desc:after {
-    margin: 5px 4px !important;
-    border-width: 4px !important;
-  }
-
-  .exclusiveMissing:after {
-    content: '\2718';
-    display: inline-block;
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  
-  .ranking-table td span.icon {
-    width: 49.875px;
-    height: 33.75px;
-  }
-
-  .ranking-table td {
-    font-size: 0.75em;
-    padding: 3px;
-    padding-top: 6px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .ranking-table tr th:nth-child(2), .ranking-table tr td:nth-child(2) {
     display: none;
   }
 }
