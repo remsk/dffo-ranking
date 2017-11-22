@@ -593,7 +593,25 @@
 				"HP": 680
 			}
 		},
-		"lv60": true
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 100
+			},
+			"lvUp": {
+				"HP": 44,
+				"iBRV": 60,
+				"mBRV": 82,
+				"ATK": 10,
+				"DEF": 11
+			},
+			"statUp": {
+				"HP": 440,
+				"mBRV": 820,
+				"ATK": 100,
+				"DEF": 210
+			}
+		}
 	},
 	{
 		"id": 47,
@@ -943,6 +961,16 @@
 				"DEF": 58
 			}
 		},
+		"exclusiveWeapon": {
+			"name": null,
+			"stats": {
+				"HP": 101,
+				"iBRV": 273,
+				"mBRV": 2925,
+				"ATK": 957,
+				"DEF": 58
+			}
+		},
 		"armor": {
 			"name": null,
 			"stats": {
@@ -971,7 +999,25 @@
 				"HP": 680
 			}
 		},
-		"lv60": true
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 100
+			},
+			"lvUp": {
+				"HP": 25,
+				"iBRV": 80,
+				"mBRV": 82,
+				"ATK": 10,
+				"DEF": 11
+			},
+			"statUp": {
+				"HP": 250,
+				"mBRV": 820,
+				"ATK": 100,
+				"DEF": 210
+			}
+		}
 	},
 	{
 		"id": 66,
@@ -3026,7 +3072,25 @@
 				"DEF": 84
 			}
 		},
-		"lv60": true
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 70
+			},
+			"lvUp": {
+				"HP": 63,
+				"iBRV": 40,
+				"mBRV": 100,
+				"ATK": 10,
+				"DEF": 8
+			},
+			"statUp": {
+				"HP": 630,
+				"mBRV": 1000,
+				"ATK": 100,
+				"DEF": 150
+			}
+		}
 	},
 	{
 		"id": 46,
@@ -3468,7 +3532,25 @@
 				"HP": 680
 			}
 		},
-		"lv60": true
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 70
+			},
+			"lvUp": {
+				"HP": 25,
+				"iBRV": 100,
+				"mBRV": 100,
+				"ATK": 10,
+				"DEF": 8
+			},
+			"statUp": {
+				"HP": 250,
+				"mBRV": 1000,
+				"ATK": 100,
+				"DEF": 150
+			}
+		}
 	},
 	{
 		"id": 12,
@@ -3852,7 +3934,25 @@
 				"mBRV": 220
 			}
 		},
-		"lv60": true
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 200
+			},
+			"lvUp": {
+				"HP": 82,
+				"iBRV": 100,
+				"mBRV": 44,
+				"ATK": 10,
+				"DEF": 20
+			},
+			"statUp": {
+				"HP": 820,
+				"mBRV": 440,
+				"ATK": 100,
+				"DEF": 400
+			}
+		}
 	},
 	{
 		"id": 20,
@@ -4044,7 +4144,25 @@
 				"mBRV": 220
 			}
 		},
-		"lv60": true
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 130
+			},
+			"lvUp": {
+				"HP": 82,
+				"iBRV": 100,
+				"mBRV": 44,
+				"ATK": 10,
+				"DEF": 14
+			},
+			"statUp": {
+				"HP": 820,
+				"mBRV": 440,
+				"ATK": 100,
+				"DEF": 270
+			}
+		}
 	},
 	{
 		"id": 13,

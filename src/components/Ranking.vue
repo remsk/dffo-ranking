@@ -13,7 +13,7 @@
 
     <div class="ranking-options">
       <label title="Show all characters" for="lv50"><input type="radio" id="lv50" v-model="params.lv60ready" :value="false">Lv50</label>
-      <label title="Coming soon" for="lv60"><input type="radio" id="lv60" v-model="params.lv60ready" :value="true" disabled>Lv60</label>
+      <label title="Show only Lv60 ready characters™" for="lv60"><input type="radio" id="lv60" v-model="params.lv60ready" :value="true">Lv60</label>
     </div>
     <div class="base-checkbox">
       <label title="Show base stats only" for="baseStats"><input type="checkbox" id="baseStats" v-model="params.baseOnly">Base stats only</label>
@@ -29,16 +29,23 @@
           </td>
         </tr>
         <tr>
-          <td title="Equip Lv5 to Lv50 stat passives (20CP)">
-            <label for="addP"><input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">Lv50 Passives</label>
-        </td>
+          <template v-if="params.lv60ready">
+            <td title="Equip Lv5 to Lv60 stat passives (30CP)">
+              <label for="addP"><input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">Lv60 Passives</label>
+            </td>
+          </template>
+          <template v-else>
+            <td title="Equip Lv5 to Lv50 stat passives (20CP)">
+              <label for="addP"><input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">Lv50 Passives</label>
+            </td>
+          </template>
           <td title="Equip 4* weapon and armor passives (7CP)">
             <label for="addF"><input type="checkbox" id="addF" :disabled="params.baseOnly ? true : false" v-model="params.addFourStar">4* Passives</label>
           </td>
         </tr>
         <tr>
-          <td title="Equip ATK passives only">
-            <label for="addATK"><input type="checkbox" id="addATK" :disabled="params.baseOnly ? true : false" v-model="params.ATKOnly">ATK only</label>
+          <td title="Equip 108 ATK artifact passives (from 15 to 45CP)">
+            <label for="addArtifact"><input type="checkbox" id="addArtifact" :disabled="params.baseOnly ? true : false" v-model="params.addArtifact">108 ATK Artifacts</label>
           </td>
           <td title="Enable synergy bonus">
             <label for="addS"><input type="checkbox" id="addS" :disabled="params.baseOnly ? true : false" v-model="params.addSynergy">Synergy</label>
@@ -108,7 +115,7 @@ export default {
         addPassives: true,
         addFourStar: false,
         addSynergy: false,
-        ATKOnly: false
+        addArtifact: false
       },
       minMaxValues: {},
       columns: [
@@ -215,13 +222,14 @@ export default {
     },
     listCharacters: function () {
       if (this.params.lv60ready) {
-        return this.characters.filter(function (character) { return character.lv60 === true })
+        return this.characters.filter(function (character) { return character.lv60 !== false })
       }
       return this.characters.filter(function (character) { return character.placeholder !== true })
     },
     fullStat: function (prop, index) {
-      // TODO Lv60 stat calculation
       let fullStat = this.getBaseSynergyValue(prop, index)
+
+      // MAIN BLOCK WHERE TOTAL STAT GETS CALCULATED (BASE + GEAR)
       if (!this.params.baseOnly) {
         if (this.characters[index].exclusiveWeapon !== undefined && this.params.addWeapon) {
           fullStat += this.getGearSynergyValue(prop, 'exclusiveWeapon', index)
@@ -237,9 +245,13 @@ export default {
             fullStat += this.characters[index].armor.bonus[prop]
           }
         }
-        if (this.params.ATKOnly && prop !== 'ATK') {
-          return fullStat
-        }
+
+        // SKIP IF NOT ATK (removed)
+        // if (this.params.ATKOnly && prop !== 'ATK') {
+        //   return fullStat
+        // }
+
+        // ADD AWAKENING PASSIVES LV50
         if (this.characters[index].awakeningPassives !== undefined && this.params.addPassives) {
           if (prop === 'HP' || prop === 'mBRV') {
             fullStat += (this.characters[index].awakeningPassives[prop] * 3)
@@ -247,6 +259,20 @@ export default {
             fullStat += (this.characters[index].awakeningPassives[prop] * 2)
           }
         }
+
+        // ADD AWAKENING PASSIVES LV60
+        if (this.params.lv60ready && this.params.addPassives && this.characters[index].lv60.awakeningPassives !== undefined) {
+          if (prop === 'ATK' || prop === 'DEF') {
+            fullStat += parseInt(this.characters[index].lv60.awakeningPassives[prop])
+          }
+        }
+
+        // ADD AWAKENING PASSIVES LV60
+        if ((prop === 'ATK') && this.params.addArtifact) {
+          fullStat += (108 * 3)
+        }
+
+        // ADD FOUR STAR GEAR PASSIVES
         if (this.characters[index].fourStarPassives !== undefined && this.params.addFourStar) {
           if (this.characters[index].fourStarPassives.weapon !== undefined && this.characters[index].fourStarPassives.weapon[prop] !== undefined) {
             fullStat += this.characters[index].fourStarPassives.weapon[prop]
@@ -259,8 +285,16 @@ export default {
       return fullStat
     },
     removeAwakeningStats: function (prop, index) {
-      // TODO Lv60 stat calculation
+      // TODO Switch calculation to add awakening to raw stats for Lv50
       let baseStat = this.characters[index].base[prop]
+      if (this.params.lv60ready && this.characters[index].lv60 !== false) {
+        // Add LvUP 51 to 60 Stat UPs
+        baseStat += parseInt(this.characters[index].lv60.lvUp[prop] * 10)
+        // Add Awakening Stat UP (if not initial BRV stat)
+        if (this.characters[index].lv60.statUp[prop] !== undefined && this.params.addAwakening) {
+          baseStat += parseInt(this.characters[index].lv60.statUp[prop])
+        }
+      }
       if (!this.params.addAwakening) {
         switch (prop) {
           case 'iBRV':
@@ -319,7 +353,13 @@ export default {
       }
     },
     baseStatsTotal: function (row) {
-      return parseInt(row.base.HP + row.base.iBRV + row.base.mBRV + row.base.ATK + row.base.DEF)
+      let base = parseInt(row.base.HP + row.base.iBRV + row.base.mBRV + row.base.ATK + row.base.DEF)
+
+      if (this.params.lv60ready) {
+        base += parseInt(row.lv60.statUp.HP + row.lv60.statUp.mBRV + row.lv60.statUp.ATK + row.lv60.statUp.DEF)
+        base += parseInt(row.lv60.lvUp.HP + row.lv60.lvUp.iBRV + row.lv60.lvUp.mBRV + row.lv60.lvUp.ATK + row.lv60.lvUp.DEF) * 10
+      }
+      return base
     },
     setupStats: function () {
       this.prepareFullStats()
