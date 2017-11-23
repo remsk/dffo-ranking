@@ -2,51 +2,60 @@
   <div class="ranking">
     <h2 class="header">DFF Opera Omnia Ranking</h2>
     <div class="notes">
-      <p>Stat values in this table are based on Lv50 fully awakened characters and 6* 35CP weapon/armor.</p>
-      <p>Characters marked with a &#10007; don't have a 35CP weapon. 6* 15CP stats are used instead.</p>
+      <template v-if="params.lv60ready">
+        <p>Stat values are based on Lv60 fully awakened characters and 6* exclusive weapon/armor.</p>
+      </template>
+      <template v-else>
+        <p>Stat values are based on Lv50 fully awakened characters and 6* exclusive weapon/armor.</p>
+      </template>
+      <p>15CP weapons are used for characters lacking their exclusive weapon. (marked with <strong>&#10007;</strong>)</p>
     </div>
 
+    <div class="ranking-options">
+      <label title="Show all characters" for="lv50"><input type="radio" id="lv50" v-model="params.lv60ready" :value="false">Lv50</label>
+      <label title="Show only Lv60 ready characters™" for="lv60"><input type="radio" id="lv60" v-model="params.lv60ready" :value="true">Lv60</label>
+    </div>
     <div class="base-checkbox">
-      <input type="checkbox" id="baseStats" v-model="params.baseOnly">
-      <label title="Show base stats only" for="baseStats">Base stats only</label>
+      <label title="Show base stats only" for="baseStats"><input type="checkbox" id="baseStats" v-model="params.baseOnly">Base stats only</label>
     </div>
     <table class="additional-options" v-if="!params.baseOnly">
       <tbody>
         <tr>
           <td title="Equip 6* exclusive weapon">
-            <input type="checkbox" id="addW" :disabled="params.baseOnly ? true : false" v-model="params.addWeapon">
-            <label for="addW">Weapon</label>
+            <label for="addW"><input type="checkbox" id="addW" :disabled="params.baseOnly ? true : false" v-model="params.addWeapon">Weapon</label>
           </td>
           <td title="Equip 6* armor and its passive">
-            <input type="checkbox" id="addA" :disabled="params.baseOnly ? true : false" v-model="params.addArmor">
-            <label for="addA">Armor</label>
+            <label for="addA"><input type="checkbox" id="addA" :disabled="params.baseOnly ? true : false" v-model="params.addArmor">Armor</label>
           </td>
         </tr>
         <tr>
-          <td title="Equip Lv5 to Lv50 stat passives (20CP)">
-            <input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">
-            <label for="addP">Lv50 Passives</label>
-        </td>
+          <template v-if="params.lv60ready">
+            <td title="Equip Lv5 to Lv60 stat passives (30CP)">
+              <label for="addP"><input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">Lv60 Passives</label>
+            </td>
+          </template>
+          <template v-else>
+            <td title="Equip Lv5 to Lv50 stat passives (20CP)">
+              <label for="addP"><input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">Lv50 Passives</label>
+            </td>
+          </template>
           <td title="Equip 4* weapon and armor passives (7CP)">
-            <input type="checkbox" id="addF" :disabled="params.baseOnly ? true : false" v-model="params.addFourStar">
-            <label for="addF">4* Passives</label>
+            <label for="addF"><input type="checkbox" id="addF" :disabled="params.baseOnly ? true : false" v-model="params.addFourStar">4* Passives</label>
           </td>
         </tr>
         <tr>
-          <td title="Equip ATK passives only">
-            <input type="checkbox" id="addATK" :disabled="params.baseOnly ? true : false" v-model="params.ATKOnly">
-            <label for="addATK">ATK only</label>
+          <td title="Equip 108 ATK artifact passives (from 15 to 45CP)">
+            <label for="addArtifact"><input type="checkbox" id="addArtifact" :disabled="params.baseOnly ? true : false" v-model="params.addArtifact">108 ATK Artifacts</label>
           </td>
           <td title="Enable synergy bonus">
-            <input type="checkbox" id="addS" :disabled="params.baseOnly ? true : false" v-model="params.addSynergy">
-            <label for="addS">Synergy</label>
+            <label for="addS"><input type="checkbox" id="addS" :disabled="params.baseOnly ? true : false" v-model="params.addSynergy">Synergy</label>
           </td>
         </tr>
       </tbody>
     </table>
     <vue-good-table
       :columns="columns"
-      :rows="characters"
+      :rows="listCharacters()"
       :globalSearch="true"
       :lineNumbers="false"
       :defaultSortBy="{field: 'id', type: 'desc'}"
@@ -98,6 +107,7 @@ export default {
     return {
       unfinishedClass: 'exclusiveMissing',
       params: {
+        lv60ready: false,
         baseOnly: true,
         addAwakening: true,
         addWeapon: true,
@@ -105,7 +115,7 @@ export default {
         addPassives: true,
         addFourStar: false,
         addSynergy: false,
-        ATKOnly: false
+        addArtifact: false
       },
       minMaxValues: {},
       columns: [
@@ -210,8 +220,16 @@ export default {
         return false
       }
     },
+    listCharacters: function () {
+      if (this.params.lv60ready) {
+        return this.characters.filter(function (character) { return character.lv60 !== false })
+      }
+      return this.characters.filter(function (character) { return character.placeholder !== true })
+    },
     fullStat: function (prop, index) {
       let fullStat = this.getBaseSynergyValue(prop, index)
+
+      // MAIN BLOCK WHERE TOTAL STAT GETS CALCULATED (BASE + GEAR)
       if (!this.params.baseOnly) {
         if (this.characters[index].exclusiveWeapon !== undefined && this.params.addWeapon) {
           fullStat += this.getGearSynergyValue(prop, 'exclusiveWeapon', index)
@@ -227,9 +245,13 @@ export default {
             fullStat += this.characters[index].armor.bonus[prop]
           }
         }
-        if (this.params.ATKOnly && prop !== 'ATK') {
-          return fullStat
-        }
+
+        // SKIP IF NOT ATK (removed)
+        // if (this.params.ATKOnly && prop !== 'ATK') {
+        //   return fullStat
+        // }
+
+        // ADD AWAKENING PASSIVES LV50
         if (this.characters[index].awakeningPassives !== undefined && this.params.addPassives) {
           if (prop === 'HP' || prop === 'mBRV') {
             fullStat += (this.characters[index].awakeningPassives[prop] * 3)
@@ -237,6 +259,20 @@ export default {
             fullStat += (this.characters[index].awakeningPassives[prop] * 2)
           }
         }
+
+        // ADD AWAKENING PASSIVES LV60
+        if (this.params.lv60ready && this.params.addPassives && this.characters[index].lv60.awakeningPassives !== undefined) {
+          if (prop === 'ATK' || prop === 'DEF') {
+            fullStat += parseInt(this.characters[index].lv60.awakeningPassives[prop])
+          }
+        }
+
+        // ADD AWAKENING PASSIVES LV60
+        if ((prop === 'ATK') && this.params.addArtifact) {
+          fullStat += (108 * 3)
+        }
+
+        // ADD FOUR STAR GEAR PASSIVES
         if (this.characters[index].fourStarPassives !== undefined && this.params.addFourStar) {
           if (this.characters[index].fourStarPassives.weapon !== undefined && this.characters[index].fourStarPassives.weapon[prop] !== undefined) {
             fullStat += this.characters[index].fourStarPassives.weapon[prop]
@@ -248,8 +284,17 @@ export default {
       }
       return fullStat
     },
-    addAwakeningStats: function (prop, index) {
+    removeAwakeningStats: function (prop, index) {
+      // TODO Switch calculation to add awakening to raw stats for Lv50
       let baseStat = this.characters[index].base[prop]
+      if (this.params.lv60ready && this.characters[index].lv60 !== false) {
+        // Add LvUP 51 to 60 Stat UPs
+        baseStat += parseInt(this.characters[index].lv60.lvUp[prop] * 10)
+        // Add Awakening Stat UP (if not initial BRV stat)
+        if (this.characters[index].lv60.statUp[prop] !== undefined && this.params.addAwakening) {
+          baseStat += parseInt(this.characters[index].lv60.statUp[prop])
+        }
+      }
       if (!this.params.addAwakening) {
         switch (prop) {
           case 'iBRV':
@@ -268,7 +313,7 @@ export default {
       return baseStat
     },
     getBaseSynergyValue: function (prop, index) {
-      let baseSynergyVal = this.addAwakeningStats(prop, index)
+      let baseSynergyVal = this.removeAwakeningStats(prop, index)
       if (this.params.addSynergy && !this.params.baseOnly) {
         baseSynergyVal += parseInt(this.characters[index].base[prop] * 0.5)
       }
@@ -283,8 +328,8 @@ export default {
     },
     getMinMax: function (prop) {
       let minMax = []
-      minMax[0] = Math.min.apply(Math, this.characters.map(function (character) { return character.full[prop] }))
-      minMax[1] = Math.max.apply(Math, this.characters.map(function (character) { return character.full[prop] }))
+      minMax[0] = Math.min.apply(Math, this.listCharacters().map(function (character) { return character.full[prop] }))
+      minMax[1] = Math.max.apply(Math, this.listCharacters().map(function (character) { return character.full[prop] }))
       return minMax
     },
     getMinMaxStats: function () {
@@ -308,7 +353,13 @@ export default {
       }
     },
     baseStatsTotal: function (row) {
-      return parseInt(row.base.HP + row.base.iBRV + row.base.mBRV + row.base.ATK + row.base.DEF)
+      let base = parseInt(row.base.HP + row.base.iBRV + row.base.mBRV + row.base.ATK + row.base.DEF)
+
+      if (this.params.lv60ready) {
+        base += parseInt(row.lv60.statUp.HP + row.lv60.statUp.mBRV + row.lv60.statUp.ATK + row.lv60.statUp.DEF)
+        base += parseInt(row.lv60.lvUp.HP + row.lv60.lvUp.iBRV + row.lv60.lvUp.mBRV + row.lv60.lvUp.ATK + row.lv60.lvUp.DEF) * 10
+      }
+      return base
     },
     setupStats: function () {
       this.prepareFullStats()
@@ -353,6 +404,13 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Karla|Open+Sans');
 
+label, th {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */    
+}
+
 div.ranking {
   max-width: 910px;
   background-color: #43517a;
@@ -365,10 +423,11 @@ div.ranking {
  h2 {
   font-family: 'Karla', sans-serif;
   text-transform: uppercase;
+  font-size: 1.5em;
 }
 
 div.notes {
-  font-size: 14px;
+  font-size: 0.85em;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 15px;
   padding: 0 15px;
@@ -378,11 +437,14 @@ p {
   margin: 2.5px auto;
 }
 
-input[type=checkbox] {
+input[type=checkbox], input[type=radio] {
   width: 16px;
+  height: 16px;
+  margin: 0 5px;
+  vertical-align: middle;
 }
 
-.additional-options tr, .base-checkbox {
+.additional-options tr, .base-checkbox, .ranking-options {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 5px;
@@ -401,8 +463,9 @@ input[type=checkbox] {
 /* Ranking Table styles */
 
 .ranking-table {
+  width: 100%;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875em;
   margin: 0 auto;
 }
 
@@ -410,11 +473,12 @@ input[type=checkbox] {
   padding: 10px;
   color: #ccc !important;
   font-size: 10px;
-  cursor: pointer;
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */      
+  width: 10.625% !important;
+  cursor: pointer;  
+}
+
+.ranking-table th:first-child {
+  width: 15% !important;
 }
 
 .ranking-table th:hover {
@@ -437,7 +501,7 @@ input[type=checkbox] {
 }
 
 .ranking-table th span {
-  font-size: 12px;
+  font-size: 1.2em;
 }
 
 .ranking-table tbody {
@@ -481,8 +545,8 @@ input[type=checkbox] {
 }
 
 .ranking-table div.empty {
-  font-size: 14px;
-  padding: 10px 5px;
+  font-size: 1.15em;
+  padding: 10px 0;
   padding-top: 7px;
 }
 
@@ -534,12 +598,11 @@ input[type=text] {
 
 input[type=text]::placeholder {
   color: #ccc;
+  font-size: 1em;
 }
 
-input[type=checkbox], label {
-  font-size: 14px;
-  height: 16px;
-  vertical-align: top;
+label {
+  font-size: 0.875em;
   display: inline-block;
 }
 
@@ -609,24 +672,11 @@ input[type=checkbox], label {
   .ranking-table th span {
     font-size: 10px;
   }
-  
-  .ranking-table td {
-    font-size: 12px;
-  }
 
   .ranking-table th.sorting-asc:after, .ranking-table th.sorting-desc:after {
     margin: 5px 4px !important;
     border-width: 4px !important;
   }
-
-  .exclusiveMissing:after {
-    content: '\2718';
-    display: inline-block;
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 480px) {
   
   .ranking-table td span.icon {
     width: 49.875px;

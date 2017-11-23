@@ -56,7 +56,8 @@
 			"armor": {
 				"HP": 680
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 52,
@@ -111,7 +112,8 @@
 			"mBRV": 110,
 			"ATK": 33,
 			"DEF": 42
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 51,
@@ -166,7 +168,8 @@
 			"mBRV": 100,
 			"ATK": 35,
 			"DEF": 38
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 55,
@@ -221,7 +224,8 @@
 			"mBRV": 105,
 			"ATK": 36,
 			"DEF": 38
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 32,
@@ -284,7 +288,8 @@
 			"armor": {
 				"HP": 680
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 17,
@@ -347,7 +352,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 50,
@@ -402,7 +408,8 @@
 			"mBRV": 100,
 			"ATK": 35,
 			"DEF": 30
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 10,
@@ -465,7 +472,8 @@
 			"armor": {
 				"iBRV": 110
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 59,
@@ -520,7 +528,8 @@
 			"mBRV": 100,
 			"ATK": 34,
 			"DEF": 42
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 6,
@@ -583,6 +592,25 @@
 			"armor": {
 				"HP": 680
 			}
+		},
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 100
+			},
+			"lvUp": {
+				"HP": 44,
+				"iBRV": 60,
+				"mBRV": 82,
+				"ATK": 10,
+				"DEF": 11
+			},
+			"statUp": {
+				"HP": 440,
+				"mBRV": 820,
+				"ATK": 100,
+				"DEF": 210
+			}
 		}
 	},
 	{
@@ -643,7 +671,8 @@
 			"armor": {
 				"mBRV": 220
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 58,
@@ -703,7 +732,8 @@
 			"armor": {
 				"iBRV": 110
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 14,
@@ -766,7 +796,8 @@
 			"armor": {
 				"HP": 680
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 33,
@@ -829,7 +860,8 @@
 			"armor": {
 				"mBRV": 220
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 36,
@@ -892,7 +924,8 @@
 			"armor": {
 				"ATK": 72
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 22,
@@ -928,6 +961,16 @@
 				"DEF": 58
 			}
 		},
+		"exclusiveWeapon": {
+			"name": null,
+			"stats": {
+				"HP": 101,
+				"iBRV": 273,
+				"mBRV": 2925,
+				"ATK": 957,
+				"DEF": 58
+			}
+		},
 		"armor": {
 			"name": null,
 			"stats": {
@@ -954,6 +997,25 @@
 			},
 			"armor": {
 				"HP": 680
+			}
+		},
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 100
+			},
+			"lvUp": {
+				"HP": 25,
+				"iBRV": 80,
+				"mBRV": 82,
+				"ATK": 10,
+				"DEF": 11
+			},
+			"statUp": {
+				"HP": 250,
+				"mBRV": 820,
+				"ATK": 100,
+				"DEF": 210
 			}
 		}
 	},
@@ -1015,7 +1077,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 30,
@@ -1078,7 +1141,8 @@
 			"armor": {
 				"iBRV": 110
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 54,
@@ -1133,7 +1197,8 @@
 			"mBRV": 95,
 			"ATK": 35,
 			"DEF": 42
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 7,
@@ -1196,7 +1261,8 @@
 			"armor": {
 				"ATK": 72
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 57,
@@ -1256,7 +1322,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 60,
@@ -1311,7 +1378,8 @@
 			"mBRV": 95,
 			"ATK": 36,
 			"DEF": 38
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 68,
@@ -1366,7 +1434,8 @@
 			"mBRV": 105,
 			"ATK": 36,
 			"DEF": 34
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 16,
@@ -1429,7 +1498,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 44,
@@ -1484,7 +1554,8 @@
 			"mBRV": 105,
 			"ATK": 33,
 			"DEF": 30
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 63,
@@ -1539,7 +1610,8 @@
 			"mBRV": 110,
 			"ATK": 34,
 			"DEF": 26
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 23,
@@ -1602,7 +1674,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 39,
@@ -1665,7 +1738,8 @@
 			"armor": {
 				"HP": 680
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 49,
@@ -1725,7 +1799,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 53,
@@ -1780,7 +1855,65 @@
 			"mBRV": 110,
 			"ATK": 34,
 			"DEF": 26
-		}
+		},
+		"lv60": false
+	},
+	{
+		"id": 69,
+		"character": "Lenna",
+		"role": null,
+		"series": {
+			"id": 5,
+			"name": "FF5"
+		},
+		"attributes": [],
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"weaponType": "Bow",
+		"exclusiveWeapon": {
+			"name": null,
+			"stats": {
+				"HP": 0,
+				"iBRV": 0,
+				"mBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			}
+		},
+		"armor": {
+			"name": null,
+			"stats": {
+				"HP": 0,
+				"iBRV": 0,
+				"mBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"bonus": {
+				"HP": 0,
+				"ATK": 0
+			}
+		},
+		"awakeningPassives": {
+			"HP": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"lv60": false,
+		"placeholder": true
 	},
 	{
 		"id": 61,
@@ -1835,7 +1968,8 @@
 			"mBRV": 105,
 			"ATK": 34,
 			"DEF": 30
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 21,
@@ -1898,7 +2032,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 62,
@@ -1953,7 +2088,8 @@
 			"mBRV": 110,
 			"ATK": 36,
 			"DEF": 26
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 48,
@@ -2013,7 +2149,8 @@
 			"armor": {
 				"HP": 680
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 18,
@@ -2076,7 +2213,8 @@
 			"armor": {
 				"ATK": 72
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 35,
@@ -2139,7 +2277,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 64,
@@ -2194,7 +2333,8 @@
 			"mBRV": 110,
 			"ATK": 34,
 			"DEF": 30
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 65,
@@ -2254,7 +2394,8 @@
 			"armor": {
 				"iBRV": 110
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 37,
@@ -2314,7 +2455,8 @@
 			"armor": {
 				"HP": 680
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 3,
@@ -2377,7 +2519,8 @@
 			"armor": {
 				"ATK": 72
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 43,
@@ -2432,7 +2575,8 @@
 			"mBRV": 105,
 			"ATK": 36,
 			"DEF": 30
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 4,
@@ -2495,7 +2639,8 @@
 			"armor": {
 				"iBRV": 110
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 67,
@@ -2555,7 +2700,65 @@
 			"armor": {
 				"iBRV": 110
 			}
-		}
+		},
+		"lv60": false
+	},
+	{
+		"id": 70,
+		"character": "Sephiroth",
+		"role": null,
+		"series": {
+			"id": 7,
+			"name": "FF7"
+		},
+		"attributes": [],
+		"full": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"base": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"weaponType": "Heavy Sword",
+		"exclusiveWeapon": {
+			"name": null,
+			"stats": {
+				"HP": 0,
+				"iBRV": 0,
+				"mBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			}
+		},
+		"armor": {
+			"name": null,
+			"stats": {
+				"HP": 0,
+				"iBRV": 0,
+				"mBRV": 0,
+				"ATK": 0,
+				"DEF": 0
+			},
+			"bonus": {
+				"HP": 0,
+				"ATK": 0
+			}
+		},
+		"awakeningPassives": {
+			"HP": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"lv60": false,
+		"placeholder": true
 	},
 	{
 		"id": 56,
@@ -2615,7 +2818,8 @@
 			"armor": {
 				"ATK": 72
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 28,
@@ -2678,7 +2882,8 @@
 			"armor": {
 				"ATK": 72
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 42,
@@ -2738,7 +2943,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 25,
@@ -2801,7 +3007,8 @@
 			"armor": {
 				"mBRV": 220
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 31,
@@ -2864,6 +3071,25 @@
 			"armor": {
 				"DEF": 84
 			}
+		},
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 70
+			},
+			"lvUp": {
+				"HP": 63,
+				"iBRV": 40,
+				"mBRV": 100,
+				"ATK": 10,
+				"DEF": 8
+			},
+			"statUp": {
+				"HP": 630,
+				"mBRV": 1000,
+				"ATK": 100,
+				"DEF": 150
+			}
 		}
 	},
 	{
@@ -2919,7 +3145,8 @@
 			"mBRV": 95,
 			"ATK": 33,
 			"DEF": 38
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 26,
@@ -2982,7 +3209,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 24,
@@ -3045,7 +3273,8 @@
 			"armor": {
 				"iBRV": 110
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 45,
@@ -3100,7 +3329,8 @@
 			"mBRV": 105,
 			"ATK": 34,
 			"DEF": 38
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 34,
@@ -3163,7 +3393,8 @@
 			"armor": {
 				"HP": 680
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 5,
@@ -3236,7 +3467,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 19,
@@ -3298,6 +3530,25 @@
 			},
 			"armor": {
 				"HP": 680
+			}
+		},
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 70
+			},
+			"lvUp": {
+				"HP": 25,
+				"iBRV": 100,
+				"mBRV": 100,
+				"ATK": 10,
+				"DEF": 8
+			},
+			"statUp": {
+				"HP": 250,
+				"mBRV": 1000,
+				"ATK": 100,
+				"DEF": 150
 			}
 		}
 	},
@@ -3362,7 +3613,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 27,
@@ -3425,7 +3677,8 @@
 			"armor": {
 				"ATK": 72
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 40,
@@ -3488,7 +3741,8 @@
 			"armor": {
 				"iBRV": 110
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 2,
@@ -3551,7 +3805,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 29,
@@ -3614,7 +3869,8 @@
 			"armor": {
 				"iBRV": 110
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 1,
@@ -3676,6 +3932,25 @@
 			},
 			"armor": {
 				"mBRV": 220
+			}
+		},
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 200
+			},
+			"lvUp": {
+				"HP": 82,
+				"iBRV": 100,
+				"mBRV": 44,
+				"ATK": 10,
+				"DEF": 20
+			},
+			"statUp": {
+				"HP": 820,
+				"mBRV": 440,
+				"ATK": 100,
+				"DEF": 400
 			}
 		}
 	},
@@ -3740,7 +4015,8 @@
 			"armor": {
 				"iBRV": 110
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 11,
@@ -3803,7 +4079,8 @@
 			"armor": {
 				"HP": 680
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 8,
@@ -3865,6 +4142,25 @@
 			},
 			"armor": {
 				"mBRV": 220
+			}
+		},
+		"lv60": {
+			"awakeningPassives": {
+				"ATK": 100,
+				"DEF": 130
+			},
+			"lvUp": {
+				"HP": 82,
+				"iBRV": 100,
+				"mBRV": 44,
+				"ATK": 10,
+				"DEF": 14
+			},
+			"statUp": {
+				"HP": 820,
+				"mBRV": 440,
+				"ATK": 100,
+				"DEF": 270
 			}
 		}
 	},
@@ -3929,7 +4225,8 @@
 			"armor": {
 				"ATK": 72
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 14,
@@ -3992,7 +4289,8 @@
 			"armor": {
 				"mBRV": 220
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 38,
@@ -4055,7 +4353,8 @@
 			"armor": {
 				"DEF": 84
 			}
-		}
+		},
+		"lv60": false
 	},
 	{
 		"id": 9,
@@ -4118,6 +4417,7 @@
 			"armor": {
 				"iBRV": 110
 			}
-		}
+		},
+		"lv60": false
 	}
 ]

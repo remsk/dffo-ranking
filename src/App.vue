@@ -22,6 +22,10 @@ export default {
 </script>
 
 <style>
+*:focus {
+  outline: none;
+}
+
 body {
   background-color: #0b0b0b;
   background-image: url('./images/bg.jpg');
@@ -49,7 +53,7 @@ header.logo img {
 }
 
 footer {
-  font-size: 12px;
+  font-size: 0.75em;
   padding: 5px 15px;
 }
 
