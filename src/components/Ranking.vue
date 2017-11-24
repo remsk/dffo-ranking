@@ -1,16 +1,15 @@
 <template>
   <div class="ranking">
     <h2 class="header">DFF Opera Omnia Ranking</h2>
-    <div class="notes">
-      <p></p>
+    <ul class="notes">
       <template v-if="params.lv60ready">
-        <p>Stat values are based on Lv60 fully awakened characters and 6* exclusive weapon/armor.</p>
+        <li>Stat values are based on Lv60 fully awakened characters and 6* exclusive weapon/armor.</li>
       </template>
       <template v-else>
-        <p>Stat values are based on Lv50 fully awakened characters and 6* exclusive weapon/armor.</p>
+        <li>Stat values are based on Lv50 fully awakened characters and 6* exclusive weapon/armor.</li>
       </template>
-      <p>15CP weapons are used for characters lacking their exclusive weapon. (marked with <strong>&#10007;</strong>)</p>
-    </div>
+      <li>15CP weapons are used for characters lacking their exclusive weapon. (marked with <strong>&#10007;</strong>)</li>
+    </ul>
     <div class="ranking-options">
       <div class="ranking-level">
         <label title="Show all characters" for="lv50"><input type="radio" id="lv50" v-model="params.lv60ready" :value="false">Lv50</label>
@@ -18,6 +17,7 @@
       </div>
       <div class="base-checkbox">
         <label title="Show base stats only" for="baseStats"><input type="checkbox" id="baseStats" v-model="params.baseOnly">Base stats only</label>
+        <label for="compactVersion"><input type="checkbox" id="compactVersion" v-model="compact">Compact</label>
       </div>
       <table class="additional-options" v-if="!params.baseOnly">
         <tbody>
@@ -65,14 +65,14 @@
       globalSearchPlaceholder="Search by character, attribute or stat"
       styleClass="ranking-table">
       <template slot="table-row" slot-scope="props">
-        <td :title="props.row.character" @click="openCharacterPage(props.row.character)" :class="isFinished(props.row)">
-          <span class="icon" :style="characterIcon(props.row.character) ? { backgroundImage: 'url(' + characterIcon(props.row.character) + ')'} : false"></span>
-          {{ props.row.character }}
+        <td :class="isFinished(props.row) + ' character'">
+          <span v-show="!compact" @click="openCharacterPage(props.row.name)" class="icon" :style="fetchIcon(props.row.name, 'characters') ? { backgroundImage: 'url(' + fetchIcon(props.row.name, 'characters') + ')'} : false"></span>
+          {{ props.row.name }}
         </td>
         <td>{{ props.row.series.name }}</td>
         <td class="attributes">
           <template v-if="props.row.attributes.length > 0">
-            <span v-for="attribute in props.row.attributes" :title="attribute" class="attribute" :style="attributeIcon(attribute) ? { backgroundImage: 'url(' + attributeIcon(attribute) + ')'} : false"></span> 
+            <span v-for="attribute in props.row.attributes" :title="attribute" :class="!compact ? 'big' : 'small'" :style="fetchIcon(attribute, 'attributes') ? { backgroundImage: 'url(' + fetchIcon(attribute, 'attributes') + ')'} : false"></span> 
           </template>
         </td>
         <td>
@@ -100,11 +100,15 @@
 </template>
 
 <script>
+import Toolkit from '../mixins/toolkit'
+import Stats from '../mixins/stats'
+
 export default {
   name: 'Ranking',
+  mixins: [Toolkit, Stats],
   data () {
     return {
-      unfinishedClass: 'exclusiveMissing',
+      compact: false,
       params: {
         lv60ready: false,
         baseOnly: true,
@@ -116,7 +120,6 @@ export default {
         addSynergy: false,
         addArtifact: false
       },
-      minMaxValues: {},
       columns: [
         {
           label: 'Order',
@@ -127,7 +130,7 @@ export default {
         },
         {
           label: 'Character',
-          field: 'character',
+          field: 'name',
           filterable: true,
           sortable: true
         },
@@ -196,197 +199,21 @@ export default {
     }
   },
   methods: {
-    setCharactersTable: function () {
-      try {
-        this.characters = require('../data.json')
-      } catch (e) {
-        console.log('Unable to load database.')
-      }
-    },
-    characterIcon: function (character) {
-      let slug = this.slugify(character)
-      try {
-        return require('../images/icons/characters/' + slug + '.png')
-      } catch (e) {
-        return false
-      }
-    },
-    attributeIcon: function (attribute) {
-      let slug = this.slugify(attribute)
-      try {
-        return require('../images/icons/attributes/' + slug + '.png')
-      } catch (e) {
-        return false
-      }
-    },
     listCharacters: function () {
       if (this.params.lv60ready) {
         return this.characters.filter(function (character) { return character.lv60 !== false })
       }
       return this.characters.filter(function (character) { return character.placeholder !== true })
     },
-    fullStat: function (prop, index) {
-      let fullStat = this.getBaseSynergyValue(prop, index)
-
-      // MAIN BLOCK WHERE TOTAL STAT GETS CALCULATED (BASE + GEAR)
-      if (!this.params.baseOnly) {
-        if (this.characters[index].exclusiveWeapon !== undefined && this.params.addWeapon) {
-          fullStat += this.getGearSynergyValue(prop, 'exclusiveWeapon', index)
-          fullStat += parseInt(this.characters[index].exclusiveWeapon.stats[prop] / 5)
-        } else if (this.characters[index].baseWeapon !== undefined && this.params.addWeapon) {
-          fullStat += this.getGearSynergyValue(prop, 'baseWeapon', index)
-          fullStat += parseInt(this.characters[index].baseWeapon.stats[prop] / 5)
-        }
-        if (this.characters[index].armor !== undefined && this.params.addArmor) {
-          fullStat += this.getGearSynergyValue(prop, 'armor', index)
-          fullStat += parseInt(this.characters[index].armor.stats[prop] / 5)
-          if (this.characters[index].armor.bonus[prop] !== undefined) {
-            fullStat += this.characters[index].armor.bonus[prop]
-          }
-        }
-
-        // SKIP IF NOT ATK (removed)
-        // if (this.params.ATKOnly && prop !== 'ATK') {
-        //   return fullStat
-        // }
-
-        // ADD AWAKENING PASSIVES LV50
-        if (this.characters[index].awakeningPassives !== undefined && this.params.addPassives) {
-          if (prop === 'HP' || prop === 'mBRV') {
-            fullStat += (this.characters[index].awakeningPassives[prop] * 3)
-          } else if (prop === 'ATK' || prop === 'DEF') {
-            fullStat += (this.characters[index].awakeningPassives[prop] * 2)
-          }
-        }
-
-        // ADD AWAKENING PASSIVES LV60
-        if (this.params.lv60ready && this.params.addPassives && this.characters[index].lv60.awakeningPassives !== undefined) {
-          if (prop === 'ATK' || prop === 'DEF') {
-            fullStat += parseInt(this.characters[index].lv60.awakeningPassives[prop])
-          }
-        }
-
-        // ADD AWAKENING PASSIVES LV60
-        if ((prop === 'ATK') && this.params.addArtifact) {
-          fullStat += (108 * 3)
-        }
-
-        // ADD FOUR STAR GEAR PASSIVES
-        if (this.characters[index].fourStarPassives !== undefined && this.params.addFourStar) {
-          if (this.characters[index].fourStarPassives.weapon !== undefined && this.characters[index].fourStarPassives.weapon[prop] !== undefined) {
-            fullStat += this.characters[index].fourStarPassives.weapon[prop]
-          }
-          if (this.characters[index].fourStarPassives.armor !== undefined && this.characters[index].fourStarPassives.armor[prop] !== undefined) {
-            fullStat += this.characters[index].fourStarPassives.armor[prop]
-          }
-        }
-      }
-      return fullStat
-    },
-    removeAwakeningStats: function (prop, index) {
-      // TODO Switch calculation to add awakening to raw stats for Lv50
-      let baseStat = this.characters[index].base[prop]
-      if (this.params.lv60ready && this.characters[index].lv60 !== false) {
-        // Add LvUP 51 to 60 Stat UPs
-        baseStat += parseInt(this.characters[index].lv60.lvUp[prop] * 10)
-        // Add Awakening Stat UP (if not initial BRV stat)
-        if (this.characters[index].lv60.statUp[prop] !== undefined && this.params.addAwakening) {
-          baseStat += parseInt(this.characters[index].lv60.statUp[prop])
-        }
-      }
-      if (!this.params.addAwakening) {
-        switch (prop) {
-          case 'iBRV':
-            return baseStat
-          case 'mBRV':
-            baseStat -= parseInt(Math.ceil(this.characters[index].awakeningPassives[prop] / 2) * 9)
-            return baseStat
-          case 'HP':
-            baseStat -= parseInt(((this.characters[index].awakeningPassives[prop] + 100) / 2) * 10)
-            return baseStat
-          default:
-            baseStat -= parseInt(Math.ceil(this.characters[index].awakeningPassives[prop] / 2) * 10)
-            return baseStat
-        }
-      }
-      return baseStat
-    },
-    getBaseSynergyValue: function (prop, index) {
-      let baseSynergyVal = this.removeAwakeningStats(prop, index)
-      if (this.params.addSynergy && !this.params.baseOnly) {
-        baseSynergyVal += parseInt(this.characters[index].base[prop] * 0.5)
-      }
-      return baseSynergyVal
-    },
-    getGearSynergyValue: function (prop, type, index) {
-      let gearSynergyVal = this.characters[index][type].stats[prop]
-      if (this.params.addSynergy) {
-        gearSynergyVal += parseInt(this.characters[index][type].stats[prop] * 0.3)
-      }
-      return gearSynergyVal
-    },
-    getMinMax: function (prop) {
-      let minMax = []
-      minMax[0] = Math.min.apply(Math, this.listCharacters().map(function (character) { return character.full[prop] }))
-      minMax[1] = Math.max.apply(Math, this.listCharacters().map(function (character) { return character.full[prop] }))
-      return minMax
-    },
-    getMinMaxStats: function () {
-      let minMaxStats = { HP: [], iBRV: [], mBRV: [], ATK: [], DEF: [] }
-
-      minMaxStats.HP = this.getMinMax('HP')
-      minMaxStats.iBRV = this.getMinMax('iBRV')
-      minMaxStats.mBRV = this.getMinMax('mBRV')
-      minMaxStats.ATK = this.getMinMax('ATK')
-      minMaxStats.DEF = this.getMinMax('DEF')
-
-      return minMaxStats
-    },
-    prepareFullStats: function () {
-      for (let i = 0; i < this.characters.length; i++) {
-        this.characters[i].full.HP = this.fullStat('HP', i)
-        this.characters[i].full.iBRV = this.fullStat('iBRV', i)
-        this.characters[i].full.mBRV = this.fullStat('mBRV', i)
-        this.characters[i].full.ATK = this.fullStat('ATK', i)
-        this.characters[i].full.DEF = this.fullStat('DEF', i)
-      }
-    },
-    baseStatsTotal: function (row) {
-      let base = parseInt(row.base.HP + row.base.iBRV + row.base.mBRV + row.base.ATK + row.base.DEF)
-
-      if (this.params.lv60ready) {
-        base += parseInt(row.lv60.statUp.HP + row.lv60.statUp.mBRV + row.lv60.statUp.ATK + row.lv60.statUp.DEF)
-        base += parseInt(row.lv60.lvUp.HP + row.lv60.lvUp.iBRV + row.lv60.lvUp.mBRV + row.lv60.lvUp.ATK + row.lv60.lvUp.DEF) * 10
-      }
-      return base
-    },
-    setupStats: function () {
-      this.prepareFullStats()
-      this.minMaxValues = this.getMinMaxStats()
-    },
     isFinished: function (row) {
       if (row.exclusiveWeapon === undefined) {
-        return this.unfinishedClass
+        return 'exclusiveMissing'
       }
-    },
-    isExtremum: function (prop, value) {
-      if (value === this.minMaxValues[prop][0]) {
-        return 'lowest'
-      } else if (value === this.minMaxValues[prop][1]) {
-        return 'highest'
-      }
-    },
-    openCharacterPage: function (character) {
-      let slug = this.slugify(character)
-
-      this.$router.push({name: 'character', params: { slug }})
-    },
-    slugify: function (str) {
-      return str.toLowerCase().split(' ').join('_').split('\'').join('')
+      return 'hasExclusive'
     }
   },
   created () {
-    this.setCharactersTable()
+    this.characters = this.fetchCharacters()
     this.setupStats()
   },
   watch: {
@@ -401,33 +228,20 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Karla|Open+Sans');
-
-label, th {
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */    
-}
-
- h2 {
-  font-family: 'Karla', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  text-align: center;
-  margin-top: 10px;
-}
-
-div.notes {
+ul.notes {
+  color: #ccc;
   margin: 0 auto;
+  max-width: 610px;
+  list-style: none;
   font-size: 0.85em;
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 15px;
-  padding: 0 15px;
-  display: block;
+  margin: 15px auto;
+  padding: 15px 25px;
+  border-radius: 3px;
+  background-color: #273153;
+  box-shadow: inset 0 0 10px #000000;
 }
 
-p {
+li {
   margin: 2.5px auto;
 }
 
@@ -478,7 +292,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 .ranking-table th, .ranking-table th.sorting-asc, .ranking-table th.sorting-desc {
-  padding: 15px 10px;
+  padding: 10px;
   color: #ccc !important;
   font-size: 10px;
   width: 10.625% !important;
@@ -515,11 +329,12 @@ input[type=checkbox], input[type=radio] {
 .ranking-table tbody {
   font-family: 'Open Sans', sans-serif;
   background-color: #bdbdbd;
-  box-shadow: inset 0px 10px 14px -10px #000000,  inset 0px -10px 14px -10px #000000;
+  box-shadow: inset 0px 10px 14px -10px #273153,  inset 0px -10px 14px -10px #273153;
 }
 
 .ranking-table tbody tr {
-  box-shadow: inset -10px 0px 14px -10px #000000,  inset 10px 0px 14px -10px #000000;
+  box-shadow: inset -10px 0px 14px -10px #273153,  inset 10px 0px 14px -10px #273153;
+  height: 32px;
 }
 
 .ranking-table tbody tr:nth-child(2n) {  
@@ -529,14 +344,12 @@ input[type=checkbox], input[type=radio] {
 .ranking-table td {
   color: #212121;
   padding: 5px 5px;
-  padding-top: 8px;
   width: 100px;
 }
 
-.ranking-table td[title] {
+.ranking-table td.character {
   width: 150px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .ranking-table td.attributes, td.role {
@@ -550,6 +363,8 @@ input[type=checkbox], input[type=radio] {
   height: 45px;
   display: block;
   margin: 0 auto;
+  margin-top: 2px;
+  cursor: pointer;
 }
 
 .ranking-table div.empty {
@@ -560,10 +375,19 @@ input[type=checkbox], input[type=radio] {
 
 .ranking-table td.attributes span {
   display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  margin: 0 3px;
+}
+
+.ranking-table td.attributes span.big {
   width: 25px;
   height: 25px;
-  margin: 0 3px;
-  vertical-align: middle;
+}
+
+.ranking-table td.attributes span.small {
+  width: 20px;
+  height: 20px;
 }
 
 .ranking-table .global-search-icon {
@@ -591,21 +415,20 @@ input[type=checkbox], input[type=radio] {
 
 input[type=text] {
   display: block;
-  max-width: 400px;
-  flex: 1;
+  max-width: 310px;
   padding: 0.9em 1em;
-  background-color: #273153;
-  color: #ccc;
+  background-color: #bdbdbd;
+  color: #212121;
   border-style: none;
   border-radius: 3px;
-  box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #273153;
   margin: 15px auto;
   margin-top: 5px;
   font-family: 'Open Sans', sans-serif;
 }
 
 input[type=text]::placeholder {
-  color: #ccc;
+  color: #212121;
   font-size: 1em;
 }
 

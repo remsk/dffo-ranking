@@ -1,0 +1,3833 @@
+[{
+	"id": 68,
+	"name": "Kefka",
+	"role": null,
+	"series": {
+		"id": 6,
+		"name": "FF6"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 831,
+		"mBRV": 1437,
+		"ATK": 500,
+		"DEF": 480
+	},
+	"weaponType": "Other",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 102,
+			"iBRV": 276,
+			"mBRV": 2925,
+			"ATK": 957,
+			"DEF": 56
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 41,
+			"iBRV": 0,
+			"mBRV": 61,
+			"ATK": 27,
+			"DEF": 870
+		},
+		"bonus": {
+			"iBRV": 110,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 105,
+		"ATK": 36,
+		"DEF": 34
+	},
+	"lv60": false
+}, {
+	"id": 67,
+	"name": "Seifer",
+	"role": null,
+	"series": {
+		"id": 8,
+		"name": "FF8"
+	},
+	"attributes": ["Wind"],
+	"full": {},
+	"base": {
+		"HP": 4265,
+		"iBRV": 693,
+		"mBRV": 1437,
+		"ATK": 480,
+		"DEF": 594
+	},
+	"weaponType": "Heavy Sword",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 107,
+			"iBRV": 233,
+			"mBRV": 2925,
+			"ATK": 950,
+			"DEF": 75
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 34,
+			"iBRV": 0,
+			"mBRV": 34,
+			"ATK": 18,
+			"DEF": 904
+		},
+		"bonus": {
+			"mBRV": 220,
+			"DEF": 84
+		}
+	},
+	"awakeningPassives": {
+		"HP": 320,
+		"mBRV": 105,
+		"ATK": 34,
+		"DEF": 42
+	},
+	"fourStarPassives": {
+		"armor": {
+			"iBRV": 110
+		}
+	},
+	"lv60": false
+}, {
+	"id": 66,
+	"name": "Fujin",
+	"role": null,
+	"series": {
+		"id": 8,
+		"name": "FF8"
+	},
+	"attributes": ["Wind"],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 785,
+		"mBRV": 1437,
+		"ATK": 480,
+		"DEF": 367
+	},
+	"weaponType": "Throwing Weapon",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 117,
+			"iBRV": 273,
+			"mBRV": 2925,
+			"ATK": 950,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 37,
+			"iBRV": 0,
+			"mBRV": 111,
+			"ATK": 18,
+			"DEF": 801
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 105,
+		"ATK": 34,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 65,
+	"name": "Raijin",
+	"role": null,
+	"series": {
+		"id": 8,
+		"name": "FF8"
+	},
+	"attributes": ["Thunder"],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 693,
+		"mBRV": 1437,
+		"ATK": 509,
+		"DEF": 480
+	},
+	"weaponType": "Spear",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 87,
+			"iBRV": 233,
+			"mBRV": 2925,
+			"ATK": 984,
+			"DEF": 62
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 39,
+			"iBRV": 0,
+			"mBRV": 57,
+			"ATK": 36,
+			"DEF": 870
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 105,
+		"ATK": 36,
+		"DEF": 34
+	},
+	"fourStarPassives": {
+		"armor": {
+			"iBRV": 110
+		}
+	},
+	"lv60": false
+}, {
+	"id": 64,
+	"name": "Quistis",
+	"role": null,
+	"series": {
+		"id": 8,
+		"name": "FF8"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 785,
+		"mBRV": 1500,
+		"ATK": 480,
+		"DEF": 424
+	},
+	"weaponType": "Whip",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 103,
+			"iBRV": 273,
+			"mBRV": 3001,
+			"ATK": 950,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 43,
+			"iBRV": 0,
+			"mBRV": 85,
+			"ATK": 18,
+			"DEF": 823
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 110,
+		"ATK": 34,
+		"DEF": 30
+	},
+	"lv60": false
+}, {
+	"id": 63,
+	"name": "Kuja",
+	"role": null,
+	"series": {
+		"id": 9,
+		"name": "FF9"
+	},
+	"attributes": ["Holy"],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 785,
+		"mBRV": 1500,
+		"ATK": 480,
+		"DEF": 367
+	},
+	"weaponType": "Other",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 107,
+			"iBRV": 273,
+			"mBRV": 3001,
+			"ATK": 950,
+			"DEF": 44
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 26,
+			"iBRV": 0,
+			"mBRV": 122,
+			"ATK": 18,
+			"DEF": 801
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 110,
+		"ATK": 34,
+		"DEF": 26
+	},
+	"lv60": false
+}, {
+	"id": 62,
+	"name": "Palom",
+	"role": null,
+	"series": {
+		"id": 4,
+		"name": "FF4"
+	},
+	"attributes": ["Ice"],
+	"full": {},
+	"base": {
+		"HP": 3656,
+		"iBRV": 831,
+		"mBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 82,
+			"iBRV": 276,
+			"mBRV": 3001,
+			"ATK": 984,
+			"DEF": 44
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 24,
+			"iBRV": 0,
+			"mBRV": 112,
+			"ATK": 36,
+			"DEF": 801
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 260,
+		"mBRV": 110,
+		"ATK": 36,
+		"DEF": 26
+	},
+	"lv60": false
+}, {
+	"id": 61,
+	"name": "Maria",
+	"role": null,
+	"series": {
+		"id": 2,
+		"name": "FF2"
+	},
+	"attributes": ["Wind"],
+	"full": {},
+	"base": {
+		"HP": 4265,
+		"iBRV": 785,
+		"mBRV": 1437,
+		"ATK": 480,
+		"DEF": 424
+	},
+	"weaponType": "Bow",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 116,
+			"iBRV": 273,
+			"mBRV": 2925,
+			"ATK": 950,
+			"DEF": 52
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 64,
+			"iBRV": 0,
+			"mBRV": 64,
+			"ATK": 18,
+			"DEF": 823
+		},
+		"bonus": {
+			"HP": 680,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 320,
+		"mBRV": 105,
+		"ATK": 34,
+		"DEF": 30
+	},
+	"lv60": false
+}, {
+	"id": 60,
+	"name": "Kain",
+	"role": null,
+	"series": {
+		"id": 4,
+		"name": "FF4"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4468,
+		"iBRV": 739,
+		"mBRV": 1300,
+		"ATK": 509,
+		"DEF": 537
+	},
+	"weaponType": "Spear",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 109,
+			"iBRV": 270,
+			"mBRV": 2740,
+			"ATK": 984,
+			"DEF": 68
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 61,
+			"iBRV": 0,
+			"mBRV": 15,
+			"ATK": 36,
+			"DEF": 882
+		},
+		"bonus": {
+			"HP": 680,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 340,
+		"mBRV": 95,
+		"ATK": 36,
+		"DEF": 38
+	},
+	"lv60": false
+}, {
+	"id": 59,
+	"name": "Celes",
+	"role": null,
+	"series": {
+		"id": 6,
+		"name": "FF6"
+	},
+	"attributes": ["Ice"],
+	"full": {},
+	"base": {
+		"HP": 4265,
+		"iBRV": 785,
+		"mBRV": 1364,
+		"ATK": 480,
+		"DEF": 594
+	},
+	"weaponType": "Heavy Sword",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 120,
+			"iBRV": 273,
+			"mBRV": 2850,
+			"ATK": 950,
+			"DEF": 75
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 41,
+			"iBRV": 0,
+			"mBRV": 27,
+			"ATK": 18,
+			"DEF": 904
+		},
+		"bonus": {
+			"HP": 680,
+			"DEF": 84
+		}
+	},
+	"awakeningPassives": {
+		"HP": 320,
+		"mBRV": 100,
+		"ATK": 34,
+		"DEF": 42
+	},
+	"lv60": false
+}, {
+	"id": 58,
+	"name": "Edgar",
+	"role": null,
+	"series": {
+		"id": 6,
+		"name": "FF6"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 739,
+		"mBRV": 1437,
+		"ATK": 500,
+		"DEF": 537
+	},
+	"weaponType": "Spear",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 97,
+			"iBRV": 270,
+			"mBRV": 2925,
+			"ATK": 957,
+			"DEF": 68
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 33,
+			"iBRV": 0,
+			"mBRV": 49,
+			"ATK": 27,
+			"DEF": 882
+		},
+		"bonus": {
+			"ATK": 72,
+			"DEF": 84
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 105,
+		"ATK": 35,
+		"DEF": 38
+	},
+	"fourStarPassives": {
+		"armor": {
+			"iBRV": 110
+		}
+	},
+	"lv60": false
+}, {
+	"id": 57,
+	"name": "Irvine",
+	"role": null,
+	"series": {
+		"id": 8,
+		"name": "FF8"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3656,
+		"iBRV": 739,
+		"mBRV": 1500,
+		"ATK": 500,
+		"DEF": 367
+	},
+	"weaponType": "Gun",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 94,
+			"iBRV": 270,
+			"mBRV": 3001,
+			"ATK": 957,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 142,
+			"ATK": 27,
+			"DEF": 801
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 260,
+		"mBRV": 110,
+		"ATK": 35,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 56,
+	"name": "Serah",
+	"role": null,
+	"series": {
+		"id": 14,
+		"name": "FF13-2"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4265,
+		"iBRV": 785,
+		"mBRV": 1364,
+		"ATK": 480,
+		"DEF": 480
+	},
+	"weaponType": "Bow",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 125,
+			"iBRV": 273,
+			"mBRV": 2850,
+			"ATK": 950,
+			"DEF": 62
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 68,
+			"iBRV": 0,
+			"mBRV": 40,
+			"ATK": 18,
+			"DEF": 870
+		},
+		"bonus": {
+			"HP": 680,
+			"iBRV": 110
+		}
+	},
+	"awakeningPassives": {
+		"HP": 320,
+		"mBRV": 100,
+		"ATK": 34,
+		"DEF": 34
+	},
+	"fourStarPassives": {
+		"armor": {
+			"ATK": 72
+		}
+	},
+	"lv60": false
+}, {
+	"id": 55,
+	"name": "Auron",
+	"role": null,
+	"series": {
+		"id": 10,
+		"name": "FF10"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4000,
+		"iBRV": 739,
+		"mBRV": 1437,
+		"ATK": 509,
+		"DEF": 537
+	},
+	"weaponType": "Heavy Sword",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 84,
+			"iBRV": 273,
+			"mBRV": 2925,
+			"ATK": 984,
+			"DEF": 68
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 31,
+			"iBRV": 0,
+			"mBRV": 45,
+			"ATK": 36,
+			"DEF": 882
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 105,
+		"ATK": 36,
+		"DEF": 38
+	},
+	"lv60": false
+}, {
+	"id": 54,
+	"name": "Garnet",
+	"role": null,
+	"series": {
+		"id": 9,
+		"name": "FF9"
+	},
+	"attributes": ["Thunder", "Water"],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 831,
+		"mBRV": 1300,
+		"ATK": 500,
+		"DEF": 594
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 120,
+			"iBRV": 276,
+			"mBRV": 2740,
+			"ATK": 957,
+			"DEF": 75
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 31,
+			"iBRV": 0,
+			"mBRV": 31,
+			"ATK": 27,
+			"DEF": 904
+		},
+		"bonus": {
+			"iBRV": 110,
+			"DEF": 84
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 95,
+		"ATK": 35,
+		"DEF": 42
+	},
+	"lv60": false
+}, {
+	"id": 53,
+	"name": "Lion",
+	"role": null,
+	"series": {
+		"id": 11,
+		"name": "FF11"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4468,
+		"iBRV": 693,
+		"mBRV": 1500,
+		"ATK": 480,
+		"DEF": 367
+	},
+	"weaponType": "Dagger",
+	"exclusiveWeapon": {
+		"name": "Misericorde",
+		"stats": {
+			"HP": 108,
+			"iBRV": 233,
+			"mBRV": 3001,
+			"ATK": 950,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 74,
+			"iBRV": 0,
+			"mBRV": 74,
+			"ATK": 18,
+			"DEF": 801
+		},
+		"bonus": {
+			"HP": 680,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 340,
+		"mBRV": 110,
+		"ATK": 34,
+		"DEF": 26
+	},
+	"lv60": false
+}, {
+	"id": 52,
+	"name": "Aerith",
+	"role": null,
+	"series": {
+		"id": 7,
+		"name": "FF7"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 785,
+		"mBRV": 1500,
+		"ATK": 471,
+		"DEF": 594
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 107,
+			"iBRV": 273,
+			"mBRV": 3001,
+			"ATK": 908,
+			"DEF": 75
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 20,
+			"iBRV": 0,
+			"mBRV": 54,
+			"ATK": 9,
+			"DEF": 904
+		},
+		"bonus": {
+			"iBRV": 110,
+			"DEF": 84
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 110,
+		"ATK": 33,
+		"DEF": 42
+	},
+	"lv60": false
+}, {
+	"id": 51,
+	"name": "Ashe",
+	"role": null,
+	"series": {
+		"id": 12,
+		"name": "FF12"
+	},
+	"attributes": ["Holy"],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 739,
+		"mBRV": 1364,
+		"ATK": 500,
+		"DEF": 537
+	},
+	"weaponType": "Heavy Sword",
+	"exclusiveWeapon": {
+		"name": "Defender",
+		"stats": {
+			"HP": 109,
+			"iBRV": 270,
+			"mBRV": 2850,
+			"ATK": 957,
+			"DEF": 68
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 41,
+			"iBRV": 0,
+			"mBRV": 41,
+			"ATK": 27,
+			"DEF": 882
+		},
+		"bonus": {
+			"ATK": 72,
+			"DEF": 84
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 100,
+		"ATK": 35,
+		"DEF": 38
+	},
+	"lv60": false
+}, {
+	"id": 50,
+	"name": "Cater",
+	"role": null,
+	"series": {
+		"id": 18,
+		"name": "FFT0"
+	},
+	"attributes": ["Ice"],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 831,
+		"mBRV": 1364,
+		"ATK": 500,
+		"DEF": 424
+	},
+	"weaponType": "Gun",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 117,
+			"iBRV": 276,
+			"mBRV": 2850,
+			"ATK": 957,
+			"DEF": 50
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 61,
+			"iBRV": 0,
+			"mBRV": 61,
+			"ATK": 27,
+			"DEF": 823
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 100,
+		"ATK": 35,
+		"DEF": 30
+	},
+	"lv60": false
+}, {
+	"id": 49,
+	"name": "Lightning",
+	"role": null,
+	"series": {
+		"id": 13,
+		"name": "FF13"
+	},
+	"attributes": ["Thunder"],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 831,
+		"mBRV": 1500,
+		"ATK": 480,
+		"DEF": 424
+	},
+	"weaponType": "Sword",
+	"exclusiveWeapon": {
+		"name": "Flamberge",
+		"stats": {
+			"HP": 98,
+			"iBRV": 276,
+			"mBRV": 3001,
+			"ATK": 950,
+			"DEF": 67
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 28,
+			"iBRV": 0,
+			"mBRV": 100,
+			"ATK": 18,
+			"DEF": 823
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 110,
+		"ATK": 34,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 48,
+	"name": "Papalymo",
+	"role": null,
+	"series": {
+		"id": 15,
+		"name": "FF14"
+	},
+	"attributes": ["Fire", "Ice"],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 785,
+		"mBRV": 1364,
+		"ATK": 500,
+		"DEF": 480
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 113,
+			"iBRV": 273,
+			"mBRV": 2850,
+			"ATK": 957,
+			"DEF": 60
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 51,
+			"iBRV": 0,
+			"mBRV": 51,
+			"ATK": 27,
+			"DEF": 870
+		},
+		"bonus": {
+			"iBRV": 110,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 100,
+		"ATK": 35,
+		"DEF": 34
+	},
+	"fourStarPassives": {
+		"armor": {
+			"HP": 680
+		}
+	},
+	"lv60": false
+}, {
+	"id": 47,
+	"name": "Cyan",
+	"role": null,
+	"series": {
+		"id": 6,
+		"name": "FF6"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4265,
+		"iBRV": 785,
+		"mBRV": 1300,
+		"ATK": 509,
+		"DEF": 480
+	},
+	"weaponType": "Heavy Sword",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 102,
+			"iBRV": 273,
+			"mBRV": 2740,
+			"ATK": 984,
+			"DEF": 74
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 76,
+			"iBRV": 0,
+			"mBRV": 20,
+			"ATK": 36,
+			"DEF": 870
+		},
+		"bonus": {
+			"HP": 680,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 320,
+		"mBRV": 95,
+		"ATK": 36,
+		"DEF": 34
+	},
+	"fourStarPassives": {
+		"armor": {
+			"mBRV": 220
+		}
+	},
+	"lv60": false
+}, {
+	"id": 46,
+	"name": "Snow",
+	"role": null,
+	"series": {
+		"id": 13,
+		"name": "FF13"
+	},
+	"attributes": ["Ice"],
+	"full": {},
+	"base": {
+		"HP": 4468,
+		"iBRV": 739,
+		"mBRV": 1300,
+		"ATK": 480,
+		"DEF": 537
+	},
+	"weaponType": "Fists",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 134,
+			"iBRV": 273,
+			"mBRV": 2740,
+			"ATK": 950,
+			"DEF": 68
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 71,
+			"iBRV": 0,
+			"mBRV": 17,
+			"ATK": 18,
+			"DEF": 882
+		},
+		"bonus": {
+			"HP": 680,
+			"DEF": 84
+		}
+	},
+	"awakeningPassives": {
+		"HP": 340,
+		"mBRV": 95,
+		"ATK": 33,
+		"DEF": 38
+	},
+	"lv60": false
+}, {
+	"id": 45,
+	"name": "Thancred",
+	"role": null,
+	"series": {
+		"id": 13,
+		"name": "FF13"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3656,
+		"iBRV": 785,
+		"mBRV": 1437,
+		"ATK": 480,
+		"DEF": 500
+	},
+	"weaponType": "Dagger",
+	"exclusiveWeapon": {
+		"name": "Yoshimitsu",
+		"stats": {
+			"HP": 112,
+			"iBRV": 273,
+			"mBRV": 2925,
+			"ATK": 950,
+			"DEF": 62
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 108,
+			"ATK": 18,
+			"DEF": 870
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 260,
+		"mBRV": 105,
+		"ATK": 34,
+		"DEF": 38
+	},
+	"lv60": false
+}, {
+	"id": 44,
+	"name": "Krile",
+	"role": null,
+	"series": {
+		"id": 5,
+		"name": "FF5"
+	},
+	"attributes": ["Thunder"],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 831,
+		"mBRV": 1437,
+		"ATK": 471,
+		"DEF": 424
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 128,
+			"iBRV": 276,
+			"mBRV": 2925,
+			"ATK": 908,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 56,
+			"iBRV": 0,
+			"mBRV": 78,
+			"ATK": 9,
+			"DEF": 823
+		},
+		"bonus": {
+			"iBRV": 110,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 105,
+		"ATK": 33,
+		"DEF": 30
+	},
+	"lv60": false
+}, {
+	"id": 43,
+	"name": "Sabin",
+	"role": null,
+	"series": {
+		"id": 6,
+		"name": "FF6"
+	},
+	"attributes": ["Holy", "Wind"],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 785,
+		"mBRV": 1437,
+		"ATK": 509,
+		"DEF": 424
+	},
+	"weaponType": "Fists",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 90,
+			"iBRV": 273,
+			"mBRV": 2925,
+			"ATK": 984,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 47,
+			"iBRV": 0,
+			"mBRV": 69,
+			"ATK": 36,
+			"DEF": 823
+		},
+		"bonus": {
+			"HP": 680,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 105,
+		"ATK": 36,
+		"DEF": 30
+	},
+	"lv60": false
+}, {
+	"id": 42,
+	"name": "Seymour",
+	"role": null,
+	"series": {
+		"id": 10,
+		"name": "FF10"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 785,
+		"mBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 78,
+			"iBRV": 273,
+			"mBRV": 3001,
+			"ATK": 984,
+			"DEF": 53
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 28,
+			"iBRV": 0,
+			"mBRV": 108,
+			"ATK": 36,
+			"DEF": 801
+		},
+		"bonus": {
+			"iBRV": 110,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 110,
+		"ATK": 36,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 41,
+	"name": "Ace",
+	"role": null,
+	"series": {
+		"id": 18,
+		"name": "FFT0"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3656,
+		"iBRV": 739,
+		"mBRV": 1500,
+		"ATK": 500,
+		"DEF": 480
+	},
+	"weaponType": "Throwing Weapon",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 87,
+			"iBRV": 270,
+			"mBRV": 3001,
+			"ATK": 957,
+			"DEF": 62
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 102,
+			"ATK": 27,
+			"DEF": 870
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 260,
+		"mBRV": 110,
+		"ATK": 35,
+		"DEF": 34
+	},
+	"fourStarPassives": {
+		"armor": {
+			"HP": 680
+		}
+	},
+	"lv60": false
+}, {
+	"id": 40,
+	"name": "Vincent",
+	"role": null,
+	"series": {
+		"id": 7,
+		"name": "FF7"
+	},
+	"attributes": ["Fire", "Thunder"],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 646,
+		"mBRV": 1500,
+		"ATK": 500,
+		"DEF": 537
+	},
+	"weaponType": "Gun",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 84,
+			"iBRV": 183,
+			"mBRV": 2683,
+			"ATK": 854,
+			"DEF": 68
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 18,
+			"iBRV": 0,
+			"mBRV": 64,
+			"ATK": 27,
+			"DEF": 882
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 110,
+		"ATK": 35,
+		"DEF": 38
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"iBRV": 110
+		}
+	},
+	"lv60": false
+}, {
+	"id": 39,
+	"name": "Layle",
+	"role": null,
+	"series": {
+		"id": 17,
+		"name": "FFCC"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 739,
+		"mBRV": 1437,
+		"ATK": 500,
+		"DEF": 480
+	},
+	"weaponType": "Throwing Weapon",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 103,
+			"iBRV": 220,
+			"mBRV": 2616,
+			"ATK": 854,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 41,
+			"iBRV": 0,
+			"mBRV": 61,
+			"ATK": 27,
+			"DEF": 870
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 105,
+		"ATK": 35,
+		"DEF": 34
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"ATK": 36
+		},
+		"armor": {
+			"HP": 680
+		}
+	},
+	"lv60": false
+}, {
+	"id": 38,
+	"name": "Zell",
+	"role": null,
+	"series": {
+		"id": 8,
+		"name": "FF8"
+	},
+	"attributes": ["Thunder"],
+	"full": {},
+	"base": {
+		"HP": 4468,
+		"iBRV": 646,
+		"mBRV": 1437,
+		"ATK": 480,
+		"DEF": 367
+	},
+	"weaponType": "Fists",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 117,
+			"iBRV": 183,
+			"mBRV": 2616,
+			"ATK": 850,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 85,
+			"iBRV": 0,
+			"mBRV": 63,
+			"ATK": 18,
+			"DEF": 801
+		},
+		"bonus": {
+			"HP": 680,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 340,
+		"mBRV": 105,
+		"ATK": 34,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"HP": 340
+		},
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 37,
+	"name": "Ramza",
+	"role": null,
+	"series": {
+		"id": 16,
+		"name": "FFT"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 785,
+		"mBRV": 1364,
+		"ATK": 500,
+		"DEF": 537
+	},
+	"weaponType": "Sword",
+	"exclusiveWeapon": {
+		"name": "Platinum Sword",
+		"stats": {
+			"HP": 109,
+			"iBRV": 270,
+			"mBRV": 2850,
+			"ATK": 957,
+			"DEF": 68
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 27,
+			"iBRV": 0,
+			"mBRV": 55,
+			"ATK": 27,
+			"DEF": 882
+		},
+		"bonus": {
+			"ATK": 72,
+			"DEF": 84
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 100,
+		"ATK": 35,
+		"DEF": 38
+	},
+	"fourStarPassives": {
+		"armor": {
+			"HP": 680
+		}
+	},
+	"lv60": false
+}, {
+	"id": 36,
+	"name": "Faris",
+	"role": null,
+	"series": {
+		"id": 5,
+		"name": "FF5"
+	},
+	"attributes": ["Water"],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 785,
+		"mBRV": 1500,
+		"ATK": 471,
+		"DEF": 424
+	},
+	"weaponType": "Dagger",
+	"exclusiveWeapon": {
+		"name": "Orichalcum Dirk",
+		"stats": {
+			"HP": 115,
+			"iBRV": 273,
+			"mBRV": 3001,
+			"ATK": 908,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 45,
+			"iBRV": 0,
+			"mBRV": 89,
+			"ATK": 9,
+			"DEF": 823
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 110,
+		"ATK": 33,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"ATK": 72
+		}
+	},
+	"lv60": false
+}, {
+	"id": 35,
+	"name": "Prishe",
+	"role": null,
+	"series": {
+		"id": 11,
+		"name": "FF11"
+	},
+	"attributes": ["Fire", "Holy", "Wind"],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 739,
+		"mBRV": 1500,
+		"ATK": 480,
+		"DEF": 367
+	},
+	"weaponType": "Fists",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 105,
+			"iBRV": 270,
+			"mBRV": 3001,
+			"ATK": 950,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 50,
+			"iBRV": 0,
+			"mBRV": 98,
+			"ATK": 18,
+			"DEF": 801
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 110,
+		"ATK": 34,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 34,
+	"name": "Tidus",
+	"role": null,
+	"series": {
+		"id": 10,
+		"name": "FF10"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 785,
+		"mBRV": 1437,
+		"ATK": 480,
+		"DEF": 424
+	},
+	"weaponType": "Sword",
+	"exclusiveWeapon": {
+		"name": "Brotherhood",
+		"stats": {
+			"HP": 115,
+			"iBRV": 273,
+			"mBRV": 2925,
+			"ATK": 986,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 40,
+			"iBRV": 0,
+			"mBRV": 88,
+			"ATK": 18,
+			"DEF": 823
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 105,
+		"ATK": 34,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"iBRV": 55
+		},
+		"armor": {
+			"HP": 680
+		}
+	},
+	"lv60": false
+}, {
+	"id": 33,
+	"name": "Eiko",
+	"role": null,
+	"series": {
+		"id": 9,
+		"name": "FF9"
+	},
+	"attributes": ["Holy"],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 831,
+		"mBRV": 1300,
+		"ATK": 500,
+		"DEF": 537
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 122,
+			"iBRV": 276,
+			"mBRV": 2740,
+			"ATK": 957,
+			"DEF": 68
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 55,
+			"iBRV": 0,
+			"mBRV": 27,
+			"ATK": 27,
+			"DEF": 882
+		},
+		"bonus": {
+			"HP": 680,
+			"iBRV": 110
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 95,
+		"ATK": 35,
+		"DEF": 38
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"iBRV": 55
+		},
+		"armor": {
+			"mBRV": 220
+		}
+	},
+	"lv60": false
+}, {
+	"id": 32,
+	"name": "Balthier",
+	"role": null,
+	"series": {
+		"id": 12,
+		"name": "FF12"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 785,
+		"mBRV": 1437,
+		"ATK": 480,
+		"DEF": 424
+	},
+	"weaponType": "Gun",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 115,
+			"iBRV": 273,
+			"mBRV": 2925,
+			"ATK": 950,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 32,
+			"iBRV": 0,
+			"mBRV": 96,
+			"ATK": 18,
+			"DEF": 823
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 105,
+		"ATK": 34,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"HP": 680
+		}
+	},
+	"lv60": false
+}, {
+	"id": 31,
+	"name": "Shantotto",
+	"role": null,
+	"series": {
+		"id": 11,
+		"name": "FF11"
+	},
+	"attributes": ["Dark", "Wind"],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 693,
+		"mBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 81,
+			"iBRV": 233,
+			"mBRV": 3001,
+			"ATK": 984,
+			"DEF": 47
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 48,
+			"iBRV": 0,
+			"mBRV": 88,
+			"ATK": 36,
+			"DEF": 801
+		},
+		"bonus": {
+			"HP": 680,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 110,
+		"ATK": 36,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"ATK": 36
+		},
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": {
+		"awakeningPassives": {
+			"ATK": 100,
+			"DEF": 70
+		},
+		"lvUp": {
+			"HP": 63,
+			"iBRV": 40,
+			"mBRV": 100,
+			"ATK": 10,
+			"DEF": 8
+		},
+		"statUp": {
+			"HP": 630,
+			"mBRV": 1000,
+			"ATK": 100,
+			"DEF": 150
+		}
+	}
+}, {
+	"id": 30,
+	"name": "Galuf",
+	"role": null,
+	"series": {
+		"id": 5,
+		"name": "FF5"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4468,
+		"iBRV": 646,
+		"mBRV": 1300,
+		"ATK": 500,
+		"DEF": 594
+	},
+	"weaponType": "Heavy Sword",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 120,
+			"iBRV": 183,
+			"mBRV": 2449,
+			"ATK": 854,
+			"DEF": 75
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 50,
+			"iBRV": 0,
+			"mBRV": 12,
+			"ATK": 27,
+			"DEF": 904
+		},
+		"bonus": {
+			"HP": 680,
+			"DEF": 84
+		}
+	},
+	"awakeningPassives": {
+		"HP": 340,
+		"mBRV": 95,
+		"ATK": 35,
+		"DEF": 42
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"DEF": 42
+		},
+		"armor": {
+			"iBRV": 110
+		}
+	},
+	"lv60": false
+}, {
+	"id": 29,
+	"name": "Wakka",
+	"role": null,
+	"series": {
+		"id": 10,
+		"name": "FF10"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4265,
+		"iBRV": 693,
+		"mBRV": 1437,
+		"ATK": 500,
+		"DEF": 480
+	},
+	"weaponType": "Throwing Weapon",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 100,
+			"iBRV": 184,
+			"mBRV": 2616,
+			"ATK": 854,
+			"DEF": 62
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 53,
+			"iBRV": 0,
+			"mBRV": 49,
+			"ATK": 27,
+			"DEF": 870
+		},
+		"bonus": {
+			"HP": 680,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 320,
+		"mBRV": 105,
+		"ATK": 35,
+		"DEF": 34
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"HP": 340
+		},
+		"armor": {
+			"iBRV": 110
+		}
+	},
+	"lv60": false
+}, {
+	"id": 28,
+	"name": "Setzer",
+	"role": null,
+	"series": {
+		"id": 6,
+		"name": "FF6"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 831,
+		"mBRV": 1500,
+		"ATK": 452,
+		"DEF": 367
+	},
+	"weaponType": "Throwing Weapon",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 130,
+			"iBRV": 276,
+			"mBRV": 3001,
+			"ATK": 882,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 52,
+			"iBRV": 0,
+			"mBRV": 108,
+			"ATK": 0,
+			"DEF": 801
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 110,
+		"ATK": 32,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"ATK": 72
+		}
+	},
+	"lv60": false
+}, {
+	"id": 27,
+	"name": "Vanille",
+	"role": null,
+	"series": {
+		"id": 13,
+		"name": "FF13"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 831,
+		"mBRV": 1437,
+		"ATK": 471,
+		"DEF": 480
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 125,
+			"iBRV": 276,
+			"mBRV": 2925,
+			"ATK": 908,
+			"DEF": 62
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 28,
+			"iBRV": 0,
+			"mBRV": 86,
+			"ATK": 9,
+			"DEF": 870
+		},
+		"bonus": {
+			"HP": 680,
+			"iBRV": 110
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 105,
+		"ATK": 33,
+		"DEF": 34
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"iBRV": 55
+		},
+		"armor": {
+			"ATK": 72
+		}
+	},
+	"lv60": false
+}, {
+	"id": 26,
+	"name": "Squall",
+	"role": null,
+	"series": {
+		"id": 8,
+		"name": "FF8"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 693,
+		"mBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	"weaponType": "Heavy Sword",
+	"exclusiveWeapon": {
+		"name": "Cutting Trigger",
+		"stats": {
+			"HP": 80,
+			"iBRV": 233,
+			"mBRV": 3001,
+			"ATK": 984,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 44,
+			"iBRV": 0,
+			"mBRV": 92,
+			"ATK": 36,
+			"DEF": 801
+		},
+		"bonus": {
+			"iBRV": 110,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 110,
+		"ATK": 36,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"ATK": 36
+		},
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 25,
+	"name": "Shadow",
+	"role": null,
+	"series": {
+		"id": 6,
+		"name": "FF6"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3656,
+		"iBRV": 831,
+		"mBRV": 1227,
+		"ATK": 500,
+		"DEF": 367
+	},
+	"weaponType": "Throwing Weapon",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 142,
+			"iBRV": 223,
+			"mBRV": 2383,
+			"ATK": 854,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 71,
+			"iBRV": 0,
+			"mBRV": 71,
+			"ATK": 27,
+			"DEF": 801
+		},
+		"bonus": {
+			"iBRV": 110,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 260,
+		"mBRV": 90,
+		"ATK": 35,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"iBRV": 55
+		},
+		"armor": {
+			"mBRV": 220
+		}
+	},
+	"lv60": false
+}, {
+	"id": 24,
+	"name": "Steiner",
+	"role": null,
+	"series": {
+		"id": 9,
+		"name": "FF9"
+	},
+	"attributes": ["Fire"],
+	"full": {},
+	"base": {
+		"HP": 4265,
+		"iBRV": 646,
+		"mBRV": 1300,
+		"ATK": 509,
+		"DEF": 480
+	},
+	"weaponType": "Heavy Sword",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 112,
+			"iBRV": 230,
+			"mBRV": 2740,
+			"ATK": 984,
+			"DEF": 62
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 72,
+			"iBRV": 0,
+			"mBRV": 24,
+			"ATK": 36,
+			"DEF": 870
+		},
+		"bonus": {
+			"HP": 680,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 320,
+		"mBRV": 95,
+		"ATK": 36,
+		"DEF": 34
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"ATK": 36
+		},
+		"armor": {
+			"iBRV": 110
+		}
+	},
+	"lv60": false
+}, {
+	"id": 23,
+	"name": "Laguna",
+	"role": null,
+	"series": {
+		"id": 8,
+		"name": "FF8"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4468,
+		"iBRV": 693,
+		"mBRV": 1437,
+		"ATK": 500,
+		"DEF": 424
+	},
+	"weaponType": "Gun",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 103,
+			"iBRV": 184,
+			"mBRV": 2616,
+			"ATK": 854,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 70,
+			"iBRV": 0,
+			"mBRV": 52,
+			"ATK": 27,
+			"DEF": 823
+		},
+		"bonus": {
+			"HP": 680,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 340,
+		"mBRV": 105,
+		"ATK": 35,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"HP": 340
+		},
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 22,
+	"name": "Firion",
+	"role": null,
+	"series": {
+		"id": 2,
+		"name": "FF2"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3656,
+		"iBRV": 785,
+		"mBRV": 1437,
+		"ATK": 500,
+		"DEF": 424
+	},
+	"weaponType": "Sword",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 101,
+			"iBRV": 221,
+			"mBRV": 2616,
+			"ATK": 854,
+			"DEF": 58
+		}
+	},
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 101,
+			"iBRV": 273,
+			"mBRV": 2925,
+			"ATK": 957,
+			"DEF": 58
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 122,
+			"ATK": 27,
+			"DEF": 823
+		},
+		"bonus": {
+			"HP": 680,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 260,
+		"mBRV": 105,
+		"ATK": 35,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"HP": 680
+		}
+	},
+	"lv60": {
+		"awakeningPassives": {
+			"ATK": 100,
+			"DEF": 100
+		},
+		"lvUp": {
+			"HP": 25,
+			"iBRV": 80,
+			"mBRV": 82,
+			"ATK": 10,
+			"DEF": 11
+		},
+		"statUp": {
+			"HP": 250,
+			"mBRV": 820,
+			"ATK": 100,
+			"DEF": 210
+		}
+	}
+}, {
+	"id": 21,
+	"name": "Onion Knight",
+	"role": null,
+	"series": {
+		"id": 3,
+		"name": "FF3"
+	},
+	"attributes": ["Ice"],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 785,
+		"mBRV": 1500,
+		"ATK": 480,
+		"DEF": 367
+	},
+	"weaponType": "Sword",
+	"exclusiveWeapon": {
+		"name": "Wightslayer",
+		"stats": {
+			"HP": 105,
+			"iBRV": 273,
+			"mBRV": 3001,
+			"ATK": 950,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 30,
+			"iBRV": 0,
+			"mBRV": 118,
+			"ATK": 18,
+			"DEF": 801
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 110,
+		"ATK": 34,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 20,
+	"name": "Yang",
+	"role": null,
+	"series": {
+		"id": 4,
+		"name": "FF4"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4468,
+		"iBRV": 646,
+		"mBRV": 1437,
+		"ATK": 509,
+		"DEF": 367
+	},
+	"weaponType": "Fists",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 92,
+			"iBRV": 183,
+			"mBRV": 2616,
+			"ATK": 878,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 78,
+			"iBRV": 0,
+			"mBRV": 58,
+			"ATK": 36,
+			"DEF": 801
+		},
+		"bonus": {
+			"HP": 680,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 340,
+		"mBRV": 105,
+		"ATK": 36,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"HP": 340
+		},
+		"armor": {
+			"iBRV": 110
+		}
+	},
+	"lv60": false
+}, {
+	"id": 19,
+	"name": "Terra",
+	"role": null,
+	"series": {
+		"id": 6,
+		"name": "FF6"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3656,
+		"iBRV": 831,
+		"mBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	"weaponType": "Sword",
+	"exclusiveWeapon": {
+		"name": "Enhancer",
+		"stats": {
+			"HP": 80,
+			"iBRV": 276,
+			"mBRV": 3001,
+			"ATK": 984,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 136,
+			"ATK": 36,
+			"DEF": 801
+		},
+		"bonus": {
+			"iBRV": 110,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 260,
+		"mBRV": 110,
+		"ATK": 36,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"iBRV": 55
+		},
+		"armor": {
+			"HP": 680
+		}
+	},
+	"lv60": {
+		"awakeningPassives": {
+			"ATK": 100,
+			"DEF": 70
+		},
+		"lvUp": {
+			"HP": 25,
+			"iBRV": 100,
+			"mBRV": 100,
+			"ATK": 10,
+			"DEF": 8
+		},
+		"statUp": {
+			"HP": 250,
+			"mBRV": 1000,
+			"ATK": 100,
+			"DEF": 150
+		}
+	}
+}, {
+	"id": 18,
+	"name": "Penelo",
+	"role": null,
+	"series": {
+		"id": 12,
+		"name": "FF12"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 831,
+		"mBRV": 1364,
+		"ATK": 471,
+		"DEF": 594
+	},
+	"weaponType": "Dagger",
+	"exclusiveWeapon": {
+		"name": "Platinum Dagger",
+		"stats": {
+			"HP": 132,
+			"iBRV": 276,
+			"mBRV": 2850,
+			"ATK": 908,
+			"DEF": 75
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 37,
+			"iBRV": 0,
+			"mBRV": 37,
+			"ATK": 9,
+			"DEF": 904
+		},
+		"bonus": {
+			"iBRV": 110,
+			"DEF": 84
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 100,
+		"ATK": 33,
+		"DEF": 42
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"DEF": 42
+		},
+		"armor": {
+			"ATK": 72
+		}
+	},
+	"lv60": false
+}, {
+	"id": 17,
+	"name": "Bartz",
+	"role": null,
+	"series": {
+		"id": 5,
+		"name": "FF5"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 739,
+		"mBRV": 1437,
+		"ATK": 500,
+		"DEF": 424
+	},
+	"weaponType": "Sword",
+	"exclusiveWeapon": {
+		"name": "Mithril Sword",
+		"stats": {
+			"HP": 103,
+			"iBRV": 270,
+			"mBRV": 2925,
+			"ATK": 957,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 50,
+			"iBRV": 0,
+			"mBRV": 72,
+			"ATK": 27,
+			"DEF": 823
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 105,
+		"ATK": 35,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 16,
+	"name": "King",
+	"role": null,
+	"series": {
+		"id": 18,
+		"name": "FFT0"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 739,
+		"mBRV": 1364,
+		"ATK": 500,
+		"DEF": 424
+	},
+	"weaponType": "Gun",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 115,
+			"iBRV": 220,
+			"mBRV": 2550,
+			"ATK": 854,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 63,
+			"iBRV": 0,
+			"mBRV": 59,
+			"ATK": 27,
+			"DEF": 823
+		},
+		"bonus": {
+			"iBRV": 110,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 100,
+		"ATK": 35,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"ATK": 36
+		},
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 14,
+	"name": "Edge",
+	"role": null,
+	"series": {
+		"id": 4,
+		"name": "FF4"
+	},
+	"attributes": ["Thunder"],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 785,
+		"mBRV": 1437,
+		"ATK": 480,
+		"DEF": 424
+	},
+	"weaponType": "Dagger",
+	"exclusiveWeapon": {
+		"name": "Ashura",
+		"stats": {
+			"HP": 113,
+			"iBRV": 273,
+			"mBRV": 2925,
+			"ATK": 950,
+			"DEF": 58
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 32,
+			"iBRV": 0,
+			"mBRV": 96,
+			"ATK": 18,
+			"DEF": 823
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 105,
+		"ATK": 34,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"iBRV": 55
+		},
+		"armor": {
+			"HP": 680
+		}
+	},
+	"lv60": false
+}, {
+	"id": 14,
+	"name": "Yuna",
+	"role": null,
+	"series": {
+		"id": 10,
+		"name": "FF10"
+	},
+	"attributes": ["Thunder"],
+	"full": {},
+	"base": {
+		"HP": 4468,
+		"iBRV": 831,
+		"mBRV": 1227,
+		"ATK": 452,
+		"DEF": 537
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 172,
+			"iBRV": 276,
+			"mBRV": 2665,
+			"ATK": 882,
+			"DEF": 68
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 100,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 882
+		},
+		"bonus": {
+			"HP": 680,
+			"iBRV": 110
+		}
+	},
+	"awakeningPassives": {
+		"HP": 340,
+		"mBRV": 90,
+		"ATK": 32,
+		"DEF": 38
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"HP": 340
+		},
+		"armor": {
+			"mBRV": 220
+		}
+	},
+	"lv60": false
+}, {
+	"id": 13,
+	"name": "Yuffie",
+	"role": null,
+	"series": {
+		"id": 7,
+		"name": "FF7"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 739,
+		"mBRV": 1500,
+		"ATK": 452,
+		"DEF": 424
+	},
+	"weaponType": "Throwing Weapon",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 128,
+			"iBRV": 220,
+			"mBRV": 2683,
+			"ATK": 788,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 48,
+			"iBRV": 0,
+			"mBRV": 92,
+			"ATK": 0,
+			"DEF": 823
+		},
+		"bonus": {
+			"HP": 680,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 110,
+		"ATK": 32,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"ATK": 72
+		}
+	},
+	"lv60": false
+}, {
+	"id": 12,
+	"name": "Vaan",
+	"role": null,
+	"series": {
+		"id": 12,
+		"name": "FF12"
+	},
+	"attributes": ["Holy", "Ice", "Wind"],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 785,
+		"mBRV": 1500,
+		"ATK": 500,
+		"DEF": 424
+	},
+	"weaponType": "Sword",
+	"exclusiveWeapon": {
+		"name": "Zwill Blade",
+		"stats": {
+			"HP": 90,
+			"iBRV": 273,
+			"mBRV": 3001,
+			"ATK": 957,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 22,
+			"iBRV": 0,
+			"mBRV": 100,
+			"ATK": 27,
+			"DEF": 823
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 110,
+		"ATK": 35,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 11,
+	"name": "Yda",
+	"role": null,
+	"series": {
+		"id": 15,
+		"name": "FF14"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 693,
+		"mBRV": 1437,
+		"ATK": 500,
+		"DEF": 424
+	},
+	"weaponType": "Fists",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 100,
+			"iBRV": 233,
+			"mBRV": 2925,
+			"ATK": 957,
+			"DEF": 62
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 26,
+			"iBRV": 0,
+			"mBRV": 96,
+			"ATK": 27,
+			"DEF": 823
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 105,
+		"ATK": 35,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"ATK": 36
+		},
+		"armor": {
+			"HP": 680
+		}
+	},
+	"lv60": false
+}, {
+	"id": 10,
+	"name": "Cecil",
+	"role": null,
+	"series": {
+		"id": 4,
+		"name": "FF4"
+	},
+	"attributes": ["Dark"],
+	"full": {},
+	"base": {
+		"HP": 4468,
+		"iBRV": 646,
+		"mBRV": 1364,
+		"ATK": 509,
+		"DEF": 424
+	},
+	"weaponType": "Heavy Sword",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 103,
+			"iBRV": 230,
+			"mBRV": 2850,
+			"ATK": 984,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 78,
+			"iBRV": 0,
+			"mBRV": 38,
+			"ATK": 36,
+			"DEF": 823
+		},
+		"bonus": {
+			"HP": 680,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 340,
+		"mBRV": 100,
+		"ATK": 36,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"HP": 340
+		},
+		"armor": {
+			"iBRV": 110
+		}
+	},
+	"lv60": false
+}, {
+	"id": 9,
+	"name": "Zidane",
+	"role": null,
+	"series": {
+		"id": 9,
+		"name": "FF9"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 693,
+		"mBRV": 1437,
+		"ATK": 480,
+		"DEF": 424
+	},
+	"weaponType": "Dagger",
+	"exclusiveWeapon": {
+		"name": "Butterfly Sword",
+		"stats": {
+			"HP": 115,
+			"iBRV": 230,
+			"mBRV": 2925,
+			"ATK": 950,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 53,
+			"iBRV": 0,
+			"mBRV": 75,
+			"ATK": 18,
+			"DEF": 823
+		},
+		"bonus": {
+			"HP": 680,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 105,
+		"ATK": 34,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"iBRV": 110
+		}
+	},
+	"lv60": false
+}, {
+	"id": 8,
+	"name": "Y'shtola",
+	"role": null,
+	"series": {
+		"id": 15,
+		"name": "FF14"
+	},
+	"attributes": ["Earth"],
+	"full": {},
+	"base": {
+		"HP": 4265,
+		"iBRV": 831,
+		"mBRV": 1300,
+		"ATK": 471,
+		"DEF": 480
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 150,
+			"iBRV": 276,
+			"mBRV": 2740,
+			"ATK": 908,
+			"DEF": 62
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 86,
+			"iBRV": 0,
+			"mBRV": 28,
+			"ATK": 9,
+			"DEF": 870
+		},
+		"bonus": {
+			"HP": 680,
+			"iBRV": 110
+		}
+	},
+	"awakeningPassives": {
+		"HP": 320,
+		"mBRV": 95,
+		"ATK": 33,
+		"DEF": 34
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"iBRV": 55
+		},
+		"armor": {
+			"mBRV": 220
+		}
+	},
+	"lv60": {
+		"awakeningPassives": {
+			"ATK": 100,
+			"DEF": 130
+		},
+		"lvUp": {
+			"HP": 82,
+			"iBRV": 100,
+			"mBRV": 44,
+			"ATK": 10,
+			"DEF": 14
+		},
+		"statUp": {
+			"HP": 820,
+			"mBRV": 440,
+			"ATK": 100,
+			"DEF": 270
+		}
+	}
+}, {
+	"id": 7,
+	"name": "Hope",
+	"role": null,
+	"series": {
+		"id": 13,
+		"name": "FF13"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4062,
+		"iBRV": 785,
+		"mBRV": 1437,
+		"ATK": 471,
+		"DEF": 424
+	},
+	"weaponType": "Throwing Weapon",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 128,
+			"iBRV": 273,
+			"mBRV": 2925,
+			"ATK": 908,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 54,
+			"iBRV": 0,
+			"mBRV": 80,
+			"ATK": 9,
+			"DEF": 823
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 300,
+		"mBRV": 105,
+		"ATK": 33,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"iBRV": 55
+		},
+		"armor": {
+			"ATK": 72
+		}
+	},
+	"lv60": false
+}, {
+	"id": 6,
+	"name": "Cloud",
+	"role": null,
+	"series": {
+		"id": 7,
+		"name": "FF7"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 739,
+		"mBRV": 1437,
+		"ATK": 509,
+		"DEF": 424
+	},
+	"weaponType": "Heavy Sword",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 90,
+			"iBRV": 270,
+			"mBRV": 2925,
+			"ATK": 984,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 29,
+			"iBRV": 0,
+			"mBRV": 87,
+			"ATK": 36,
+			"DEF": 823
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 105,
+		"ATK": 36,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"ATK": 36
+		},
+		"armor": {
+			"HP": 680
+		}
+	},
+	"lv60": {
+		"awakeningPassives": {
+			"ATK": 100,
+			"DEF": 100
+		},
+		"lvUp": {
+			"HP": 44,
+			"iBRV": 60,
+			"mBRV": 82,
+			"ATK": 10,
+			"DEF": 11
+		},
+		"statUp": {
+			"HP": 440,
+			"mBRV": 820,
+			"ATK": 100,
+			"DEF": 210
+		}
+	}
+}, {
+	"id": 5,
+	"name": "Tifa",
+	"role": null,
+	"series": {
+		"id": 7,
+		"name": "FF7"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 739,
+		"mBRV": 1437,
+		"ATK": 500,
+		"DEF": 424
+	},
+	"weaponType": "Fists",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 101,
+			"iBRV": 220,
+			"mBRV": 2616,
+			"ATK": 854,
+			"DEF": 58
+		}
+	},
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 101,
+			"iBRV": 270,
+			"mBRV": 2925,
+			"ATK": 957,
+			"DEF": 58
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 32,
+			"iBRV": 0,
+			"mBRV": 90,
+			"ATK": 27,
+			"DEF": 823
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 105,
+		"ATK": 35,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 4,
+	"name": "Sazh",
+	"role": null,
+	"series": {
+		"id": 13,
+		"name": "FF13"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4265,
+		"iBRV": 739,
+		"mBRV": 1364,
+		"ATK": 500,
+		"DEF": 480
+	},
+	"weaponType": "Gun",
+	"baseWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 112,
+			"iBRV": 220,
+			"mBRV": 2550,
+			"ATK": 854,
+			"DEF": 62
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 62,
+			"iBRV": 0,
+			"mBRV": 40,
+			"ATK": 27,
+			"DEF": 870
+		},
+		"bonus": {
+			"HP": 680,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 320,
+		"mBRV": 100,
+		"ATK": 35,
+		"DEF": 34
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"HP": 340
+		},
+		"armor": {
+			"iBRV": 110
+		}
+	},
+	"lv60": false
+}, {
+	"id": 3,
+	"name": "Rem",
+	"role": null,
+	"series": {
+		"id": 18,
+		"name": "FFT0"
+	},
+	"attributes": ["Ice"],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 785,
+		"mBRV": 1500,
+		"ATK": 452,
+		"DEF": 424
+	},
+	"weaponType": "Dagger",
+	"baseWeapon": {
+		"name": "Survival Edge",
+		"stats": {
+			"HP": 128,
+			"iBRV": 221,
+			"mBRV": 2683,
+			"ATK": 788,
+			"DEF": 55
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 28,
+			"iBRV": 0,
+			"mBRV": 112,
+			"ATK": 0,
+			"DEF": 823
+		},
+		"bonus": {
+			"iBRV": 110,
+			"mBRV": 220
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 110,
+		"ATK": 32,
+		"DEF": 30
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"mBRV": 110
+		},
+		"armor": {
+			"ATK": 72
+		}
+	},
+	"lv60": false
+}, {
+	"id": 2,
+	"name": "Vivi",
+	"role": null,
+	"series": {
+		"id": 9,
+		"name": "FF9"
+	},
+	"attributes": ["Fire"],
+	"full": {},
+	"base": {
+		"HP": 3859,
+		"iBRV": 693,
+		"mBRV": 1500,
+		"ATK": 509,
+		"DEF": 367
+	},
+	"weaponType": "Staff",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 80,
+			"iBRV": 233,
+			"mBRV": 3001,
+			"ATK": 984,
+			"DEF": 49
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 28,
+			"iBRV": 0,
+			"mBRV": 108,
+			"ATK": 36,
+			"DEF": 801
+		},
+		"bonus": {
+			"mBRV": 220,
+			"ATK": 72
+		}
+	},
+	"awakeningPassives": {
+		"HP": 280,
+		"mBRV": 110,
+		"ATK": 36,
+		"DEF": 26
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"ATK": 36
+		},
+		"armor": {
+			"DEF": 84
+		}
+	},
+	"lv60": false
+}, {
+	"id": 1,
+	"name": "Warrior of Light",
+	"role": null,
+	"series": {
+		"id": 1,
+		"name": "FF1"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 4265,
+		"iBRV": 831,
+		"mBRV": 1300,
+		"ATK": 480,
+		"DEF": 594
+	},
+	"weaponType": "Sword",
+	"exclusiveWeapon": {
+		"name": "Flame Sword",
+		"stats": {
+			"HP": 132,
+			"iBRV": 276,
+			"mBRV": 2740,
+			"ATK": 950,
+			"DEF": 75
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 52,
+			"iBRV": 0,
+			"mBRV": 16,
+			"ATK": 18,
+			"DEF": 904
+		},
+		"bonus": {
+			"iBRV": 110,
+			"DEF": 84
+		}
+	},
+	"awakeningPassives": {
+		"HP": 320,
+		"mBRV": 95,
+		"ATK": 34,
+		"DEF": 42
+	},
+	"fourStarPassives": {
+		"weapon": {
+			"DEF": 42
+		},
+		"armor": {
+			"mBRV": 220
+		}
+	},
+	"lv60": {
+		"awakeningPassives": {
+			"ATK": 100,
+			"DEF": 200
+		},
+		"lvUp": {
+			"HP": 82,
+			"iBRV": 100,
+			"mBRV": 44,
+			"ATK": 10,
+			"DEF": 20
+		},
+		"statUp": {
+			"HP": 820,
+			"mBRV": 440,
+			"ATK": 100,
+			"DEF": 400
+		}
+	}
+}]

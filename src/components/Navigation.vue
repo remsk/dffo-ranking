@@ -48,7 +48,6 @@ ul {
 
 li {
   margin:0;
-  padding: 10px;
   height: calc(100% - 20px);
   vertical-align: middle;
   display: table-cell;
@@ -65,7 +64,9 @@ a {
   text-transform: uppercase;
   font-size: 1.25em;
   line-height: 1.25em;
+  width: 100%;
   height: 100%;
+  padding: 10px;
   display: block;
   margin: 0 auto;
 }

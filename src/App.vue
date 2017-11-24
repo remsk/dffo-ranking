@@ -7,9 +7,7 @@
       <navigation />
     </header>
     <main>
-      <keep-alive>
-        <router-view></router-view>
-      </keep-alive>
+      <router-view></router-view>
     </main>
     <footer>All materials are the property of KOEI TECMO GAMES/SQUARE ENIX CO., LTD. All Rights Reserved.</footer>
   </div>
@@ -27,8 +25,17 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Karla|Open+Sans');
+
 *:focus {
   outline: none;
+}
+
+label, th, nav {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */    
 }
 
 body {
@@ -42,7 +49,7 @@ body {
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -58,6 +65,14 @@ main {
   border-bottom: 1px solid #3b3b3b;
   border-left: 1px solid #5b5b5b;
   border-top: 1px solid #5b5b5b;
+}
+
+ h2 {
+  font-family: 'Karla', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 10px;
 }
 
 header {
