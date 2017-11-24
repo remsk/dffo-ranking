@@ -2,6 +2,7 @@
   <div class="ranking">
     <h2 class="header">DFF Opera Omnia Ranking</h2>
     <div class="notes">
+      <p></p>
       <template v-if="params.lv60ready">
         <p>Stat values are based on Lv60 fully awakened characters and 6* exclusive weapon/armor.</p>
       </template>
@@ -10,49 +11,50 @@
       </template>
       <p>15CP weapons are used for characters lacking their exclusive weapon. (marked with <strong>&#10007;</strong>)</p>
     </div>
-
     <div class="ranking-options">
-      <label title="Show all characters" for="lv50"><input type="radio" id="lv50" v-model="params.lv60ready" :value="false">Lv50</label>
-      <label title="Show only Lv60 ready characters™" for="lv60"><input type="radio" id="lv60" v-model="params.lv60ready" :value="true">Lv60</label>
-    </div>
-    <div class="base-checkbox">
-      <label title="Show base stats only" for="baseStats"><input type="checkbox" id="baseStats" v-model="params.baseOnly">Base stats only</label>
-    </div>
-    <table class="additional-options" v-if="!params.baseOnly">
-      <tbody>
-        <tr>
-          <td title="Equip 6* exclusive weapon">
-            <label for="addW"><input type="checkbox" id="addW" :disabled="params.baseOnly ? true : false" v-model="params.addWeapon">Weapon</label>
-          </td>
-          <td title="Equip 6* armor and its passive">
-            <label for="addA"><input type="checkbox" id="addA" :disabled="params.baseOnly ? true : false" v-model="params.addArmor">Armor</label>
-          </td>
-        </tr>
-        <tr>
-          <template v-if="params.lv60ready">
-            <td title="Equip Lv5 to Lv60 stat passives (30CP)">
-              <label for="addP"><input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">Lv60 Passives</label>
+      <div class="ranking-level">
+        <label title="Show all characters" for="lv50"><input type="radio" id="lv50" v-model="params.lv60ready" :value="false">Lv50</label>
+        <label title="Show only Lv60 ready characters™" for="lv60"><input type="radio" id="lv60" v-model="params.lv60ready" :value="true">Lv60</label>
+      </div>
+      <div class="base-checkbox">
+        <label title="Show base stats only" for="baseStats"><input type="checkbox" id="baseStats" v-model="params.baseOnly">Base stats only</label>
+      </div>
+      <table class="additional-options" v-if="!params.baseOnly">
+        <tbody>
+          <tr>
+            <td title="Equip 6* exclusive weapon">
+              <label for="addW">Weapon<input type="checkbox" id="addW" :disabled="params.baseOnly ? true : false" v-model="params.addWeapon"></label>
             </td>
-          </template>
-          <template v-else>
-            <td title="Equip Lv5 to Lv50 stat passives (20CP)">
-              <label for="addP"><input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives">Lv50 Passives</label>
+            <td title="Equip 6* armor and its passive">
+              <label for="addA"><input type="checkbox" id="addA" :disabled="params.baseOnly ? true : false" v-model="params.addArmor">Armor</label>
             </td>
-          </template>
-          <td title="Equip 4* weapon and armor passives (7CP)">
-            <label for="addF"><input type="checkbox" id="addF" :disabled="params.baseOnly ? true : false" v-model="params.addFourStar">4* Passives</label>
-          </td>
-        </tr>
-        <tr>
-          <td title="Equip 108 ATK artifact passives (from 15 to 45CP)">
-            <label for="addArtifact"><input type="checkbox" id="addArtifact" :disabled="params.baseOnly ? true : false" v-model="params.addArtifact">108 ATK Artifacts</label>
-          </td>
-          <td title="Enable synergy bonus">
-            <label for="addS"><input type="checkbox" id="addS" :disabled="params.baseOnly ? true : false" v-model="params.addSynergy">Synergy</label>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          </tr>
+          <tr>
+            <template v-if="params.lv60ready">
+              <td title="Equip Lv5 to Lv60 stat passives (30CP)">
+                <label for="addP">Lv60 Passives<input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives"></label>
+              </td>
+            </template>
+            <template v-else>
+              <td title="Equip Lv5 to Lv50 stat passives (20CP)">
+                <label for="addP">Lv50 Passives<input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives"></label>
+              </td>
+            </template>
+            <td title="Equip 4* weapon and armor passives (7CP)">
+              <label for="addF"><input type="checkbox" id="addF" :disabled="params.baseOnly ? true : false" v-model="params.addFourStar">4* Passives</label>
+            </td>
+          </tr>
+          <tr>
+            <td title="Equip 108 ATK artifact passives (from 15 to 45CP)">
+              <label for="addArtifact">108 ATK x3<input type="checkbox" id="addArtifact" :disabled="params.baseOnly ? true : false" v-model="params.addArtifact"></label>
+            </td>
+            <td title="Enable synergy bonus">
+              <label for="addS"><input type="checkbox" id="addS" :disabled="params.baseOnly ? true : false" v-model="params.addSynergy">Synergy</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <vue-good-table
       :columns="columns"
       :rows="listCharacters()"
@@ -62,9 +64,6 @@
       secondarySortType="asc"
       globalSearchPlaceholder="Search by character, attribute or stat"
       styleClass="ranking-table">
-      <template slot="table-column" slot-scope="props">
-        <span :title="(props.column.label === 'BST' ? 'Base stats total' : false)">{{ props.column.label }}</span>
-      </template>
       <template slot="table-row" slot-scope="props">
         <td :title="props.row.character" @click="openCharacterPage(props.row.character)" :class="isFinished(props.row)">
           <span class="icon" :style="characterIcon(props.row.character) ? { backgroundImage: 'url(' + characterIcon(props.row.character) + ')'} : false"></span>
@@ -380,7 +379,7 @@ export default {
     openCharacterPage: function (character) {
       let slug = this.slugify(character)
 
-      this.$router.push({name: 'Character', params: { slug }})
+      this.$router.push({name: 'character', params: { slug }})
     },
     slugify: function (str) {
       return str.toLowerCase().split(' ').join('_').split('\'').join('')
@@ -411,44 +410,44 @@ label, th {
   user-select: none;          /* Likely future */    
 }
 
-div.ranking {
-  max-width: 910px;
-  background-color: #43517a;
-  margin: 0 auto;
-  border-radius: 5px;
-  padding: 15px;
-  box-shadow: inset 0 0 10px #000000;
-}
-
  h2 {
   font-family: 'Karla', sans-serif;
   text-transform: uppercase;
   font-size: 1.5em;
+  text-align: center;
+  margin-top: 10px;
 }
 
 div.notes {
+  margin: 0 auto;
   font-size: 0.85em;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 15px;
   padding: 0 15px;
+  display: block;
 }
 
 p {
   margin: 2.5px auto;
 }
 
+div.ranking-options {
+  display: block;
+}
+
 input[type=checkbox], input[type=radio] {
   width: 16px;
   height: 16px;
-  margin: 0 5px;
+  margin: 0 7.5px;
   vertical-align: middle;
 }
 
-.additional-options tr, .base-checkbox, .ranking-options {
+.additional-options tr, .base-checkbox, .ranking-level {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 5px;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 .additional-options {
@@ -456,25 +455,34 @@ input[type=checkbox], input[type=radio] {
   margin: 0 auto;
 }
 
-.additional-options td {
+.additional-options td:nth-child(2) {
   text-align: left;
+}
+
+.additional-options td:first-child {
+  text-align: right;
 }
 
 /* Ranking Table styles */
 
 .ranking-table {
   width: 100%;
+  overflow: hidden;
   text-align: center;
   font-size: 0.875em;
   margin: 0 auto;
 }
 
+.ranking-table thead {
+  background-color: #43517a;
+}
+
 .ranking-table th, .ranking-table th.sorting-asc, .ranking-table th.sorting-desc {
-  padding: 10px;
+  padding: 15px 10px;
   color: #ccc !important;
   font-size: 10px;
   width: 10.625% !important;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .ranking-table th:first-child {
@@ -589,7 +597,7 @@ input[type=text] {
   background-color: #273153;
   color: #ccc;
   border-style: none;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: inset 0 0 10px #000000;
   margin: 15px auto;
   margin-top: 5px;

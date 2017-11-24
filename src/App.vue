@@ -1,22 +1,27 @@
 <template>
   <div id="app">
-    <router-link :to="{ name: 'Ranking' }">
-      <header class="logo"><img title="DFF OPERA OMNIA" src="./images/logo.png"></header>
-    </router-link>
-    <keep-alive>
-      <router-view></router-view>
-    </keep-alive>
-    <footer>All materials are the property of KOEI TECMO GAMES/SQUARE ENIX CO., LTD. All Rights Reserved. </footer>
+    <header>
+       <router-link :to="{ name: 'ranking' }" class="logo">
+        <img title="DFF OPERA OMNIA" src="./images/logo.png">
+      </router-link>
+      <navigation />
+    </header>
+    <main>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
+    </main>
+    <footer>All materials are the property of KOEI TECMO GAMES/SQUARE ENIX CO., LTD. All Rights Reserved.</footer>
   </div>
 </template>
 
 <script>
-import Ranking from './components/Ranking'
+import Navigation from './components/Navigation'
 
 export default {
   name: 'app',
   components: {
-    Ranking
+    Navigation
   }
 }
 </script>
@@ -31,30 +36,51 @@ body {
   background-image: url('./images/bg.jpg');
   background-repeat: repeat-y;
   background-position: top center;
+  color: #cfd8dc;
+  margin: 0;
+  padding: 0 10px;
 }
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #cfd8dc;
 }
 
-header.logo {
-  display: block;
+main {
+  max-width: 910px;
+  background-color: #43517a;
+  margin: 0 auto;
+  padding: 15px;
+  box-shadow: inset 0 0 10px #000000;
+  border-radius: 3px;
+  border-right: 1px solid #3b3b3b;
+  border-bottom: 1px solid #3b3b3b;
+  border-left: 1px solid #5b5b5b;
+  border-top: 1px solid #5b5b5b;
+}
+
+header {
   margin: 15px auto;
+}
+
+a.logo {
+  margin: 0 auto;
+  display: block;
   max-width: 430px;
   line-height: 0;
 }
 
-header.logo img {
+a.logo img {
   width: 100%;
 }
 
 footer {
+  max-width: 910px;
   font-size: 0.75em;
   padding: 5px 15px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media screen and (min-width: 1800px) {
