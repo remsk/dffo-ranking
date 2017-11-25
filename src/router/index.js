@@ -20,19 +20,19 @@ export default new Router({
       component: Ranking
     },
     {
-      path: '/:slug',
-      name: 'character',
-      component: Character
+      path: '/faq',
+      name: 'faq',
+      component: FAQ
     },
     {
-      path: '/all',
+      path: '/characters/all',
       name: 'characters',
       component: Characters
     },
     {
-      path: '/faq',
-      name: 'faq',
-      component: FAQ
+      path: '/characters/:slug',
+      name: 'character',
+      component: Character
     },
     {
       path: '*',

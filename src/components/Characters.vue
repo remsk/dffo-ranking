@@ -1,12 +1,15 @@
 <template>
   <div class="characters">
     <h2 class="header">ALL CHARACTERS</h2>
-    <ul>
-      <li v-for="character in characters" @click="openCharacterPage(character.name)">
-        <span class="icon" :style="fetchCard(character.name) ? { backgroundImage: 'url(' + fetchCard(character.name) + ')'} : false"></span>
-        <span class="name">{{ character.name }}</span>
-      </li>
-    </ul>
+    <div class="series">
+      <ul>
+        <li v-for="character in sortBySeries()" @click="openCharacterPage(character.name)">
+          <span class="icon" :style="fetchCard(character.name) ? { backgroundImage: 'url(' + fetchCard(character.name) + ')'} : false"></span>
+          <span class="name">{{ character.name }}</span>
+          <span class="series">{{ filterByCharacter(character).name }}</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -18,29 +21,48 @@ export default {
   mixins: [Toolkit],
   data () {
     return {
-      characters: []
+      orderBySeries: false,
+      characters: [],
+      series: []
+    }
+  },
+  methods: {
+    filterByCharacter: function (character) {
+      return this.series.find(function (entry) { return entry.id === character.series })
+    },
+    sortBySeries: function () {
+      if (this.orderBySeries) {
+        return this.characters.sort(function (a, b) {
+          if (a.series === b.series) {
+            return a.id - b.id
+          }
+          return a.series - b.series
+        })
+      }
+      return this.characters.sort(function (a, b) { return a.id - b.id })
     }
   },
   created () {
     this.characters = this.fetchCharacters()
-    .map(function (character) { return { id: character.id, name: character.name } })
-    .sort(function (a, b) { return a.id - b.id })
+    .map(function (character) { return { id: character.id, name: character.name, series: character.series.id } })
+    this.series = this.fetchSeries()
   }
 }
 </script>
 
 <style scoped>
+
 ul {
   list-style: none;
-  margin: 0 auto;
-  padding: 10px 0;
+  padding: 10px;
+  margin: 0;
   color: #ccc;
   border-radius: 3px;
   background-color: #273153;
   box-shadow: inset 0 0 10px #000000;
   text-align: center;
-  max-width: 860px;
 }
+
 li {
   width: 120px;
   height: 140px;
@@ -49,6 +71,7 @@ li {
   margin: 10px;
   cursor: pointer;
 }
+
 span.icon {
   background-size: contain;
   background-repeat: no-repeat;
@@ -56,11 +79,15 @@ span.icon {
   height: 120px;
   display: block;
   margin: 0 auto;
-  box-shadow: inset 0 0 10px #273153;
   border-radius: 3px;
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
 }
-span.name {
-  font-size: 0.85em;
+
+span.name, span.series {
+  font-size: 0.65em;
+  line-height: 20px;
+  text-transform: uppercase;
   color: #212121;
   width: 120px;
   height: 20px;
@@ -70,5 +97,19 @@ span.name {
   background-color: #bdbdbd;
   border-radius: 3px;
   box-shadow: inset 0 0 10px #273153;
+  border-top-right-radius: unset;
+  border-top-left-radius: unset;
+}
+
+span.series {
+  display: none;
+}
+
+li:hover span.name {
+  display: none;
+}
+
+li:hover span.series {
+  display: block;
 }
 </style>

@@ -10,6 +10,13 @@ export default {
         console.log('Unable to load database.')
       }
     },
+    fetchSeries: function () {
+      try {
+        return require('../series.json')
+      } catch (e) {
+        console.log('Unable to load series.')
+      }
+    },
     fetchIcon: function (name, type) {
       let slug = this.slugify(name)
       try {

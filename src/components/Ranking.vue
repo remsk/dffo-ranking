@@ -231,7 +231,7 @@ export default {
 ul.notes {
   color: #ccc;
   margin: 0 auto;
-  max-width: 610px;
+  max-width: 600px;
   list-style: none;
   font-size: 0.85em;
   margin: 15px auto;

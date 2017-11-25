@@ -55,7 +55,7 @@ body {
 }
 
 main {
-  max-width: 910px;
+  max-width: 1000px;
   background-color: #43517a;
   margin: 0 auto;
   padding: 15px;

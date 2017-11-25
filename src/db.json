@@ -1,4 +1,54 @@
 [{
+	"id": 69,
+	"name": "Lenna",
+	"role": null,
+	"series": {
+		"id": 5,
+		"name": "FF5"
+	},
+	"attributes": [],
+	"full": {},
+	"base": {
+		"HP": 0,
+		"iBRV": 0,
+		"mBRV": 0,
+		"ATK": 0,
+		"DEF": 0
+	},
+	"weaponType": "Bow",
+	"exclusiveWeapon": {
+		"name": null,
+		"stats": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		}
+	},
+	"armor": {
+		"name": null,
+		"stats": {
+			"HP": 0,
+			"iBRV": 0,
+			"mBRV": 0,
+			"ATK": 0,
+			"DEF": 0
+		},
+		"bonus": {
+			"iBRV": 0,
+			"ATK": 0
+		}
+	},
+	"awakeningPassives": {
+		"HP": 0,
+		"mBRV": 0,
+		"ATK": 0,
+		"DEF": 0
+	},
+	"lv60": false,
+	"placeholder": true
+}, {
 	"id": 68,
 	"name": "Kefka",
 	"role": null,
