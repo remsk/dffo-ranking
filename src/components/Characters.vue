@@ -3,7 +3,7 @@
     <h2 class="header">ALL CHARACTERS</h2>
     <div class="series">
       <ul>
-        <li v-for="character in sortBySeries()" @click="openCharacterPage(character.name)">
+        <li v-for="character in charactersList" @click="openCharacterPage(character.name)">
           <span class="icon" :style="fetchCard(character.name) ? { backgroundImage: 'url(' + fetchCard(character.name) + ')'} : false"></span>
           <span class="name">{{ character.name }}</span>
           <span class="series">{{ filterByCharacter(character).name }}</span>
@@ -46,6 +46,11 @@ export default {
     this.characters = this.fetchCharacters()
     .map(function (character) { return { id: character.id, name: character.name, series: character.series.id } })
     this.series = this.fetchSeries()
+  },
+  computed: {
+    charactersList: function () {
+      return this.sortBySeries()
+    }
   }
 }
 </script>

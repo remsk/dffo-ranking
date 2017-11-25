@@ -1,11 +1,13 @@
 <template>
   <div class="character">
     <h2 class="header">{{ character.name }}</h2>
+    <router-link :to="{ name: 'character', params: { slug: previousCharacter }}">Previous</router-link>
     <div class="status">
       <div class="icon" :style="fetchCard(character.name) ? { backgroundImage: 'url(' + fetchCard(character.name) + ')'} : false"></div>
       <div class="gear">
       </div>
     </div>
+    <router-link :to="{ name: 'character', params: { slug: nextCharacter }}">Next</router-link>
   </div>
 </template>
 
@@ -20,12 +22,42 @@ export default {
       character: {}
     }
   },
+  methods: {
+    loadCharacter: function () {
+      let name = this.$route.params.slug
+      return this.fetchCharacters()
+      .find(function (a) { return a.name.toLowerCase().split(' ').join('_').split('\'').join('') === name }, name)
+    }
+  },
   created () {
-    let name = this.$route.params.slug
-    this.character = this.fetchCharacters()
-    .find(function (a) {
-      return a.name.toLowerCase().split(' ').join('_').split('\'').join('') === name
-    }, name)
+    this.character = this.loadCharacter()
+  },
+  computed: {
+    previousCharacter: function () {
+      let previousId = parseInt(this.character.id) - 1
+      if (previousId > 0) {
+        return this.slugify(this.fetchCharacters()
+          .sort(function (a, b) { return a.id - b.id })
+          .find(function (b) { return b.id === previousId }, previousId).name)
+      } else {
+        return this.slugify(this.character.name)
+      }
+    },
+    nextCharacter: function () {
+      let nextId = parseInt(this.character.id) + 1
+      if (nextId <= this.fetchCharacters().length) {
+        return this.slugify(this.fetchCharacters()
+          .sort(function (a, b) { return a.id - b.id })
+          .find(function (b) { return b.id === nextId }, nextId).name)
+      } else {
+        return this.slugify(this.character.name)
+      }
+    }
+  },
+  watch: {
+    '$route.params.slug': function () {
+      this.character = this.loadCharacter()
+    }
   }
 }
 </script>

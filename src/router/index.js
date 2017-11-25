@@ -25,12 +25,12 @@ export default new Router({
       component: FAQ
     },
     {
-      path: '/characters/all',
+      path: '/all',
       name: 'characters',
       component: Characters
     },
     {
-      path: '/characters/:slug',
+      path: '/:slug',
       name: 'character',
       component: Character
     },

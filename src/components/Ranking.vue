@@ -3,12 +3,12 @@
     <h2 class="header">DFF Opera Omnia Ranking</h2>
     <ul class="notes">
       <template v-if="params.lv60ready">
-        <li>Stat values are based on Lv60 fully awakened characters and 6* exclusive weapon/armor.</li>
+        <li>Stat values are based on Lv60 fully awakened characters and 6★ exclusive weapon/armor.</li>
       </template>
       <template v-else>
-        <li>Stat values are based on Lv50 fully awakened characters and 6* exclusive weapon/armor.</li>
+        <li>Stat values are based on Lv50 fully awakened characters and 6★ exclusive weapon/armor.</li>
       </template>
-      <li>15CP weapons are used for characters lacking their exclusive weapon. (marked with <strong>&#10007;</strong>)</li>
+      <li>15CP weapons are used for characters lacking their exclusive weapon. (marked with <strong>✗</strong>)</li>
     </ul>
     <div class="ranking-options">
       <div class="ranking-level">
@@ -22,10 +22,10 @@
       <table class="additional-options" v-if="!params.baseOnly">
         <tbody>
           <tr>
-            <td title="Equip 6* exclusive weapon">
+            <td title="Equip 6★ exclusive weapon">
               <label for="addW">Weapon<input type="checkbox" id="addW" :disabled="params.baseOnly ? true : false" v-model="params.addWeapon"></label>
             </td>
-            <td title="Equip 6* armor and its passive">
+            <td title="Equip 6★ armor and its passive">
               <label for="addA"><input type="checkbox" id="addA" :disabled="params.baseOnly ? true : false" v-model="params.addArmor">Armor</label>
             </td>
           </tr>
@@ -40,7 +40,7 @@
                 <label for="addP">Lv50 Passives<input type="checkbox" id="addP" :disabled="params.baseOnly ? true : false" v-model="params.addPassives"></label>
               </td>
             </template>
-            <td title="Equip 4* weapon and armor passives (7CP)">
+            <td title="Equip 4★ weapon and armor passives (7CP)">
               <label for="addF"><input type="checkbox" id="addF" :disabled="params.baseOnly ? true : false" v-model="params.addFourStar">4* Passives</label>
             </td>
           </tr>
