@@ -1,0 +1,128 @@
+{
+	"series": [{
+		"name": "Final Fantasy",
+		"abbr": "FF1",
+		"id": 1
+	}, {
+		"name": "Final Fantasy II",
+		"abbr": "FF2",
+		"id": 2
+	}, {
+		"name": "Final Fantasy III",
+		"abbr": "FF3",
+		"id": 3
+	}, {
+		"name": "Final Fantasy IV",
+		"abbr": "FF4",
+		"id": 4
+	}, {
+		"name": "Final Fantasy V",
+		"abbr": "FF5",
+		"id": 5
+	}, {
+		"name": "Final Fantasy VI",
+		"abbr": "FF6",
+		"id": 6
+	}, {
+		"name": "Final Fantasy VII",
+		"abbr": "FF7",
+		"id": 7
+	}, {
+		"name": "Final Fantasy VIII",
+		"abbr": "FF8",
+		"id": 8
+	}, {
+		"name": "Final Fantasy IX",
+		"abbr": "FF9",
+		"id": 9
+	}, {
+		"name": "Final Fantasy X",
+		"abbr": "FF10",
+		"id": 10
+	}, {
+		"name": "Final Fantasy XI",
+		"abbr": "FF11",
+		"id": 11
+	}, {
+		"name": "Final Fantasy XII",
+		"abbr": "FF12",
+		"id": 12
+	}, {
+		"name": "Final Fantasy XIII",
+		"abbr": "FF13",
+		"id": 13
+	}, {
+		"name": "Final Fantasy XIII-2",
+		"abbr": "FF13-2",
+		"id": 14
+	}, {
+		"name": "Final Fantasy XIV",
+		"abbr": "FF14",
+		"id": 15
+	}, {
+		"name": "Final Fantasy Tactics",
+		"abbr": "FFT",
+		"id": 16
+	}, {
+		"name": "Final Fantasy CC",
+		"abbr": "FFCC",
+		"id": 17
+	}, {
+		"name": "Final Fantasy Type-0",
+		"abbr": "FFT0",
+		"id": 18
+	}],
+	"weapons": [{
+		"name": "Dagger",
+		"id": 1
+	}, {
+		"name": "Sword",
+		"id": 2
+	}, {
+		"name": "Heavy Sword",
+		"id": 3
+	}, {
+		"name": "Staff",
+		"id": 4
+	}, {
+		"name": "Gun",
+		"id": 5
+	}, {
+		"name": "Fists",
+		"id": 6
+	}, {
+		"name": "Throwing Weapon",
+		"id": 7
+	}, {
+		"name": "Spear",
+		"id": 8
+	}, {
+		"name": "Bow",
+		"id": 9
+	}, {
+		"name": "Whip",
+		"id": 10
+	}, {
+		"name": "Other",
+		"id": 11
+	}],
+	"crystals": [{
+		"name": "Red",
+		"id": 1
+	}, {
+		"name": "Blue",
+		"id": 2
+	}, {
+		"name": "Green",
+		"id": 3
+	}, {
+		"name": "Yellow",
+		"id": 4
+	}, {
+		"name": "Black",
+		"id": 5
+	}, {
+		"name": "White",
+		"id": 6
+	}]
+}

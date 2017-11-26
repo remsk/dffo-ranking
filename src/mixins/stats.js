@@ -1,7 +1,18 @@
 export default {
   data () {
     return {
-      minMaxValues: {}
+      minMaxValues: {},
+      params: {
+        lv60ready: false,
+        baseOnly: true,
+        addAwakening: true,
+        addWeapon: true,
+        addArmor: true,
+        addPassives: true,
+        addFourStar: false,
+        addSynergy: false,
+        addArtifact: false
+      }
     }
   },
   methods: {
@@ -121,28 +132,6 @@ export default {
       minMaxStats.DEF = this.getMinMax('DEF')
 
       return minMaxStats
-    },
-    baseStatsTotal: function (row) {
-      let base = parseInt(row.base.HP + row.base.iBRV + row.base.mBRV + row.base.ATK + row.base.DEF)
-
-      if (this.params.lv60ready) {
-        base += parseInt(row.lv60.statUp.HP + row.lv60.statUp.mBRV + row.lv60.statUp.ATK + row.lv60.statUp.DEF)
-        base += parseInt(row.lv60.lvUp.HP + row.lv60.lvUp.iBRV + row.lv60.lvUp.mBRV + row.lv60.lvUp.ATK + row.lv60.lvUp.DEF) * 10
-      }
-      return base
-    },
-    prepareFullStats: function () {
-      for (let i = 0; i < this.characters.length; i++) {
-        this.characters[i].full.HP = this.fullStat('HP', i)
-        this.characters[i].full.iBRV = this.fullStat('iBRV', i)
-        this.characters[i].full.mBRV = this.fullStat('mBRV', i)
-        this.characters[i].full.ATK = this.fullStat('ATK', i)
-        this.characters[i].full.DEF = this.fullStat('DEF', i)
-      }
-    },
-    setupStats: function () {
-      this.prepareFullStats()
-      this.minMaxValues = this.getMinMaxStats()
     },
     isExtremum: function (prop, value) {
       if (value === this.minMaxValues[prop][0]) {

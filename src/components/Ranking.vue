@@ -19,7 +19,7 @@
         <label title="Show base stats only" for="baseStats"><input type="checkbox" id="baseStats" v-model="params.baseOnly">Base stats only</label>
         <label for="compactVersion"><input type="checkbox" id="compactVersion" v-model="compact">Compact</label>
       </div>
-      <table class="additional-options" v-if="!params.baseOnly">
+      <table class="additional-options" v-show="!this.params.baseOnly">
         <tbody>
           <tr>
             <td title="Equip 6★ exclusive weapon">
@@ -69,7 +69,7 @@
           <span v-show="!compact" @click="openCharacterPage(props.row.name)" class="icon" :style="fetchIcon(props.row.name, 'characters') ? { backgroundImage: 'url(' + fetchIcon(props.row.name, 'characters') + ')'} : false"></span>
           {{ props.row.name }}
         </td>
-        <td>{{ props.row.series.name }}</td>
+        <td>{{ seriesName(props.row.series) }}</td>
         <td class="attributes">
           <template v-if="props.row.attributes.length > 0">
             <span v-for="attribute in props.row.attributes" :title="attribute" :class="!compact ? 'big' : 'small'" :style="fetchIcon(attribute, 'attributes') ? { backgroundImage: 'url(' + fetchIcon(attribute, 'attributes') + ')'} : false"></span> 
@@ -109,17 +109,6 @@ export default {
   data () {
     return {
       compact: false,
-      params: {
-        lv60ready: false,
-        baseOnly: true,
-        addAwakening: true,
-        addWeapon: true,
-        addArmor: true,
-        addPassives: true,
-        addFourStar: false,
-        addSynergy: false,
-        addArtifact: false
-      },
       columns: [
         {
           label: 'Order',
@@ -136,7 +125,7 @@ export default {
         },
         {
           label: 'Series',
-          field: 'series.id',
+          field: 'series',
           filterable: false,
           sortable: true
         },
@@ -195,7 +184,8 @@ export default {
           sortable: true
         }
       ],
-      characters: []
+      characters: [],
+      filters: []
     }
   },
   methods: {
@@ -210,10 +200,36 @@ export default {
         return 'exclusiveMissing'
       }
       return 'hasExclusive'
+    },
+    seriesName: function (seriesId) {
+      return this.filters.series.find(function (entry) { return entry.id === seriesId }).abbr
+    },
+    baseStatsTotal: function (row) {
+      let base = parseInt(row.base.HP + row.base.iBRV + row.base.mBRV + row.base.ATK + row.base.DEF)
+
+      if (this.params.lv60ready) {
+        base += parseInt(row.lv60.statUp.HP + row.lv60.statUp.mBRV + row.lv60.statUp.ATK + row.lv60.statUp.DEF)
+        base += parseInt(row.lv60.lvUp.HP + row.lv60.lvUp.iBRV + row.lv60.lvUp.mBRV + row.lv60.lvUp.ATK + row.lv60.lvUp.DEF) * 10
+      }
+      return base
+    },
+    prepareFullStats: function () {
+      for (let i = 0; i < this.characters.length; i++) {
+        this.characters[i].full.HP = this.fullStat('HP', i)
+        this.characters[i].full.iBRV = this.fullStat('iBRV', i)
+        this.characters[i].full.mBRV = this.fullStat('mBRV', i)
+        this.characters[i].full.ATK = this.fullStat('ATK', i)
+        this.characters[i].full.DEF = this.fullStat('DEF', i)
+      }
+    },
+    setupStats: function () {
+      this.prepareFullStats()
+      this.minMaxValues = this.getMinMaxStats()
     }
   },
   created () {
     this.characters = this.fetchCharacters()
+    this.filters = this.fetchFilters()
     this.setupStats()
   },
   watch: {

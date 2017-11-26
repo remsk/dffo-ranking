@@ -1,15 +1,13 @@
 <template>
   <div class="characters">
     <h2 class="header">ALL CHARACTERS</h2>
-    <div class="series">
-      <ul>
-        <li v-for="character in charactersList" @click="openCharacterPage(character.name)">
-          <span class="icon" :style="fetchCard(character.name) ? { backgroundImage: 'url(' + fetchCard(character.name) + ')'} : false"></span>
-          <span class="name">{{ character.name }}</span>
-          <span class="series">{{ filterByCharacter(character).name }}</span>
-        </li>
-      </ul>
-    </div>
+    <ul>
+      <li v-for="character in charactersList" @click="openCharacterPage(character.name)">
+        <span class="icon" :style="fetchCard(character.name) ? { backgroundImage: 'url(' + fetchCard(character.name) + ')'} : false"></span>
+        <span class="name">{{ character.name }}</span>
+        <span class="info">{{ filterByCharacter(character) }}</span>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -21,35 +19,32 @@ export default {
   mixins: [Toolkit],
   data () {
     return {
-      orderBySeries: false,
       characters: [],
-      series: []
+      filters: {}
     }
   },
   methods: {
     filterByCharacter: function (character) {
-      return this.series.find(function (entry) { return entry.id === character.series })
+      return this.filters.series.find(function (entry) { return entry.id === character.series }).name
     },
-    sortBySeries: function () {
-      if (this.orderBySeries) {
-        return this.characters.sort(function (a, b) {
-          if (a.series === b.series) {
-            return a.id - b.id
-          }
-          return a.series - b.series
-        })
-      }
+    sortBy: function () {
       return this.characters.sort(function (a, b) { return a.id - b.id })
     }
   },
   created () {
     this.characters = this.fetchCharacters()
-    .map(function (character) { return { id: character.id, name: character.name, series: character.series.id } })
-    this.series = this.fetchSeries()
+    .map(function (character) {
+      return {
+        id: character.id,
+        name: character.name,
+        series: character.series
+      }
+    })
+    this.filters = this.fetchFilters()
   },
   computed: {
     charactersList: function () {
-      return this.sortBySeries()
+      return this.sortBy()
     }
   }
 }
@@ -75,6 +70,8 @@ li {
   vertical-align: top;
   margin: 10px;
   cursor: pointer;
+  filter: none;
+  transition: .25s all;
 }
 
 span.icon {
@@ -89,7 +86,7 @@ span.icon {
   border-bottom-left-radius: unset;
 }
 
-span.name, span.series {
+span.name, span.info {
   font-size: 0.65em;
   line-height: 20px;
   text-transform: uppercase;
@@ -106,15 +103,19 @@ span.name, span.series {
   border-top-left-radius: unset;
 }
 
-span.series {
+span.info {
   display: none;
+}
+
+li:hover {
+  filter: grayscale(75%);
 }
 
 li:hover span.name {
   display: none;
 }
 
-li:hover span.series {
+li:hover span.info {
   display: block;
 }
 </style>

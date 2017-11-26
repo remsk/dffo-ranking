@@ -2,10 +2,7 @@
 	"id": 69,
 	"name": "Lenna",
 	"role": null,
-	"series": {
-		"id": 5,
-		"name": "FF5"
-	},
+	"series": 5,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -15,7 +12,7 @@
 		"ATK": 0,
 		"DEF": 0
 	},
-	"weaponType": "Bow",
+	"weaponType": 9,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -52,10 +49,7 @@
 	"id": 68,
 	"name": "Kefka",
 	"role": null,
-	"series": {
-		"id": 6,
-		"name": "FF6"
-	},
+	"series": 6,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -65,7 +59,7 @@
 		"ATK": 500,
 		"DEF": 480
 	},
-	"weaponType": "Other",
+	"weaponType": 11,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -101,10 +95,7 @@
 	"id": 67,
 	"name": "Seifer",
 	"role": null,
-	"series": {
-		"id": 8,
-		"name": "FF8"
-	},
+	"series": 8,
 	"attributes": ["Wind"],
 	"full": {},
 	"base": {
@@ -114,7 +105,7 @@
 		"ATK": 480,
 		"DEF": 594
 	},
-	"weaponType": "Heavy Sword",
+	"weaponType": 3,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -155,10 +146,7 @@
 	"id": 66,
 	"name": "Fujin",
 	"role": null,
-	"series": {
-		"id": 8,
-		"name": "FF8"
-	},
+	"series": 8,
 	"attributes": ["Wind"],
 	"full": {},
 	"base": {
@@ -168,7 +156,7 @@
 		"ATK": 480,
 		"DEF": 367
 	},
-	"weaponType": "Throwing Weapon",
+	"weaponType": 7,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -209,10 +197,7 @@
 	"id": 65,
 	"name": "Raijin",
 	"role": null,
-	"series": {
-		"id": 8,
-		"name": "FF8"
-	},
+	"series": 8,
 	"attributes": ["Thunder"],
 	"full": {},
 	"base": {
@@ -222,7 +207,7 @@
 		"ATK": 509,
 		"DEF": 480
 	},
-	"weaponType": "Spear",
+	"weaponType": 8,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -263,10 +248,7 @@
 	"id": 64,
 	"name": "Quistis",
 	"role": null,
-	"series": {
-		"id": 8,
-		"name": "FF8"
-	},
+	"series": 8,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -276,7 +258,7 @@
 		"ATK": 480,
 		"DEF": 424
 	},
-	"weaponType": "Whip",
+	"weaponType": 10,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -312,10 +294,7 @@
 	"id": 63,
 	"name": "Kuja",
 	"role": null,
-	"series": {
-		"id": 9,
-		"name": "FF9"
-	},
+	"series": 9,
 	"attributes": ["Holy"],
 	"full": {},
 	"base": {
@@ -325,7 +304,7 @@
 		"ATK": 480,
 		"DEF": 367
 	},
-	"weaponType": "Other",
+	"weaponType": 11,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -361,10 +340,7 @@
 	"id": 62,
 	"name": "Palom",
 	"role": null,
-	"series": {
-		"id": 4,
-		"name": "FF4"
-	},
+	"series": 4,
 	"attributes": ["Ice"],
 	"full": {},
 	"base": {
@@ -374,7 +350,7 @@
 		"ATK": 509,
 		"DEF": 367
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -410,10 +386,7 @@
 	"id": 61,
 	"name": "Maria",
 	"role": null,
-	"series": {
-		"id": 2,
-		"name": "FF2"
-	},
+	"series": 2,
 	"attributes": ["Wind"],
 	"full": {},
 	"base": {
@@ -423,7 +396,7 @@
 		"ATK": 480,
 		"DEF": 424
 	},
-	"weaponType": "Bow",
+	"weaponType": 9,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -459,10 +432,7 @@
 	"id": 60,
 	"name": "Kain",
 	"role": null,
-	"series": {
-		"id": 4,
-		"name": "FF4"
-	},
+	"series": 4,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -472,7 +442,7 @@
 		"ATK": 509,
 		"DEF": 537
 	},
-	"weaponType": "Spear",
+	"weaponType": 8,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -508,10 +478,7 @@
 	"id": 59,
 	"name": "Celes",
 	"role": null,
-	"series": {
-		"id": 6,
-		"name": "FF6"
-	},
+	"series": 6,
 	"attributes": ["Ice"],
 	"full": {},
 	"base": {
@@ -521,7 +488,7 @@
 		"ATK": 480,
 		"DEF": 594
 	},
-	"weaponType": "Heavy Sword",
+	"weaponType": 3,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -557,10 +524,7 @@
 	"id": 58,
 	"name": "Edgar",
 	"role": null,
-	"series": {
-		"id": 6,
-		"name": "FF6"
-	},
+	"series": 6,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -570,7 +534,7 @@
 		"ATK": 500,
 		"DEF": 537
 	},
-	"weaponType": "Spear",
+	"weaponType": 8,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -611,10 +575,7 @@
 	"id": 57,
 	"name": "Irvine",
 	"role": null,
-	"series": {
-		"id": 8,
-		"name": "FF8"
-	},
+	"series": 8,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -624,7 +585,7 @@
 		"ATK": 500,
 		"DEF": 367
 	},
-	"weaponType": "Gun",
+	"weaponType": 5,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -665,10 +626,7 @@
 	"id": 56,
 	"name": "Serah",
 	"role": null,
-	"series": {
-		"id": 14,
-		"name": "FF13-2"
-	},
+	"series": 14,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -678,7 +636,7 @@
 		"ATK": 480,
 		"DEF": 480
 	},
-	"weaponType": "Bow",
+	"weaponType": 9,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -719,20 +677,17 @@
 	"id": 55,
 	"name": "Auron",
 	"role": null,
-	"series": {
-		"id": 10,
-		"name": "FF10"
-	},
+	"series": 10,
 	"attributes": [],
 	"full": {},
 	"base": {
-		"HP": 4000,
+		"HP": 4062,
 		"iBRV": 739,
 		"mBRV": 1437,
 		"ATK": 509,
 		"DEF": 537
 	},
-	"weaponType": "Heavy Sword",
+	"weaponType": 3,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -768,10 +723,7 @@
 	"id": 54,
 	"name": "Garnet",
 	"role": null,
-	"series": {
-		"id": 9,
-		"name": "FF9"
-	},
+	"series": 9,
 	"attributes": ["Thunder", "Water"],
 	"full": {},
 	"base": {
@@ -781,7 +733,7 @@
 		"ATK": 500,
 		"DEF": 594
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -817,10 +769,7 @@
 	"id": 53,
 	"name": "Lion",
 	"role": null,
-	"series": {
-		"id": 11,
-		"name": "FF11"
-	},
+	"series": 11,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -830,7 +779,7 @@
 		"ATK": 480,
 		"DEF": 367
 	},
-	"weaponType": "Dagger",
+	"weaponType": 1,
 	"exclusiveWeapon": {
 		"name": "Misericorde",
 		"stats": {
@@ -866,10 +815,7 @@
 	"id": 52,
 	"name": "Aerith",
 	"role": null,
-	"series": {
-		"id": 7,
-		"name": "FF7"
-	},
+	"series": 7,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -879,7 +825,7 @@
 		"ATK": 471,
 		"DEF": 594
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -915,10 +861,7 @@
 	"id": 51,
 	"name": "Ashe",
 	"role": null,
-	"series": {
-		"id": 12,
-		"name": "FF12"
-	},
+	"series": 12,
 	"attributes": ["Holy"],
 	"full": {},
 	"base": {
@@ -928,7 +871,7 @@
 		"ATK": 500,
 		"DEF": 537
 	},
-	"weaponType": "Heavy Sword",
+	"weaponType": 3,
 	"exclusiveWeapon": {
 		"name": "Defender",
 		"stats": {
@@ -964,10 +907,7 @@
 	"id": 50,
 	"name": "Cater",
 	"role": null,
-	"series": {
-		"id": 18,
-		"name": "FFT0"
-	},
+	"series": 18,
 	"attributes": ["Ice"],
 	"full": {},
 	"base": {
@@ -977,7 +917,7 @@
 		"ATK": 500,
 		"DEF": 424
 	},
-	"weaponType": "Gun",
+	"weaponType": 5,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -1013,10 +953,7 @@
 	"id": 49,
 	"name": "Lightning",
 	"role": null,
-	"series": {
-		"id": 13,
-		"name": "FF13"
-	},
+	"series": 13,
 	"attributes": ["Thunder"],
 	"full": {},
 	"base": {
@@ -1026,7 +963,7 @@
 		"ATK": 480,
 		"DEF": 424
 	},
-	"weaponType": "Sword",
+	"weaponType": 2,
 	"exclusiveWeapon": {
 		"name": "Flamberge",
 		"stats": {
@@ -1067,10 +1004,7 @@
 	"id": 48,
 	"name": "Papalymo",
 	"role": null,
-	"series": {
-		"id": 15,
-		"name": "FF14"
-	},
+	"series": 15,
 	"attributes": ["Fire", "Ice"],
 	"full": {},
 	"base": {
@@ -1080,7 +1014,7 @@
 		"ATK": 500,
 		"DEF": 480
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -1121,10 +1055,7 @@
 	"id": 47,
 	"name": "Cyan",
 	"role": null,
-	"series": {
-		"id": 6,
-		"name": "FF6"
-	},
+	"series": 6,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -1134,7 +1065,7 @@
 		"ATK": 509,
 		"DEF": 480
 	},
-	"weaponType": "Heavy Sword",
+	"weaponType": 3,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -1175,10 +1106,7 @@
 	"id": 46,
 	"name": "Snow",
 	"role": null,
-	"series": {
-		"id": 13,
-		"name": "FF13"
-	},
+	"series": 13,
 	"attributes": ["Ice"],
 	"full": {},
 	"base": {
@@ -1188,7 +1116,7 @@
 		"ATK": 480,
 		"DEF": 537
 	},
-	"weaponType": "Fists",
+	"weaponType": 6,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -1224,10 +1152,7 @@
 	"id": 45,
 	"name": "Thancred",
 	"role": null,
-	"series": {
-		"id": 13,
-		"name": "FF13"
-	},
+	"series": 13,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -1237,7 +1162,7 @@
 		"ATK": 480,
 		"DEF": 500
 	},
-	"weaponType": "Dagger",
+	"weaponType": 1,
 	"exclusiveWeapon": {
 		"name": "Yoshimitsu",
 		"stats": {
@@ -1273,10 +1198,7 @@
 	"id": 44,
 	"name": "Krile",
 	"role": null,
-	"series": {
-		"id": 5,
-		"name": "FF5"
-	},
+	"series": 5,
 	"attributes": ["Thunder"],
 	"full": {},
 	"base": {
@@ -1286,7 +1208,7 @@
 		"ATK": 471,
 		"DEF": 424
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -1322,10 +1244,7 @@
 	"id": 43,
 	"name": "Sabin",
 	"role": null,
-	"series": {
-		"id": 6,
-		"name": "FF6"
-	},
+	"series": 6,
 	"attributes": ["Holy", "Wind"],
 	"full": {},
 	"base": {
@@ -1335,7 +1254,7 @@
 		"ATK": 509,
 		"DEF": 424
 	},
-	"weaponType": "Fists",
+	"weaponType": 6,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -1371,10 +1290,7 @@
 	"id": 42,
 	"name": "Seymour",
 	"role": null,
-	"series": {
-		"id": 10,
-		"name": "FF10"
-	},
+	"series": 10,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -1384,7 +1300,7 @@
 		"ATK": 509,
 		"DEF": 367
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -1425,10 +1341,7 @@
 	"id": 41,
 	"name": "Ace",
 	"role": null,
-	"series": {
-		"id": 18,
-		"name": "FFT0"
-	},
+	"series": 18,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -1438,7 +1351,7 @@
 		"ATK": 500,
 		"DEF": 480
 	},
-	"weaponType": "Throwing Weapon",
+	"weaponType": 7,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -1479,10 +1392,7 @@
 	"id": 40,
 	"name": "Vincent",
 	"role": null,
-	"series": {
-		"id": 7,
-		"name": "FF7"
-	},
+	"series": 7,
 	"attributes": ["Fire", "Thunder"],
 	"full": {},
 	"base": {
@@ -1492,7 +1402,7 @@
 		"ATK": 500,
 		"DEF": 537
 	},
-	"weaponType": "Gun",
+	"weaponType": 5,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -1536,10 +1446,7 @@
 	"id": 39,
 	"name": "Layle",
 	"role": null,
-	"series": {
-		"id": 17,
-		"name": "FFCC"
-	},
+	"series": 17,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -1549,7 +1456,7 @@
 		"ATK": 500,
 		"DEF": 480
 	},
-	"weaponType": "Throwing Weapon",
+	"weaponType": 7,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -1593,10 +1500,7 @@
 	"id": 38,
 	"name": "Zell",
 	"role": null,
-	"series": {
-		"id": 8,
-		"name": "FF8"
-	},
+	"series": 8,
 	"attributes": ["Thunder"],
 	"full": {},
 	"base": {
@@ -1606,7 +1510,7 @@
 		"ATK": 480,
 		"DEF": 367
 	},
-	"weaponType": "Fists",
+	"weaponType": 6,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -1650,10 +1554,7 @@
 	"id": 37,
 	"name": "Ramza",
 	"role": null,
-	"series": {
-		"id": 16,
-		"name": "FFT"
-	},
+	"series": 16,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -1663,7 +1564,7 @@
 		"ATK": 500,
 		"DEF": 537
 	},
-	"weaponType": "Sword",
+	"weaponType": 2,
 	"exclusiveWeapon": {
 		"name": "Platinum Sword",
 		"stats": {
@@ -1704,10 +1605,7 @@
 	"id": 36,
 	"name": "Faris",
 	"role": null,
-	"series": {
-		"id": 5,
-		"name": "FF5"
-	},
+	"series": 5,
 	"attributes": ["Water"],
 	"full": {},
 	"base": {
@@ -1717,7 +1615,7 @@
 		"ATK": 471,
 		"DEF": 424
 	},
-	"weaponType": "Dagger",
+	"weaponType": 1,
 	"exclusiveWeapon": {
 		"name": "Orichalcum Dirk",
 		"stats": {
@@ -1761,10 +1659,7 @@
 	"id": 35,
 	"name": "Prishe",
 	"role": null,
-	"series": {
-		"id": 11,
-		"name": "FF11"
-	},
+	"series": 11,
 	"attributes": ["Fire", "Holy", "Wind"],
 	"full": {},
 	"base": {
@@ -1774,7 +1669,7 @@
 		"ATK": 480,
 		"DEF": 367
 	},
-	"weaponType": "Fists",
+	"weaponType": 6,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -1818,10 +1713,7 @@
 	"id": 34,
 	"name": "Tidus",
 	"role": null,
-	"series": {
-		"id": 10,
-		"name": "FF10"
-	},
+	"series": 10,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -1831,7 +1723,7 @@
 		"ATK": 480,
 		"DEF": 424
 	},
-	"weaponType": "Sword",
+	"weaponType": 2,
 	"exclusiveWeapon": {
 		"name": "Brotherhood",
 		"stats": {
@@ -1875,10 +1767,7 @@
 	"id": 33,
 	"name": "Eiko",
 	"role": null,
-	"series": {
-		"id": 9,
-		"name": "FF9"
-	},
+	"series": 9,
 	"attributes": ["Holy"],
 	"full": {},
 	"base": {
@@ -1888,7 +1777,7 @@
 		"ATK": 500,
 		"DEF": 537
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -1932,10 +1821,7 @@
 	"id": 32,
 	"name": "Balthier",
 	"role": null,
-	"series": {
-		"id": 12,
-		"name": "FF12"
-	},
+	"series": 12,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -1945,7 +1831,7 @@
 		"ATK": 480,
 		"DEF": 424
 	},
-	"weaponType": "Gun",
+	"weaponType": 5,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -1989,10 +1875,7 @@
 	"id": 31,
 	"name": "Shantotto",
 	"role": null,
-	"series": {
-		"id": 11,
-		"name": "FF11"
-	},
+	"series": 11,
 	"attributes": ["Dark", "Wind"],
 	"full": {},
 	"base": {
@@ -2002,7 +1885,7 @@
 		"ATK": 509,
 		"DEF": 367
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -2064,10 +1947,7 @@
 	"id": 30,
 	"name": "Galuf",
 	"role": null,
-	"series": {
-		"id": 5,
-		"name": "FF5"
-	},
+	"series": 5,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2077,7 +1957,7 @@
 		"ATK": 500,
 		"DEF": 594
 	},
-	"weaponType": "Heavy Sword",
+	"weaponType": 3,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -2121,10 +2001,7 @@
 	"id": 29,
 	"name": "Wakka",
 	"role": null,
-	"series": {
-		"id": 10,
-		"name": "FF10"
-	},
+	"series": 10,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2134,7 +2011,7 @@
 		"ATK": 500,
 		"DEF": 480
 	},
-	"weaponType": "Throwing Weapon",
+	"weaponType": 7,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -2178,10 +2055,7 @@
 	"id": 28,
 	"name": "Setzer",
 	"role": null,
-	"series": {
-		"id": 6,
-		"name": "FF6"
-	},
+	"series": 6,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2191,7 +2065,7 @@
 		"ATK": 452,
 		"DEF": 367
 	},
-	"weaponType": "Throwing Weapon",
+	"weaponType": 7,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -2235,10 +2109,7 @@
 	"id": 27,
 	"name": "Vanille",
 	"role": null,
-	"series": {
-		"id": 13,
-		"name": "FF13"
-	},
+	"series": 13,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2248,7 +2119,7 @@
 		"ATK": 471,
 		"DEF": 480
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -2292,10 +2163,7 @@
 	"id": 26,
 	"name": "Squall",
 	"role": null,
-	"series": {
-		"id": 8,
-		"name": "FF8"
-	},
+	"series": 8,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2305,7 +2173,7 @@
 		"ATK": 509,
 		"DEF": 367
 	},
-	"weaponType": "Heavy Sword",
+	"weaponType": 3,
 	"exclusiveWeapon": {
 		"name": "Cutting Trigger",
 		"stats": {
@@ -2349,10 +2217,7 @@
 	"id": 25,
 	"name": "Shadow",
 	"role": null,
-	"series": {
-		"id": 6,
-		"name": "FF6"
-	},
+	"series": 6,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2362,7 +2227,7 @@
 		"ATK": 500,
 		"DEF": 367
 	},
-	"weaponType": "Throwing Weapon",
+	"weaponType": 7,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -2406,10 +2271,7 @@
 	"id": 24,
 	"name": "Steiner",
 	"role": null,
-	"series": {
-		"id": 9,
-		"name": "FF9"
-	},
+	"series": 9,
 	"attributes": ["Fire"],
 	"full": {},
 	"base": {
@@ -2419,7 +2281,7 @@
 		"ATK": 509,
 		"DEF": 480
 	},
-	"weaponType": "Heavy Sword",
+	"weaponType": 3,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -2463,10 +2325,7 @@
 	"id": 23,
 	"name": "Laguna",
 	"role": null,
-	"series": {
-		"id": 8,
-		"name": "FF8"
-	},
+	"series": 8,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2476,7 +2335,7 @@
 		"ATK": 500,
 		"DEF": 424
 	},
-	"weaponType": "Gun",
+	"weaponType": 5,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -2520,10 +2379,7 @@
 	"id": 22,
 	"name": "Firion",
 	"role": null,
-	"series": {
-		"id": 2,
-		"name": "FF2"
-	},
+	"series": 2,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2533,7 +2389,7 @@
 		"ATK": 500,
 		"DEF": 424
 	},
-	"weaponType": "Sword",
+	"weaponType": 2,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -2605,10 +2461,7 @@
 	"id": 21,
 	"name": "Onion Knight",
 	"role": null,
-	"series": {
-		"id": 3,
-		"name": "FF3"
-	},
+	"series": 3,
 	"attributes": ["Ice"],
 	"full": {},
 	"base": {
@@ -2618,7 +2471,7 @@
 		"ATK": 480,
 		"DEF": 367
 	},
-	"weaponType": "Sword",
+	"weaponType": 2,
 	"exclusiveWeapon": {
 		"name": "Wightslayer",
 		"stats": {
@@ -2662,10 +2515,7 @@
 	"id": 20,
 	"name": "Yang",
 	"role": null,
-	"series": {
-		"id": 4,
-		"name": "FF4"
-	},
+	"series": 4,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2675,7 +2525,7 @@
 		"ATK": 509,
 		"DEF": 367
 	},
-	"weaponType": "Fists",
+	"weaponType": 6,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -2719,10 +2569,7 @@
 	"id": 19,
 	"name": "Terra",
 	"role": null,
-	"series": {
-		"id": 6,
-		"name": "FF6"
-	},
+	"series": 6,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2732,7 +2579,7 @@
 		"ATK": 509,
 		"DEF": 367
 	},
-	"weaponType": "Sword",
+	"weaponType": 2,
 	"exclusiveWeapon": {
 		"name": "Enhancer",
 		"stats": {
@@ -2794,10 +2641,7 @@
 	"id": 18,
 	"name": "Penelo",
 	"role": null,
-	"series": {
-		"id": 12,
-		"name": "FF12"
-	},
+	"series": 12,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2807,7 +2651,7 @@
 		"ATK": 471,
 		"DEF": 594
 	},
-	"weaponType": "Dagger",
+	"weaponType": 1,
 	"exclusiveWeapon": {
 		"name": "Platinum Dagger",
 		"stats": {
@@ -2851,10 +2695,7 @@
 	"id": 17,
 	"name": "Bartz",
 	"role": null,
-	"series": {
-		"id": 5,
-		"name": "FF5"
-	},
+	"series": 5,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2864,7 +2705,7 @@
 		"ATK": 500,
 		"DEF": 424
 	},
-	"weaponType": "Sword",
+	"weaponType": 2,
 	"exclusiveWeapon": {
 		"name": "Mithril Sword",
 		"stats": {
@@ -2908,10 +2749,7 @@
 	"id": 16,
 	"name": "King",
 	"role": null,
-	"series": {
-		"id": 18,
-		"name": "FFT0"
-	},
+	"series": 18,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -2921,7 +2759,7 @@
 		"ATK": 500,
 		"DEF": 424
 	},
-	"weaponType": "Gun",
+	"weaponType": 5,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -2965,10 +2803,7 @@
 	"id": 15,
 	"name": "Edge",
 	"role": null,
-	"series": {
-		"id": 4,
-		"name": "FF4"
-	},
+	"series": 4,
 	"attributes": ["Thunder"],
 	"full": {},
 	"base": {
@@ -2978,7 +2813,7 @@
 		"ATK": 480,
 		"DEF": 424
 	},
-	"weaponType": "Dagger",
+	"weaponType": 1,
 	"exclusiveWeapon": {
 		"name": "Ashura",
 		"stats": {
@@ -3022,10 +2857,7 @@
 	"id": 14,
 	"name": "Yuna",
 	"role": null,
-	"series": {
-		"id": 10,
-		"name": "FF10"
-	},
+	"series": 10,
 	"attributes": ["Thunder"],
 	"full": {},
 	"base": {
@@ -3035,7 +2867,7 @@
 		"ATK": 452,
 		"DEF": 537
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -3079,10 +2911,7 @@
 	"id": 13,
 	"name": "Yuffie",
 	"role": null,
-	"series": {
-		"id": 7,
-		"name": "FF7"
-	},
+	"series": 7,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -3092,7 +2921,7 @@
 		"ATK": 452,
 		"DEF": 424
 	},
-	"weaponType": "Throwing Weapon",
+	"weaponType": 7,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -3136,10 +2965,7 @@
 	"id": 12,
 	"name": "Vaan",
 	"role": null,
-	"series": {
-		"id": 12,
-		"name": "FF12"
-	},
+	"series": 12,
 	"attributes": ["Holy", "Ice", "Wind"],
 	"full": {},
 	"base": {
@@ -3149,7 +2975,7 @@
 		"ATK": 500,
 		"DEF": 424
 	},
-	"weaponType": "Sword",
+	"weaponType": 2,
 	"exclusiveWeapon": {
 		"name": "Zwill Blade",
 		"stats": {
@@ -3193,10 +3019,7 @@
 	"id": 11,
 	"name": "Yda",
 	"role": null,
-	"series": {
-		"id": 15,
-		"name": "FF14"
-	},
+	"series": 15,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -3206,7 +3029,7 @@
 		"ATK": 500,
 		"DEF": 424
 	},
-	"weaponType": "Fists",
+	"weaponType": 6,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -3250,10 +3073,7 @@
 	"id": 10,
 	"name": "Cecil",
 	"role": null,
-	"series": {
-		"id": 4,
-		"name": "FF4"
-	},
+	"series": 4,
 	"attributes": ["Dark"],
 	"full": {},
 	"base": {
@@ -3263,7 +3083,7 @@
 		"ATK": 509,
 		"DEF": 424
 	},
-	"weaponType": "Heavy Sword",
+	"weaponType": 3,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -3307,10 +3127,7 @@
 	"id": 9,
 	"name": "Zidane",
 	"role": null,
-	"series": {
-		"id": 9,
-		"name": "FF9"
-	},
+	"series": 9,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -3320,7 +3137,7 @@
 		"ATK": 480,
 		"DEF": 424
 	},
-	"weaponType": "Dagger",
+	"weaponType": 1,
 	"exclusiveWeapon": {
 		"name": "Butterfly Sword",
 		"stats": {
@@ -3364,10 +3181,7 @@
 	"id": 8,
 	"name": "Y'shtola",
 	"role": null,
-	"series": {
-		"id": 15,
-		"name": "FF14"
-	},
+	"series": 15,
 	"attributes": ["Earth"],
 	"full": {},
 	"base": {
@@ -3377,7 +3191,7 @@
 		"ATK": 471,
 		"DEF": 480
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -3439,10 +3253,7 @@
 	"id": 7,
 	"name": "Hope",
 	"role": null,
-	"series": {
-		"id": 13,
-		"name": "FF13"
-	},
+	"series": 13,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -3452,7 +3263,7 @@
 		"ATK": 471,
 		"DEF": 424
 	},
-	"weaponType": "Throwing Weapon",
+	"weaponType": 7,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -3496,10 +3307,7 @@
 	"id": 6,
 	"name": "Cloud",
 	"role": null,
-	"series": {
-		"id": 7,
-		"name": "FF7"
-	},
+	"series": 7,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -3509,7 +3317,7 @@
 		"ATK": 509,
 		"DEF": 424
 	},
-	"weaponType": "Heavy Sword",
+	"weaponType": 3,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -3571,10 +3379,7 @@
 	"id": 5,
 	"name": "Tifa",
 	"role": null,
-	"series": {
-		"id": 7,
-		"name": "FF7"
-	},
+	"series": 7,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -3584,7 +3389,7 @@
 		"ATK": 500,
 		"DEF": 424
 	},
-	"weaponType": "Fists",
+	"weaponType": 6,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -3638,10 +3443,7 @@
 	"id": 4,
 	"name": "Sazh",
 	"role": null,
-	"series": {
-		"id": 13,
-		"name": "FF13"
-	},
+	"series": 13,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -3651,7 +3453,7 @@
 		"ATK": 500,
 		"DEF": 480
 	},
-	"weaponType": "Gun",
+	"weaponType": 5,
 	"baseWeapon": {
 		"name": null,
 		"stats": {
@@ -3695,10 +3497,7 @@
 	"id": 3,
 	"name": "Rem",
 	"role": null,
-	"series": {
-		"id": 18,
-		"name": "FFT0"
-	},
+	"series": 18,
 	"attributes": ["Ice"],
 	"full": {},
 	"base": {
@@ -3708,7 +3507,7 @@
 		"ATK": 452,
 		"DEF": 424
 	},
-	"weaponType": "Dagger",
+	"weaponType": 1,
 	"baseWeapon": {
 		"name": "Survival Edge",
 		"stats": {
@@ -3752,10 +3551,7 @@
 	"id": 2,
 	"name": "Vivi",
 	"role": null,
-	"series": {
-		"id": 9,
-		"name": "FF9"
-	},
+	"series": 9,
 	"attributes": ["Fire"],
 	"full": {},
 	"base": {
@@ -3765,7 +3561,7 @@
 		"ATK": 509,
 		"DEF": 367
 	},
-	"weaponType": "Staff",
+	"weaponType": 4,
 	"exclusiveWeapon": {
 		"name": null,
 		"stats": {
@@ -3809,10 +3605,7 @@
 	"id": 1,
 	"name": "Warrior of Light",
 	"role": null,
-	"series": {
-		"id": 1,
-		"name": "FF1"
-	},
+	"series": 1,
 	"attributes": [],
 	"full": {},
 	"base": {
@@ -3822,7 +3615,7 @@
 		"ATK": 480,
 		"DEF": 594
 	},
-	"weaponType": "Sword",
+	"weaponType": 2,
 	"exclusiveWeapon": {
 		"name": "Flame Sword",
 		"stats": {

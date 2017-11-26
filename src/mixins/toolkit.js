@@ -10,11 +10,18 @@ export default {
         console.log('Unable to load database.')
       }
     },
-    fetchSeries: function () {
+    fetchFilters: function () {
       try {
-        return require('../series.json')
+        return require('../filters.json')
       } catch (e) {
-        console.log('Unable to load series.')
+        console.log('Unable to load filters.')
+      }
+    },
+    fetchPatterns: function () {
+      try {
+        return require('../patterns.json')
+      } catch (e) {
+        console.log('Unable to load patterns.')
       }
     },
     fetchIcon: function (name, type) {
