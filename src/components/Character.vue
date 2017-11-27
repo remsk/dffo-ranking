@@ -1,14 +1,16 @@
 <template>
   <div class="character">
     <h2 class="header">{{ character.name }}</h2>
-    <router-link class="previous" :to="{ name: 'character', params: { slug: previousCharacter }}">Previous</router-link>
+    <router-link v-if="character.name !== previousCharacter[1]" class="previous" :to="{ name: 'character', params: { slug: previousCharacter[0] }}">{{ previousCharacter[1] }}</router-link>
     <div class="status">
       <div class="icon" :style="fetchCard(character.name) ? { backgroundImage: 'url(' + fetchCard(character.name) + ')'} : false"></div>
       <div class="stats">
-        <pattern-chart :width="180" :height="180" :data="patternData" />
+      </div>
+      <div class="chart">
+        <pattern-chart :width="240" :height="200" :data="patternData" />
       </div>
     </div>
-    <router-link class="next" :to="{ name: 'character', params: { slug: nextCharacter }}">Next</router-link>
+    <router-link v-if="character.name !== nextCharacter[1]" class="next" :to="{ name: 'character', params: { slug: nextCharacter[0] }}">{{ nextCharacter[1] }}</router-link>
   </div>
 </template>
 
@@ -23,7 +25,7 @@ export default {
     return {
       character: {},
       patterns: [],
-      patternData: [0, 0, 0, 0, 0]
+      patternData: []
     }
   },
   methods: {
@@ -55,8 +57,10 @@ export default {
         let mbrvPattern = this.patterns.find(function (p) { return p.mbrv === trueBaseStats[2] }, trueBaseStats).type
         let atkPattern = this.patterns.find(function (p) { return p.atk === trueBaseStats[3] }, trueBaseStats).type
         let defPattern = this.patterns.find(function (p) { return p.def === trueBaseStats[4] }, trueBaseStats).type
-        return [hpPattern, ibrvPattern, mbrvPattern, atkPattern, defPattern]
+        return [[hpPattern, defPattern, mbrvPattern, ibrvPattern, atkPattern],
+          [this.character.base.HP, this.character.base.DEF, this.character.base.mBRV, this.character.base.iBRV, this.character.base.ATK]]
       }
+      return [0, 0, 0, 0, 0]
     },
     setTrueBaseStats: function () {
       if (this.character.placeholder !== true) {
@@ -70,9 +74,9 @@ export default {
     },
     changeCharacterPage: function (e) {
       if (e.keyCode === 37) {
-        this.openCharacterPage(this.previousCharacter)
+        this.openCharacterPage(this.previousCharacter[0])
       } else if (e.keyCode === 39) {
-        this.openCharacterPage(this.nextCharacter)
+        this.openCharacterPage(this.nextCharacter[0])
       }
     }
   },
@@ -89,21 +93,23 @@ export default {
     previousCharacter: function () {
       let previousId = parseInt(this.character.id) - 1
       if (previousId > 0) {
-        return this.slugify(this.fetchCharacters()
+        let previousName = this.fetchCharacters()
           .sort(function (a, b) { return a.id - b.id })
-          .find(function (b) { return b.id === previousId }, previousId).name)
+          .find(function (b) { return b.id === previousId }, previousId).name
+        return [this.slugify(previousName), previousName]
       } else {
-        return this.slugify(this.character.name)
+        return [this.slugify(this.character.name), this.character.name]
       }
     },
     nextCharacter: function () {
       let nextId = parseInt(this.character.id) + 1
       if (nextId <= this.fetchCharacters().length) {
-        return this.slugify(this.fetchCharacters()
+        let nextName = this.fetchCharacters()
           .sort(function (a, b) { return a.id - b.id })
-          .find(function (b) { return b.id === nextId }, nextId).name)
+          .find(function (b) { return b.id === nextId }, nextId).name
+        return [this.slugify(nextName), nextName]
       } else {
-        return this.slugify(this.character.name)
+        return [this.slugify(this.character.name), this.character.name]
       }
     }
   },
@@ -127,44 +133,58 @@ div.character {
 
 div.status {
   margin: 0 auto;
-  max-width: 400px;
   font-size: 0;
-  text-align: center;
-}
-
-div.stats  {
-  margin: 0;
-  color: #ccc;
   border-radius: 3px;
   background-color: #273153;
   box-shadow: inset 0 0 10px #000000;
-  display: inline-block;
-  width: 180px;
-  height: 180px;
-  border-top-left-radius: unset;
-  border-bottom-left-radius: unset;
   padding: 10px;
+}
+
+div.chart  {
+  color: #212121;
+/*  background-color: #bdbdbd;
+  border-radius: 3px;
+  box-shadow: inset 0 0 10px #273153;*/
+/*  border-radius: 3px;
+  background-color: #273153;
+  box-shadow: inset 0 0 10px #000000;*/
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
+  height: 200px;
+}
+
+div.chart div {
+  margin-top: -2.5px;
+}
+
+div.stats {
+  width: calc(100% - 450px);
+  height: 200px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 div.icon {
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 0;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   display: inline-block;
   border-radius: 3px;
-  border-top-right-radius: unset;
-  border-bottom-right-radius: unset;
   box-shadow: inset 0 0 10px #273153;
-  padding: 10px;
+  margin-right: 10px;
+  vertical-align: top;
 }
 
 a {
   text-decoration: none;
   position: absolute;
   color: #ccc;
-  top: 0;
+  top: -15px;
+  font-family: 'Karla', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.15em;
 }
 
 a.previous {

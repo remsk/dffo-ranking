@@ -70,8 +70,8 @@ li {
   vertical-align: top;
   margin: 10px;
   cursor: pointer;
-  filter: none;
   transition: .25s all;
+  filter: grayscale(75%);
 }
 
 span.icon {
@@ -108,7 +108,7 @@ span.info {
 }
 
 li:hover {
-  filter: grayscale(75%);
+  filter: none;
 }
 
 li:hover span.name {
