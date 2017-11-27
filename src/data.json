@@ -1471,6 +1471,16 @@
 				"DEF": 55
 			}
 		},
+		"exclusiveWeapon": {
+			"name": null,
+			"stats": {
+				"HP": 115,
+				"iBRV": 270,
+				"mBRV": 2850,
+				"ATK": 957,
+				"DEF": 55
+			}
+		},
 		"armor": {
 			"name": null,
 			"stats": {
@@ -1875,45 +1885,54 @@
 			"DEF": 0
 		},
 		"base": {
-			"HP": 0,
-			"iBRV": 0,
-			"mBRV": 0,
-			"ATK": 0,
-			"DEF": 0
+			"HP": 4468,
+			"iBRV": 831,
+			"mBRV": 1364,
+			"ATK": 480,
+			"DEF": 367
 		},
 		"weaponType": "Bow",
+		"baseWeapon": {
+			"name": null,
+			"stats": {
+				"HP": 130,
+				"iBRV": 223,
+				"mBRV": 2550,
+				"ATK": 850,
+				"DEF": 49
+			}
+		},
 		"exclusiveWeapon": {
 			"name": null,
 			"stats": {
-				"HP": 0,
-				"iBRV": 0,
-				"mBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"HP": 130,
+				"iBRV": 276,
+				"mBRV": 2850,
+				"ATK": 950,
+				"DEF": 49
 			}
 		},
 		"armor": {
 			"name": null,
 			"stats": {
-				"HP": 0,
+				"HP": 99,
 				"iBRV": 0,
-				"mBRV": 0,
-				"ATK": 0,
-				"DEF": 0
+				"mBRV": 49,
+				"ATK": 18,
+				"DEF": 801
 			},
 			"bonus": {
-				"HP": 0,
-				"ATK": 0
+				"HP": 680,
+				"iBRV": 110
 			}
 		},
 		"awakeningPassives": {
-			"HP": 0,
-			"mBRV": 0,
-			"ATK": 0,
-			"DEF": 0
+			"HP": 340,
+			"mBRV": 100,
+			"ATK": 34,
+			"DEF": 26
 		},
-		"lv60": false,
-		"placeholder": true
+		"lv60": false
 	},
 	{
 		"id": 61,
