@@ -2,7 +2,7 @@
   <div id="app">
     <header>
        <router-link :to="{ name: 'ranking' }" class="logo">
-        <img title="DFF OPERA OMNIA" src="./images/logo.png">
+        <img title="DFF OPERA OMNIA" src="./assets/logo.png">
       </router-link>
       <navigation />
     </header>
@@ -40,7 +40,7 @@ label, th, nav {
 
 body {
   background-color: #0b0b0b;
-  background-image: url('./images/bg.jpg');
+  background-image: url('./assets/bg.jpg');
   background-repeat: repeat-y;
   background-position: top center;
   color: #cfd8dc;

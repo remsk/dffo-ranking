@@ -27,7 +27,7 @@ export default {
     fetchIcon: function (name, type) {
       let slug = this.slugify(name)
       try {
-        return require('../images/icons/' + type + '/' + slug + '.png')
+        return require('../assets/icons/' + type + '/' + slug + '.png')
       } catch (e) {
         return false
       }
@@ -35,7 +35,7 @@ export default {
     fetchCard: function (name) {
       let slug = this.slugify(name)
       try {
-        return require('../images/cards/' + slug + '.jpg')
+        return require('../assets/cards/' + slug + '.jpg')
       } catch (e) {
         return false
       }

@@ -66,13 +66,13 @@
       styleClass="ranking-table">
       <template slot="table-row" slot-scope="props">
         <td :class="isFinished(props.row) + ' character'">
-          <span v-show="!compact" @click="openCharacterPage(props.row.name)" class="icon" :style="fetchIcon(props.row.name, 'characters') ? { backgroundImage: 'url(' + fetchIcon(props.row.name, 'characters') + ')'} : false"></span>
+          <span v-show="!compact" @click="openCharacterPage(props.row.name)" class="icon" :style="{ backgroundImage: 'url(' + fetchIcon(props.row.name, 'characters') + ')'}"></span>
           {{ props.row.name }}
         </td>
         <td>{{ seriesName(props.row.series) }}</td>
         <td class="attributes">
           <template v-if="props.row.attributes.length > 0">
-            <span v-for="attribute in props.row.attributes" :title="attribute" :class="!compact ? 'big' : 'small'" :style="fetchIcon(attribute, 'attributes') ? { backgroundImage: 'url(' + fetchIcon(attribute, 'attributes') + ')'} : false"></span> 
+            <span v-for="attribute in props.row.attributes" :title="attribute" :class="!compact ? 'big' : 'small'" :style="{ backgroundImage: 'url(' + fetchIcon(attribute, 'attributes') + ')'}"></span> 
           </template>
         </td>
         <td>

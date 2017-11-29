@@ -22,7 +22,20 @@ export default {
               return 'Base ' + data.labels[tooltipItem[0].index]
             },
             label: function (tooltipItem, data) {
-              return data.datasets[1].data[tooltipItem.index]
+              switch (data.datasets[0].data[tooltipItem.index]) {
+                case 1:
+                  return data.datasets[1].data[tooltipItem.index] + ' ★'
+                case 2:
+                  return data.datasets[1].data[tooltipItem.index] + ' ★★'
+                case 3:
+                  return data.datasets[1].data[tooltipItem.index] + ' ★★★'
+                case 4:
+                  return data.datasets[1].data[tooltipItem.index] + ' ★★★★'
+                case 5:
+                  return data.datasets[1].data[tooltipItem.index] + ' ★★★★★'
+                default:
+                  return data.datasets[1].data[tooltipItem.index]
+              }
             }
           }
         },

@@ -3,8 +3,11 @@
     <h2 class="header">{{ character.name }}</h2>
     <router-link v-if="character.name !== previousCharacter[1]" class="previous" :to="{ name: 'character', params: { slug: previousCharacter[0] }}">{{ previousCharacter[1] }}</router-link>
     <div class="status">
-      <div class="icon" :style="fetchCard(character.name) ? { backgroundImage: 'url(' + fetchCard(character.name) + ')'} : false"></div>
+      <div class="avatar" :style="{ backgroundImage: 'url(' + fetchCard(character.name) + ')'}"></div>
       <div class="stats">
+        <span class="icon" :style="{ backgroundImage: 'url(' + fetchIcon('artifact', 'gear') + ')'}"></span>
+        <span class="icon" :style="{ backgroundImage: 'url(' + fetchIcon('armor', 'gear') + ')'}"></span>
+        <span class="icon" :style="{ backgroundImage: 'url(' + fetchIcon(weaponType, 'gear') + ')'}"></span>
       </div>
       <div class="chart">
         <pattern-chart :width="240" :height="200" :data="patternData" />
@@ -25,6 +28,7 @@ export default {
     return {
       character: {},
       patterns: [],
+      weapons: [],
       patternData: []
     }
   },
@@ -83,6 +87,7 @@ export default {
   created () {
     this.character = this.loadCharacter()
     this.patterns = this.fetchPatterns()
+    this.weapons = this.fetchFilters().weapons
     this.setTrueBaseStats()
     document.addEventListener('keydown', this.changeCharacterPage)
   },
@@ -111,6 +116,10 @@ export default {
       } else {
         return [this.slugify(this.character.name), this.character.name]
       }
+    },
+    weaponType: function () {
+      let weaponTypeID = this.character.weaponType
+      return this.slugify(this.weapons.find(function (weaponType) { return weaponType.id === weaponTypeID }, weaponTypeID).name)
     }
   },
   watch: {
@@ -165,7 +174,7 @@ div.stats {
   vertical-align: top;
 }
 
-div.icon {
+div.avatar {
   background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
@@ -175,6 +184,14 @@ div.icon {
   box-shadow: inset 0 0 10px #273153;
   margin-right: 10px;
   vertical-align: top;
+}
+
+span.icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 a {

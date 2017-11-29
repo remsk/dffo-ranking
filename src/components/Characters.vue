@@ -3,7 +3,7 @@
     <h2 class="header">ALL CHARACTERS</h2>
     <ul>
       <li v-for="character in charactersList" @click="openCharacterPage(character.name)">
-        <span class="icon" :style="fetchCard(character.name) ? { backgroundImage: 'url(' + fetchCard(character.name) + ')'} : false"></span>
+        <span class="icon" :style="{ backgroundImage: 'url(' + fetchCard(character.name) + ')'}"></span>
         <span class="name">{{ character.name }}</span>
         <span class="info">{{ filterByCharacter(character) }}</span>
       </li>
@@ -71,7 +71,7 @@ li {
   margin: 10px;
   cursor: pointer;
   transition: .25s all;
-  filter: grayscale(75%);
+  filter: grayscale(45%);
 }
 
 span.icon {
@@ -117,5 +117,9 @@ li:hover span.name {
 
 li:hover span.info {
   display: block;
+}
+
+li:hover span.name, li:hover span.info {
+  background-color: #e9e1c9;
 }
 </style>
